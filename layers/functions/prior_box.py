@@ -29,14 +29,14 @@ class PriorBox(object):
         mean = []
         for k, f in enumerate(self.feature_maps):
             for i, j in product(range(f), repeat=2):
-                f_k = self.image_size / self.steps[k]
+                f_k = self.image_size / self.steps[k] # 比feature_maps尺寸更精细的cell width
                 # unit center x,y
-                cx = (j + 0.5) / f_k
+                cx = (j + 0.5) / f_k # feature_maps越大，坐标越精细
                 cy = (i + 0.5) / f_k
 
                 # aspect_ratio: 1
                 # rel size: min_size
-                s_k = self.min_sizes[k]/self.image_size
+                s_k = self.min_sizes[k]/self.image_size # 不同feature_map大小的prior大小其实也是预定义好的
                 mean += [cx, cy, s_k, s_k]
 
                 # aspect_ratio: 1

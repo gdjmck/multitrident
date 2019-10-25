@@ -1,0 +1,222 @@
+Loading base network...
+Initializing weights...
+Loading the dataset...
+Training RefineDet on: GDUT
+Using the specified args:
+Namespace(basenet='/root/.torch/models/vgg16_reducedfc.pth', basenetBN='./weights/vgg16_bn-6c64b313.pth', batch_size=8, cuda=True, dataset='GDUT', dataset_root='/home/chk/GDUT-HWD', gamma=0.1, input_size='320', lr=0.0003, momentum=0.9, num_workers=0, resume=None, save_folder='./weights/', start_iter=0, visdom=False, weight_decay=0.0005, withBN=False)
+===========================================
+timer: 8.2980 sec.
+iter 0 || ARM_L: 3.7550 ARM_C: 3.5256 TRM_s_L: 5.8927 TRM_s_C: 29.0674 TRM_m_L: 5.5717 TRM_m_C: 25.2236 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:48.50  small:45.50  middle:3.00  big:0.00 lr:0.0003
+===========================================
+===========================================
+===========================================
+===========================================
+===========================================
+===========================================
+===========================================
+===========================================
+===========================================
+===========================================
+timer: 0.6778 sec.
+iter 10 || ARM_L: 5.3050 ARM_C: 6.9798 TRM_s_L: 6.6747 TRM_s_C: 11.5045 TRM_m_L: 0.0000 TRM_m_C: 0.0000 TRM_b_L: 5.6587 TRM_b_C: 56.4246 || 
+all:75.18  small:72.18  middle:2.45  big:0.55 lr:0.0003
+===========================================
+===========================================
+===========================================
+===========================================
+===========================================
+===========================================
+===========================================
+nan in trm_loss_s_l
+===========================================
+nan in VGG[0] tensor(52428800)
+nan in sources[0]
+nan in sources[1]
+nan in sources[2]
+nan in sources[3]
+nan in a from source[0]
+nan in a from source[0]
+nan in a from decov[0]
+nan in b from source[1]
+nan in b from source[1]
+nan in a from decov[1]
+nan in b from source[2]
+nan in a from decov[2]
+nan in b from source[3]
+nan in trm_source[0]
+nan in trm_source[1]
+nan in trm_source[2]
+nan in trm_source[3]
+nan in arm_loc[0]
+nan in arm_loc[1]
+nan in arm_loc[2]
+nan in arm_loc[3]
+	nan in out
+nan in loc_p
+nan in arm_loss_l
+nan in arm_loss_c
+nan in trm_loss_s_l
+nan in trm_loss_s_c
+===========================================
+nan in VGG[0] tensor(52428800)
+nan in sources[0]
+nan in sources[1]
+nan in sources[2]
+nan in sources[3]
+nan in a from source[0]
+nan in a from source[0]
+nan in a from decov[0]
+nan in b from source[1]
+nan in b from source[1]
+nan in a from decov[1]
+nan in b from source[2]
+nan in b from source[2]
+nan in a from decov[2]
+nan in b from source[3]
+nan in b from source[3]
+nan in trm_source[0]
+nan in trm_source[1]
+nan in trm_source[2]
+nan in trm_source[3]
+nan in arm_loc[0]
+nan in arm_loc[1]
+nan in arm_loc[2]
+nan in arm_loc[3]
+	nan in out
+nan in loc_p
+nan in arm_loss_l
+nan in arm_loss_c
+nan in trm_loss_s_l
+nan in trm_loss_s_c
+===========================================
+nan in VGG[0] tensor(52428800)
+nan in sources[0]
+nan in sources[1]
+nan in sources[2]
+nan in sources[3]
+nan in a from source[0]
+nan in a from source[0]
+nan in a from decov[0]
+nan in b from source[1]
+nan in b from source[1]
+nan in a from decov[1]
+nan in b from source[2]
+nan in b from source[2]
+nan in a from decov[2]
+nan in b from source[3]
+nan in b from source[3]
+nan in trm_source[0]
+nan in trm_source[1]
+nan in trm_source[2]
+nan in trm_source[3]
+nan in arm_loc[0]
+nan in arm_loc[1]
+nan in arm_loc[2]
+nan in arm_loc[3]
+	nan in out
+nan in loc_p
+nan in arm_loss_l
+nan in arm_loss_c
+nan in trm_loss_s_l
+nan in trm_loss_s_c
+timer: 0.5878 sec.
+iter 20 || ARM_L: nan ARM_C: nan TRM_s_L: nan TRM_s_C: nan TRM_m_L: 0.0000 TRM_m_C: 0.0000 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:13945.91  small:13945.18  middle:0.73  big:0.00 lr:0.0003
+===========================================
+nan in VGG[0] tensor(52428800)
+nan in sources[0]
+nan in sources[1]
+nan in sources[2]
+nan in sources[3]
+nan in a from source[0]
+nan in a from source[0]
+nan in a from decov[0]
+nan in b from source[1]
+nan in b from source[1]
+nan in a from decov[1]
+nan in b from source[2]
+nan in b from source[2]
+nan in a from decov[2]
+nan in b from source[3]
+nan in b from source[3]
+nan in trm_source[0]
+nan in trm_source[1]
+nan in trm_source[2]
+nan in trm_source[3]
+nan in arm_loc[0]
+nan in arm_loc[1]
+nan in arm_loc[2]
+nan in arm_loc[3]
+	nan in out
+nan in loc_p
+nan in arm_loss_l
+nan in arm_loss_c
+nan in trm_loss_s_l
+nan in trm_loss_s_c
+===========================================
+nan in VGG[0] tensor(52428800)
+nan in sources[0]
+nan in sources[1]
+nan in sources[2]
+nan in sources[3]
+nan in a from source[0]
+nan in a from source[0]
+nan in a from decov[0]
+nan in b from source[1]
+nan in b from source[1]
+nan in a from decov[1]
+nan in b from source[2]
+nan in b from source[2]
+nan in a from decov[2]
+nan in b from source[3]
+nan in b from source[3]
+nan in trm_source[0]
+nan in trm_source[1]
+nan in trm_source[2]
+nan in trm_source[3]
+nan in arm_loc[0]
+nan in arm_loc[1]
+nan in arm_loc[2]
+nan in arm_loc[3]
+	nan in out
+nan in loc_p
+nan in arm_loss_l
+nan in arm_loss_c
+nan in trm_loss_s_l
+nan in trm_loss_m_l
+nan in trm_loss_s_c
+nan in trm_loss_m_c
+===========================================
+nan in VGG[0] tensor(52428800)
+nan in sources[0]
+nan in sources[1]
+nan in sources[2]
+nan in sources[3]
+nan in a from source[0]
+nan in a from source[0]
+nan in a from decov[0]
+nan in b from source[1]
+nan in b from source[1]
+nan in a from decov[1]
+nan in b from source[2]
+nan in b from source[2]
+nan in a from decov[2]
+nan in b from source[3]
+nan in b from source[3]
+nan in trm_source[0]
+nan in trm_source[1]
+nan in trm_source[2]
+nan in trm_source[3]
+nan in arm_loc[0]
+nan in arm_loc[1]
+nan in arm_loc[2]
+nan in arm_loc[3]
+	nan in out
+nan in loc_p
+nan in arm_loss_l
+nan in arm_loss_c
+nan in trm_loss_s_l
+nan in trm_loss_m_l
+nan in trm_loss_s_c
+nan in trm_loss_m_c

@@ -2,6 +2,7 @@ from data import *
 from utils.augmentations import SSDAugmentation
 from layers.modules.multitrident_multibox_loss import multitridentMultiBoxLoss
 from layers.modules.refinedet_multibox_loss import RefineDetMultiBoxLoss
+from layers.box_utils import have_nan
 #from ssd import build_ssd
 from models.multitrident_refinedet import  build_multitridentrefinedet
 import os
@@ -28,7 +29,7 @@ os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 parser = argparse.ArgumentParser(
     description='Single Shot MultiBox Detector Training With Pytorch')
 train_set = parser.add_mutually_exclusive_group()
-parser.add_argument('--dataset', default='VOC', choices=['VOC', 'COCO'],
+parser.add_argument('--dataset', default='VOC', choices=['VOC', 'COCO', 'GDUT'],
                     type=str, help='VOC or COCO')
 parser.add_argument('--input_size', default='320', choices=['320', '512'],
                     type=str, help='RefineDet320 or RefineDet512')
@@ -98,6 +99,13 @@ def train():
         dataset = VOCDetection(root=args.dataset_root,
                                transform=SSDAugmentation(cfg['min_dim'],
                                                          MEANS))
+    elif args.dataset == 'GDUT':
+        '''if args.dataset_root == COCO_ROOT:
+            parser.error('Must specify dataset if specifying dataset_root')'''
+        cfg = voc_refinedet[args.input_size]
+        dataset = GDUT(root=args.dataset_root,
+                               transform=SSDAugmentation(cfg['min_dim'],
+                                                         MEANS))
 
     if args.visdom:
         import visdom
@@ -105,7 +113,7 @@ def train():
 
     refinedet_net = build_multitridentrefinedet('train', cfg['min_dim'], cfg['num_classes'])
     net = refinedet_net
-    print(net)
+    #print(net)
     #input()
 
     if args.cuda:
@@ -219,8 +227,9 @@ def train():
             adjust_learning_rate(optimizer, args.gamma, step_index, iteration)
 
         # load train data
-        try:
+        try: 
             images, targets = next(batch_iterator)
+            #print('\timage: ', images.size(), '\ttargets: ', targets.size())
         except StopIteration:
             batch_iterator = iter(data_loader)
             images, targets = next(batch_iterator)
@@ -241,10 +250,42 @@ def train():
         # forward
         t0 = time.time()
         out = net(images)
+        if have_nan(out[0]):
+            print('\tnan in out')
+        '''
+        print('\tOUT:')
+        for item in out:
+            if type(item) == torch.Tensor:
+                print(item.size())
+            else:
+                print(type(item))
+        print('\ttargets:')
+        for item in targets:
+            print(item.size())
+        '''
+        #print('ARM_LOC:', out[0].size(), '\tARM_CONF:', out[1].size())
         # backprop
         optimizer.zero_grad()
         arm_loss_l, arm_loss_c = arm_criterion(out, targets)
+        if have_nan(arm_loss_l):
+            print('nan in arm_loss_l')
+        if have_nan(arm_loss_c):
+            print('nan in arm_loss_c')
+        #print('----------------\t\tarm_criterion', arm_loss_l, arm_loss_c)
         trm_loss_s_l, trm_loss_m_l, trm_loss_b_l, trm_loss_s_c, trm_loss_m_c, trm_loss_b_c, n_all, n_small, n_middle, n_big = trm_criterion(out, targets)
+        if have_nan(trm_loss_s_l):
+            print('nan in trm_loss_s_l')
+        if have_nan(trm_loss_m_l):
+            print('nan in trm_loss_m_l')
+        if have_nan(trm_loss_b_l):
+            print('nan in trm_loss_b_l')
+        if have_nan(trm_loss_s_c):
+            print('nan in trm_loss_s_c')
+        if have_nan(trm_loss_m_c):
+            print('nan in trm_loss_m_c')
+        if have_nan(trm_loss_b_c):
+            print('nan in trm_loss_b_c')
+        #print('trm_criterion=============', trm_loss_s_l, trm_loss_m_l, trm_loss_b_l, trm_loss_s_c, trm_loss_m_c, trm_loss_b_c, n_all, n_small, n_middle, n_big)
 
         #input()
         arm_loss = arm_loss_l + arm_loss_c
@@ -262,10 +303,10 @@ def train():
         # trm_conf_s_loss += trm_loss_s_c.item()
         # trm_conf_m_loss += trm_loss_m_c.item()
         # trm_conf_b_loss += trm_loss_b_c.item()
-        num_all = np.append(num_all, n_all)
-        num_small = np.append(num_small, n_small)
-        num_middle = np.append(num_middle, n_middle)
-        num_big = np.append(num_big, n_big)
+        num_all = np.append(num_all, n_all.cpu())
+        num_small = np.append(num_small, n_small.cpu())
+        num_middle = np.append(num_middle, n_middle.cpu() if type(n_middle) == torch.Tensor else n_middle)
+        num_big = np.append(num_big, n_big.cpu() if type(n_big) == torch.Tensor else n_big)
 
         if type(trm_loss_s_l) != float:
             trm_loss_s_l_value = trm_loss_s_l.item()
@@ -296,7 +337,7 @@ def train():
             print('timer: %.4f sec.' % (t1 - t0))
             print('iter ' + repr(iteration) + ' || ARM_L: %.4f ARM_C: %.4f TRM_s_L: %.4f TRM_s_C: %.4f TRM_m_L: %.4f TRM_m_C: %.4f TRM_b_L: %.4f TRM_b_C: %.4f ||' \
             % (arm_loss_l.item(), arm_loss_c.item(), trm_loss_s_l_value, trm_loss_s_c_value, trm_loss_m_l_value, trm_loss_m_c_value, trm_loss_b_l_value, trm_loss_b_c_value), end=' ')
-            print('\n'+'all:{}  small:{}  middle:{}  big:{} lr:{}'.format(num_all.mean(), num_small.mean(), num_middle.mean(), num_big.mean(), optimizer.param_groups[0]["lr"]))
+            print('\n'+'all:{:.2f}  small:{:.2f}  middle:{:.2f}  big:{:.2f} lr:{}'.format(num_all.mean(), num_small.mean(), num_middle.mean(), num_big.mean(), optimizer.param_groups[0]["lr"]))
             num_all = np.array(0)
             num_small = np.array(0)
             num_middle = np.array(0)
@@ -384,3 +425,9 @@ def update_vis_plot(iteration, loc, conf, window1, window2, update_type,
 
 if __name__ == '__main__':
     train()
+    '''
+    cfg = voc_refinedet[args.input_size]
+    dataset = GDUT(root=args.dataset_root,
+                               transform=SSDAugmentation(cfg['min_dim'],
+                                                         MEANS))
+    '''

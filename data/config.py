@@ -75,7 +75,7 @@ voc_refinedet = {
         'name': 'RefineDet_VOC_320',
     },
     '320': {
-        'num_classes': 21,
+        'num_classes': 6,
         'lr_steps': (125000, 230010, 350000),
         'max_iter': 350000,
         'feature_maps': [40, 20, 10, 5],

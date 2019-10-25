@@ -1,4 +1,4 @@
-from .voc0712 import VOCDetection, ExpVOCDetection, VOCAnnotationTransform, VOC_CLASSES, VOC_ROOT
+from .voc0712 import VOCDetection, ExpVOCDetection, VOCAnnotationTransform, VOC_CLASSES, VOC_ROOT, GDUT
 
 #from .coco import COCODetection, COCOAnnotationTransform, COCO_CLASSES, COCO_ROOT, get_label_map
 from .config import *

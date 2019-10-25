@@ -1,6 +1,11 @@
 # -*- coding: utf-8 -*-
 import torch
 
+def have_nan(tensor):
+    if type(tensor) == torch.Tensor:
+        return torch.isnan(tensor).sum()
+    else:
+        return 0
 
 def point_form(boxes):
     """ Convert prior_boxes to (xmin, ymin, xmax, ymax)
@@ -208,6 +213,9 @@ def soft_refine_match(threshold, truths, priors, variances, labels, loc_t, conf_
     conf[best_truth_overlap < threshold] = 0  # label as background
     loc_t[idx] = loc  # [num_priors,4] encoded offsets to learn
     conf_t[idx] = conf  # [num_priors] top class label for each prior
+    
+    if idx % 50 == 0:
+        print('loc', loc)
 
 
 
