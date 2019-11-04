@@ -17,8 +17,11 @@ import torch.utils.data as data
 import numpy as np
 import argparse
 from utils.logging import Logger
+from utils.grad_vis import plot_grad_flow_v2
+from tensorboardX import SummaryWriter
 import matplotlib.pyplot as plt
 import math
+
 
 
 def str2bool(v):
@@ -77,8 +80,13 @@ else:
 
 if not os.path.exists(args.save_folder):
     os.mkdir(args.save_folder)
+    
+tb_folder = os.path.join(args.save_folder, 'TB')
+if not os.path.exists(tb_folder):
+    os.makedirs(tb_folder)
 
 sys.stdout = Logger(os.path.join(args.save_folder, 'log.txt'))
+writer = SummaryWriter(tb_folder)
 
 def train():
     if args.dataset == 'COCO':
@@ -109,6 +117,7 @@ def train():
 
     if args.visdom:
         import visdom
+        global viz
         viz = visdom.Visdom()
 
     refinedet_net = build_multitridentrefinedet('train', cfg['min_dim'], cfg['num_classes'])
@@ -250,8 +259,6 @@ def train():
         # forward
         t0 = time.time()
         out = net(images)
-        if have_nan(out[0]):
-            print('\tnan in out')
         '''
         print('\tOUT:')
         for item in out:
@@ -267,31 +274,19 @@ def train():
         # backprop
         optimizer.zero_grad()
         arm_loss_l, arm_loss_c = arm_criterion(out, targets)
-        if have_nan(arm_loss_l):
-            print('nan in arm_loss_l')
-        if have_nan(arm_loss_c):
-            print('nan in arm_loss_c')
         #print('----------------\t\tarm_criterion', arm_loss_l, arm_loss_c)
         trm_loss_s_l, trm_loss_m_l, trm_loss_b_l, trm_loss_s_c, trm_loss_m_c, trm_loss_b_c, n_all, n_small, n_middle, n_big = trm_criterion(out, targets)
-        if have_nan(trm_loss_s_l):
-            print('nan in trm_loss_s_l')
-        if have_nan(trm_loss_m_l):
-            print('nan in trm_loss_m_l')
-        if have_nan(trm_loss_b_l):
-            print('nan in trm_loss_b_l')
-        if have_nan(trm_loss_s_c):
-            print('nan in trm_loss_s_c')
-        if have_nan(trm_loss_m_c):
-            print('nan in trm_loss_m_c')
-        if have_nan(trm_loss_b_c):
-            print('nan in trm_loss_b_c')
         #print('trm_criterion=============', trm_loss_s_l, trm_loss_m_l, trm_loss_b_l, trm_loss_s_c, trm_loss_m_c, trm_loss_b_c, n_all, n_small, n_middle, n_big)
 
         #input()
         arm_loss = arm_loss_l + arm_loss_c
         trm_loss = trm_loss_s_l+ trm_loss_m_l+ trm_loss_b_l+trm_loss_s_c+ trm_loss_m_c+trm_loss_b_c
         loss = arm_loss + trm_loss
+        
         loss.backward()
+        
+        if iteration % 200 == 0:
+            writer.add_figure('Grad', plot_grad_flow_v2(net.named_parameters()), global_step=iteration // 200)
         # trm_loss.backward()
         optimizer.step()
         t1 = time.time()
@@ -305,8 +300,8 @@ def train():
         # trm_conf_b_loss += trm_loss_b_c.item()
         num_all = np.append(num_all, n_all.cpu())
         num_small = np.append(num_small, n_small.cpu())
-        num_middle = np.append(num_middle, n_middle.cpu() if type(n_middle) == torch.Tensor else n_middle)
-        num_big = np.append(num_big, n_big.cpu() if type(n_big) == torch.Tensor else n_big)
+        num_middle = np.append(num_middle, n_middle.cpu())
+        num_big = np.append(num_big, n_big.cpu())
 
         if type(trm_loss_s_l) != float:
             trm_loss_s_l_value = trm_loss_s_l.item()
@@ -344,7 +339,7 @@ def train():
             num_big = np.array(0)
 
         if args.visdom:
-            update_vis_plot(iteration, arm_loss_l.data[0], arm_loss_c.data[0],
+            update_vis_plot(iteration, arm_loss_l.item(), arm_loss_c.item(),
                             iter_plot, epoch_plot, 'append')
 
         if iteration != 0 and iteration % 5000 == 0:
@@ -413,6 +408,7 @@ def update_vis_plot(iteration, loc, conf, window1, window2, update_type,
         win=window1,
         update=update_type
     )
+    '''
     # initialize epoch plot on first iteration
     if iteration == 0:
         viz.line(
@@ -421,6 +417,7 @@ def update_vis_plot(iteration, loc, conf, window1, window2, update_type,
             win=window2,
             update=True
         )
+    '''
 
 
 if __name__ == '__main__':

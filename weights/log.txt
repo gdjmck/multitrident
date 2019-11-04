@@ -1,222 +1,2108 @@
-Loading base network...
-Initializing weights...
+Resuming training, loading ./weights/RefineDet320_GDUT_130000.pth...
+Loading weights into state dict...
+Finished!
 Loading the dataset...
 Training RefineDet on: GDUT
 Using the specified args:
-Namespace(basenet='/root/.torch/models/vgg16_reducedfc.pth', basenetBN='./weights/vgg16_bn-6c64b313.pth', batch_size=8, cuda=True, dataset='GDUT', dataset_root='/home/chk/GDUT-HWD', gamma=0.1, input_size='320', lr=0.0003, momentum=0.9, num_workers=0, resume=None, save_folder='./weights/', start_iter=0, visdom=False, weight_decay=0.0005, withBN=False)
-===========================================
-timer: 8.2980 sec.
-iter 0 || ARM_L: 3.7550 ARM_C: 3.5256 TRM_s_L: 5.8927 TRM_s_C: 29.0674 TRM_m_L: 5.5717 TRM_m_C: 25.2236 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
-all:48.50  small:45.50  middle:3.00  big:0.00 lr:0.0003
-===========================================
-===========================================
-===========================================
-===========================================
-===========================================
-===========================================
-===========================================
-===========================================
-===========================================
-===========================================
-timer: 0.6778 sec.
-iter 10 || ARM_L: 5.3050 ARM_C: 6.9798 TRM_s_L: 6.6747 TRM_s_C: 11.5045 TRM_m_L: 0.0000 TRM_m_C: 0.0000 TRM_b_L: 5.6587 TRM_b_C: 56.4246 || 
-all:75.18  small:72.18  middle:2.45  big:0.55 lr:0.0003
-===========================================
-===========================================
-===========================================
-===========================================
-===========================================
-===========================================
-===========================================
-nan in trm_loss_s_l
-===========================================
-nan in VGG[0] tensor(52428800)
-nan in sources[0]
-nan in sources[1]
-nan in sources[2]
-nan in sources[3]
-nan in a from source[0]
-nan in a from source[0]
-nan in a from decov[0]
-nan in b from source[1]
-nan in b from source[1]
-nan in a from decov[1]
-nan in b from source[2]
-nan in a from decov[2]
-nan in b from source[3]
-nan in trm_source[0]
-nan in trm_source[1]
-nan in trm_source[2]
-nan in trm_source[3]
-nan in arm_loc[0]
-nan in arm_loc[1]
-nan in arm_loc[2]
-nan in arm_loc[3]
-	nan in out
-nan in loc_p
-nan in arm_loss_l
-nan in arm_loss_c
-nan in trm_loss_s_l
-nan in trm_loss_s_c
-===========================================
-nan in VGG[0] tensor(52428800)
-nan in sources[0]
-nan in sources[1]
-nan in sources[2]
-nan in sources[3]
-nan in a from source[0]
-nan in a from source[0]
-nan in a from decov[0]
-nan in b from source[1]
-nan in b from source[1]
-nan in a from decov[1]
-nan in b from source[2]
-nan in b from source[2]
-nan in a from decov[2]
-nan in b from source[3]
-nan in b from source[3]
-nan in trm_source[0]
-nan in trm_source[1]
-nan in trm_source[2]
-nan in trm_source[3]
-nan in arm_loc[0]
-nan in arm_loc[1]
-nan in arm_loc[2]
-nan in arm_loc[3]
-	nan in out
-nan in loc_p
-nan in arm_loss_l
-nan in arm_loss_c
-nan in trm_loss_s_l
-nan in trm_loss_s_c
-===========================================
-nan in VGG[0] tensor(52428800)
-nan in sources[0]
-nan in sources[1]
-nan in sources[2]
-nan in sources[3]
-nan in a from source[0]
-nan in a from source[0]
-nan in a from decov[0]
-nan in b from source[1]
-nan in b from source[1]
-nan in a from decov[1]
-nan in b from source[2]
-nan in b from source[2]
-nan in a from decov[2]
-nan in b from source[3]
-nan in b from source[3]
-nan in trm_source[0]
-nan in trm_source[1]
-nan in trm_source[2]
-nan in trm_source[3]
-nan in arm_loc[0]
-nan in arm_loc[1]
-nan in arm_loc[2]
-nan in arm_loc[3]
-	nan in out
-nan in loc_p
-nan in arm_loss_l
-nan in arm_loss_c
-nan in trm_loss_s_l
-nan in trm_loss_s_c
-timer: 0.5878 sec.
-iter 20 || ARM_L: nan ARM_C: nan TRM_s_L: nan TRM_s_C: nan TRM_m_L: 0.0000 TRM_m_C: 0.0000 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
-all:13945.91  small:13945.18  middle:0.73  big:0.00 lr:0.0003
-===========================================
-nan in VGG[0] tensor(52428800)
-nan in sources[0]
-nan in sources[1]
-nan in sources[2]
-nan in sources[3]
-nan in a from source[0]
-nan in a from source[0]
-nan in a from decov[0]
-nan in b from source[1]
-nan in b from source[1]
-nan in a from decov[1]
-nan in b from source[2]
-nan in b from source[2]
-nan in a from decov[2]
-nan in b from source[3]
-nan in b from source[3]
-nan in trm_source[0]
-nan in trm_source[1]
-nan in trm_source[2]
-nan in trm_source[3]
-nan in arm_loc[0]
-nan in arm_loc[1]
-nan in arm_loc[2]
-nan in arm_loc[3]
-	nan in out
-nan in loc_p
-nan in arm_loss_l
-nan in arm_loss_c
-nan in trm_loss_s_l
-nan in trm_loss_s_c
-===========================================
-nan in VGG[0] tensor(52428800)
-nan in sources[0]
-nan in sources[1]
-nan in sources[2]
-nan in sources[3]
-nan in a from source[0]
-nan in a from source[0]
-nan in a from decov[0]
-nan in b from source[1]
-nan in b from source[1]
-nan in a from decov[1]
-nan in b from source[2]
-nan in b from source[2]
-nan in a from decov[2]
-nan in b from source[3]
-nan in b from source[3]
-nan in trm_source[0]
-nan in trm_source[1]
-nan in trm_source[2]
-nan in trm_source[3]
-nan in arm_loc[0]
-nan in arm_loc[1]
-nan in arm_loc[2]
-nan in arm_loc[3]
-	nan in out
-nan in loc_p
-nan in arm_loss_l
-nan in arm_loss_c
-nan in trm_loss_s_l
-nan in trm_loss_m_l
-nan in trm_loss_s_c
-nan in trm_loss_m_c
-===========================================
-nan in VGG[0] tensor(52428800)
-nan in sources[0]
-nan in sources[1]
-nan in sources[2]
-nan in sources[3]
-nan in a from source[0]
-nan in a from source[0]
-nan in a from decov[0]
-nan in b from source[1]
-nan in b from source[1]
-nan in a from decov[1]
-nan in b from source[2]
-nan in b from source[2]
-nan in a from decov[2]
-nan in b from source[3]
-nan in b from source[3]
-nan in trm_source[0]
-nan in trm_source[1]
-nan in trm_source[2]
-nan in trm_source[3]
-nan in arm_loc[0]
-nan in arm_loc[1]
-nan in arm_loc[2]
-nan in arm_loc[3]
-	nan in out
-nan in loc_p
-nan in arm_loss_l
-nan in arm_loss_c
-nan in trm_loss_s_l
-nan in trm_loss_m_l
-nan in trm_loss_s_c
-nan in trm_loss_m_c
+Namespace(basenet='/root/.torch/models/vgg16_reducedfc.pth', basenetBN='/root/.torch/models/vgg16_bn-6c64b313.pth', batch_size=12, cuda=True, dataset='GDUT', dataset_root='/home/chk/GDUT-HWD', gamma=0.1, input_size='320', lr=0.00028, momentum=0.9, num_workers=0, resume='./weights/RefineDet320_GDUT_130000.pth', save_folder='./weights/', start_iter=130000, visdom=True, weight_decay=0.0005, withBN='True')
+timer: 9.8808 sec.
+iter 130000 || ARM_L: 0.3494 ARM_C: 1.1190 TRM_s_L: 1.0358 TRM_s_C: 1.0487 TRM_m_L: 0.2911 TRM_m_C: 0.3678 TRM_b_L: 0.0977 TRM_b_C: 0.1596 || 
+all:269.50  small:133.50  middle:116.50  big:19.50 lr:0.00028
+Saving state, iter: 130000
+timer: 0.7831 sec.
+iter 130010 || ARM_L: 0.4446 ARM_C: 1.4313 TRM_s_L: 1.3059 TRM_s_C: 0.6388 TRM_m_L: 0.3457 TRM_m_C: 0.0556 TRM_b_L: 0.3079 TRM_b_C: 0.2511 || 
+all:580.00  small:278.73  middle:270.73  big:30.55 lr:0.00028
+timer: 0.7796 sec.
+iter 130020 || ARM_L: 0.6123 ARM_C: 1.3422 TRM_s_L: 0.8038 TRM_s_C: 0.7530 TRM_m_L: 0.1664 TRM_m_C: 0.2664 TRM_b_L: 0.1979 TRM_b_C: 0.5872 || 
+all:536.55  small:349.18  middle:169.45  big:17.91 lr:0.00028
+timer: 0.7907 sec.
+iter 130030 || ARM_L: 0.5685 ARM_C: 1.4070 TRM_s_L: 0.9248 TRM_s_C: 0.2742 TRM_m_L: 0.2621 TRM_m_C: 0.5332 TRM_b_L: 0.1389 TRM_b_C: 0.7772 || 
+all:649.09  small:430.09  middle:198.55  big:20.45 lr:0.00028
+timer: 0.7934 sec.
+iter 130040 || ARM_L: 0.6124 ARM_C: 1.0699 TRM_s_L: 1.0998 TRM_s_C: 0.9423 TRM_m_L: 0.2184 TRM_m_C: 0.3154 TRM_b_L: 0.1479 TRM_b_C: 0.2214 || 
+all:551.91  small:314.64  middle:217.91  big:19.36 lr:0.00028
+timer: 0.7947 sec.
+iter 130050 || ARM_L: 0.5817 ARM_C: 1.1936 TRM_s_L: 0.9835 TRM_s_C: 0.4343 TRM_m_L: 0.4642 TRM_m_C: 0.1525 TRM_b_L: 0.1485 TRM_b_C: 0.2951 || 
+all:577.82  small:317.45  middle:239.18  big:21.18 lr:0.00028
+timer: 0.7819 sec.
+iter 130060 || ARM_L: 0.5231 ARM_C: 1.2018 TRM_s_L: 0.7895 TRM_s_C: 1.1337 TRM_m_L: 0.2797 TRM_m_C: 0.5994 TRM_b_L: 0.1686 TRM_b_C: 0.5819 || 
+all:634.09  small:333.45  middle:269.73  big:30.91 lr:0.00028
+timer: 0.7532 sec.
+iter 130070 || ARM_L: 0.4468 ARM_C: 1.2945 TRM_s_L: 0.8807 TRM_s_C: 0.3222 TRM_m_L: 0.3620 TRM_m_C: 0.3040 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:570.18  small:332.45  middle:212.45  big:25.27 lr:0.00028
+timer: 0.7537 sec.
+iter 130080 || ARM_L: 0.6602 ARM_C: 1.4032 TRM_s_L: 0.9376 TRM_s_C: 1.0828 TRM_m_L: 0.2998 TRM_m_C: 0.4839 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:564.82  small:274.09  middle:270.27  big:20.45 lr:0.00028
+timer: 0.8408 sec.
+iter 130090 || ARM_L: 0.9662 ARM_C: 1.3198 TRM_s_L: 1.6073 TRM_s_C: 0.2368 TRM_m_L: 0.3260 TRM_m_C: 0.1915 TRM_b_L: 0.3588 TRM_b_C: 0.6049 || 
+all:539.36  small:272.45  middle:237.36  big:29.55 lr:0.00028
+timer: 0.7945 sec.
+iter 130100 || ARM_L: 0.5469 ARM_C: 1.3197 TRM_s_L: 0.7904 TRM_s_C: 0.7781 TRM_m_L: 0.7963 TRM_m_C: 1.8361 TRM_b_L: 1.2428 TRM_b_C: 1.5229 || 
+all:575.27  small:358.82  middle:190.82  big:25.64 lr:0.00028
+timer: 0.7548 sec.
+iter 130110 || ARM_L: 0.8517 ARM_C: 1.4854 TRM_s_L: 0.8878 TRM_s_C: 0.7274 TRM_m_L: 0.5404 TRM_m_C: 0.3085 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:551.27  small:315.82  middle:205.09  big:30.36 lr:0.00028
+timer: 0.8156 sec.
+iter 130120 || ARM_L: 0.8485 ARM_C: 1.4522 TRM_s_L: 0.9949 TRM_s_C: 0.2804 TRM_m_L: 0.2218 TRM_m_C: 0.0185 TRM_b_L: 0.3179 TRM_b_C: 0.5130 || 
+all:633.64  small:382.00  middle:240.55  big:11.09 lr:0.00028
+timer: 0.7865 sec.
+iter 130130 || ARM_L: 0.6738 ARM_C: 1.3539 TRM_s_L: 0.8613 TRM_s_C: 1.2506 TRM_m_L: 0.2821 TRM_m_C: 0.4228 TRM_b_L: 0.2948 TRM_b_C: 0.7563 || 
+all:525.91  small:361.91  middle:152.82  big:11.18 lr:0.00028
+timer: 0.7726 sec.
+iter 130140 || ARM_L: 1.5773 ARM_C: 1.4905 TRM_s_L: 1.5581 TRM_s_C: 1.5187 TRM_m_L: 0.3420 TRM_m_C: 0.5615 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:506.18  small:286.18  middle:198.82  big:21.18 lr:0.00028
+timer: 0.7988 sec.
+iter 130150 || ARM_L: 0.7126 ARM_C: 1.7063 TRM_s_L: 1.0355 TRM_s_C: 1.4410 TRM_m_L: 0.5174 TRM_m_C: 1.0652 TRM_b_L: 0.2924 TRM_b_C: 0.4491 || 
+all:563.64  small:296.00  middle:255.09  big:12.55 lr:0.00028
+timer: 0.7963 sec.
+iter 130160 || ARM_L: 0.8483 ARM_C: 1.5354 TRM_s_L: 1.4189 TRM_s_C: 0.7419 TRM_m_L: 0.4938 TRM_m_C: 0.0535 TRM_b_L: 0.5091 TRM_b_C: 0.9586 || 
+all:449.36  small:256.82  middle:155.45  big:37.09 lr:0.00028
+timer: 0.7629 sec.
+iter 130170 || ARM_L: 0.8245 ARM_C: 1.4346 TRM_s_L: 1.1470 TRM_s_C: 0.8811 TRM_m_L: 0.4297 TRM_m_C: 0.4857 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:553.64  small:363.82  middle:172.27  big:17.55 lr:0.00028
+timer: 0.7677 sec.
+iter 130180 || ARM_L: 0.5998 ARM_C: 1.5048 TRM_s_L: 0.9631 TRM_s_C: 1.0673 TRM_m_L: 0.4597 TRM_m_C: 0.9973 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:627.18  small:378.45  middle:240.64  big:8.09 lr:0.00028
+timer: 0.8103 sec.
+iter 130190 || ARM_L: 0.8032 ARM_C: 1.3641 TRM_s_L: 1.3401 TRM_s_C: 1.4330 TRM_m_L: 0.5619 TRM_m_C: 0.4190 TRM_b_L: 0.3301 TRM_b_C: 0.7155 || 
+all:594.45  small:351.55  middle:212.45  big:30.45 lr:0.00028
+timer: 0.8222 sec.
+iter 130200 || ARM_L: 0.6896 ARM_C: 1.5864 TRM_s_L: 0.8239 TRM_s_C: 0.9503 TRM_m_L: 0.3310 TRM_m_C: 0.9716 TRM_b_L: 0.2350 TRM_b_C: 0.7042 || 
+all:644.91  small:373.27  middle:251.36  big:20.27 lr:0.00028
+timer: 0.8206 sec.
+iter 130210 || ARM_L: 0.8667 ARM_C: 1.3863 TRM_s_L: 1.3209 TRM_s_C: 0.5654 TRM_m_L: 0.5058 TRM_m_C: 0.1729 TRM_b_L: 0.5350 TRM_b_C: 1.4499 || 
+all:516.64  small:287.36  middle:211.64  big:17.64 lr:0.00028
+timer: 0.7605 sec.
+iter 130220 || ARM_L: 0.3847 ARM_C: 1.1800 TRM_s_L: 0.9640 TRM_s_C: 0.5582 TRM_m_L: 0.2920 TRM_m_C: 0.3238 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:569.82  small:336.09  middle:214.36  big:19.36 lr:0.00028
+timer: 0.8046 sec.
+iter 130230 || ARM_L: 1.1145 ARM_C: 1.5447 TRM_s_L: 1.3370 TRM_s_C: 1.4893 TRM_m_L: 0.4622 TRM_m_C: 0.8282 TRM_b_L: 0.1646 TRM_b_C: 0.3333 || 
+all:560.64  small:357.73  middle:171.09  big:31.82 lr:0.00028
+timer: 0.7558 sec.
+iter 130240 || ARM_L: 0.3434 ARM_C: 1.2154 TRM_s_L: 0.5444 TRM_s_C: 0.6319 TRM_m_L: 0.2119 TRM_m_C: 0.6229 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:590.09  small:320.91  middle:232.91  big:36.27 lr:0.00028
+timer: 0.7635 sec.
+iter 130250 || ARM_L: 0.6381 ARM_C: 1.3856 TRM_s_L: 1.1120 TRM_s_C: 1.3752 TRM_m_L: 0.3651 TRM_m_C: 0.1291 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:646.09  small:317.18  middle:310.36  big:18.55 lr:0.00028
+timer: 0.7842 sec.
+iter 130260 || ARM_L: 0.6488 ARM_C: 1.5150 TRM_s_L: 0.9169 TRM_s_C: 1.0678 TRM_m_L: 0.3698 TRM_m_C: 0.4295 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:708.55  small:425.18  middle:265.09  big:18.27 lr:0.00028
+timer: 0.8030 sec.
+iter 130270 || ARM_L: 0.5626 ARM_C: 1.3171 TRM_s_L: 0.8832 TRM_s_C: 1.3932 TRM_m_L: 0.3068 TRM_m_C: 0.4882 TRM_b_L: 0.1376 TRM_b_C: 0.3028 || 
+all:555.45  small:318.00  middle:198.82  big:38.64 lr:0.00028
+timer: 0.8945 sec.
+iter 130280 || ARM_L: 0.7358 ARM_C: 1.2113 TRM_s_L: 0.9781 TRM_s_C: 1.3901 TRM_m_L: 0.4926 TRM_m_C: 0.5917 TRM_b_L: 0.0964 TRM_b_C: 0.1653 || 
+all:502.27  small:303.09  middle:177.45  big:21.73 lr:0.00028
+timer: 0.9151 sec.
+iter 130290 || ARM_L: 0.3879 ARM_C: 1.5428 TRM_s_L: 0.6156 TRM_s_C: 0.8402 TRM_m_L: 0.2943 TRM_m_C: 0.3519 TRM_b_L: 0.5094 TRM_b_C: 0.2553 || 
+all:555.55  small:328.09  middle:217.82  big:9.64 lr:0.00028
+timer: 0.9387 sec.
+iter 130300 || ARM_L: 1.2740 ARM_C: 1.7735 TRM_s_L: 1.3323 TRM_s_C: 1.0949 TRM_m_L: 0.1781 TRM_m_C: 0.2178 TRM_b_L: 0.2815 TRM_b_C: 0.5323 || 
+all:555.64  small:292.36  middle:219.18  big:44.09 lr:0.00028
+timer: 0.9093 sec.
+iter 130310 || ARM_L: 0.8578 ARM_C: 1.4916 TRM_s_L: 1.0080 TRM_s_C: 1.0439 TRM_m_L: 0.4945 TRM_m_C: 1.3545 TRM_b_L: 0.3005 TRM_b_C: 0.8878 || 
+all:671.27  small:392.00  middle:265.73  big:13.55 lr:0.00028
+timer: 0.8635 sec.
+iter 130320 || ARM_L: 0.4874 ARM_C: 1.2697 TRM_s_L: 0.6752 TRM_s_C: 0.1650 TRM_m_L: 0.3265 TRM_m_C: 0.1128 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:601.36  small:277.36  middle:308.82  big:15.18 lr:0.00028
+timer: 0.8766 sec.
+iter 130330 || ARM_L: 0.9449 ARM_C: 1.4052 TRM_s_L: 0.8627 TRM_s_C: 1.0054 TRM_m_L: 0.4516 TRM_m_C: 0.4033 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:483.36  small:302.91  middle:169.09  big:11.36 lr:0.00028
+timer: 0.9122 sec.
+iter 130340 || ARM_L: 0.3967 ARM_C: 1.1087 TRM_s_L: 1.0151 TRM_s_C: 0.7946 TRM_m_L: 0.2514 TRM_m_C: 0.4568 TRM_b_L: 0.1047 TRM_b_C: 0.4193 || 
+all:550.09  small:293.45  middle:223.73  big:32.91 lr:0.00028
+timer: 0.8957 sec.
+iter 130350 || ARM_L: 0.7533 ARM_C: 1.5935 TRM_s_L: 0.9426 TRM_s_C: 1.4031 TRM_m_L: 0.8324 TRM_m_C: 0.9480 TRM_b_L: 0.4831 TRM_b_C: 0.2255 || 
+all:533.64  small:320.45  middle:207.45  big:5.73 lr:0.00028
+timer: 0.8999 sec.
+iter 130360 || ARM_L: 0.6812 ARM_C: 1.5892 TRM_s_L: 0.9402 TRM_s_C: 0.4587 TRM_m_L: 0.9389 TRM_m_C: 1.0706 TRM_b_L: 0.2965 TRM_b_C: 0.6372 || 
+all:526.18  small:276.09  middle:221.73  big:28.36 lr:0.00028
+timer: 0.9096 sec.
+iter 130370 || ARM_L: 0.5327 ARM_C: 1.5855 TRM_s_L: 0.7956 TRM_s_C: 0.4291 TRM_m_L: 0.4564 TRM_m_C: 0.4514 TRM_b_L: 0.8541 TRM_b_C: 2.1304 || 
+all:585.55  small:296.64  middle:254.00  big:34.91 lr:0.00028
+timer: 0.8760 sec.
+iter 130380 || ARM_L: 0.4803 ARM_C: 1.2995 TRM_s_L: 0.9315 TRM_s_C: 1.1519 TRM_m_L: 0.2744 TRM_m_C: 0.5404 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:621.18  small:322.00  middle:287.73  big:11.45 lr:0.00028
+timer: 0.8913 sec.
+iter 130390 || ARM_L: 0.6739 ARM_C: 1.6813 TRM_s_L: 0.9548 TRM_s_C: 0.6488 TRM_m_L: 0.5554 TRM_m_C: 0.1916 TRM_b_L: 0.4721 TRM_b_C: 1.1683 || 
+all:634.00  small:351.91  middle:263.45  big:18.64 lr:0.00028
+timer: 0.8946 sec.
+iter 130400 || ARM_L: 0.5428 ARM_C: 1.4310 TRM_s_L: 0.7381 TRM_s_C: 0.7822 TRM_m_L: 0.7279 TRM_m_C: 1.1000 TRM_b_L: 0.1517 TRM_b_C: 0.2807 || 
+all:578.09  small:303.27  middle:262.82  big:12.00 lr:0.00028
+timer: 0.8991 sec.
+iter 130410 || ARM_L: 0.7756 ARM_C: 1.5305 TRM_s_L: 0.8795 TRM_s_C: 1.0239 TRM_m_L: 0.5629 TRM_m_C: 0.3170 TRM_b_L: 0.1284 TRM_b_C: 0.3979 || 
+all:576.82  small:341.09  middle:207.64  big:28.09 lr:0.00028
+timer: 0.8562 sec.
+iter 130420 || ARM_L: 0.4315 ARM_C: 1.3743 TRM_s_L: 0.6460 TRM_s_C: 0.9569 TRM_m_L: 0.2435 TRM_m_C: 0.5675 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:586.45  small:358.64  middle:194.91  big:32.91 lr:0.00028
+timer: 0.9405 sec.
+iter 130430 || ARM_L: 1.9841 ARM_C: 1.8471 TRM_s_L: 4.6281 TRM_s_C: 2.1895 TRM_m_L: 0.3111 TRM_m_C: 0.4018 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:635.73  small:339.55  middle:286.09  big:10.09 lr:0.00028
+timer: 0.9058 sec.
+iter 130440 || ARM_L: 0.9156 ARM_C: 1.7284 TRM_s_L: 0.8001 TRM_s_C: 1.2031 TRM_m_L: 0.5834 TRM_m_C: 0.3038 TRM_b_L: 0.2182 TRM_b_C: 0.5842 || 
+all:609.00  small:335.36  middle:249.55  big:24.09 lr:0.00028
+timer: 0.8744 sec.
+iter 130450 || ARM_L: 1.4633 ARM_C: 1.8718 TRM_s_L: 1.6224 TRM_s_C: 2.1858 TRM_m_L: 1.2527 TRM_m_C: 2.7401 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:556.55  small:343.82  middle:180.82  big:31.91 lr:0.00028
+timer: 0.8885 sec.
+iter 130460 || ARM_L: 0.6358 ARM_C: 1.3907 TRM_s_L: 1.1127 TRM_s_C: 0.9948 TRM_m_L: 0.5705 TRM_m_C: 0.7990 TRM_b_L: 0.1496 TRM_b_C: 1.1997 || 
+all:596.73  small:340.45  middle:237.18  big:19.09 lr:0.00028
+timer: 0.9405 sec.
+iter 130470 || ARM_L: 0.7687 ARM_C: 1.7359 TRM_s_L: 0.7851 TRM_s_C: 0.9992 TRM_m_L: 0.7291 TRM_m_C: 0.9035 TRM_b_L: 0.3375 TRM_b_C: 1.0285 || 
+all:597.55  small:360.64  middle:222.45  big:14.45 lr:0.00028
+timer: 0.8967 sec.
+iter 130480 || ARM_L: 0.8956 ARM_C: 1.2700 TRM_s_L: 0.8627 TRM_s_C: 1.1381 TRM_m_L: 0.2126 TRM_m_C: 0.5918 TRM_b_L: 0.3758 TRM_b_C: 0.2670 || 
+all:623.45  small:329.73  middle:268.27  big:25.45 lr:0.00028
+timer: 0.9009 sec.
+iter 130490 || ARM_L: 0.7938 ARM_C: 1.3344 TRM_s_L: 1.3083 TRM_s_C: 1.9739 TRM_m_L: 0.3478 TRM_m_C: 0.4491 TRM_b_L: 0.1881 TRM_b_C: 0.1819 || 
+all:510.45  small:264.36  middle:226.64  big:19.45 lr:0.00028
+timer: 0.8924 sec.
+iter 130500 || ARM_L: 0.4960 ARM_C: 1.4549 TRM_s_L: 0.7851 TRM_s_C: 0.1734 TRM_m_L: 0.5494 TRM_m_C: 0.1320 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:547.45  small:298.73  middle:233.91  big:14.82 lr:0.00028
+timer: 0.8480 sec.
+iter 130510 || ARM_L: 0.6220 ARM_C: 1.4499 TRM_s_L: 1.0040 TRM_s_C: 0.4960 TRM_m_L: 0.5725 TRM_m_C: 0.0634 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:594.36  small:334.73  middle:239.00  big:20.64 lr:0.00028
+timer: 0.9074 sec.
+iter 130520 || ARM_L: 1.0055 ARM_C: 1.6138 TRM_s_L: 1.2456 TRM_s_C: 0.4482 TRM_m_L: 0.8838 TRM_m_C: 0.2787 TRM_b_L: 0.5161 TRM_b_C: 1.3124 || 
+all:580.00  small:338.73  middle:211.45  big:29.82 lr:0.00028
+timer: 0.8480 sec.
+iter 130530 || ARM_L: 0.7918 ARM_C: 1.5090 TRM_s_L: 0.7869 TRM_s_C: 0.9819 TRM_m_L: 0.1770 TRM_m_C: 0.4101 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:629.27  small:276.82  middle:309.36  big:43.09 lr:0.00028
+timer: 0.8758 sec.
+iter 130540 || ARM_L: 1.1766 ARM_C: 1.8479 TRM_s_L: 2.1462 TRM_s_C: 1.6271 TRM_m_L: 0.5912 TRM_m_C: 0.9133 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:541.73  small:254.36  middle:269.45  big:17.91 lr:0.00028
+timer: 0.8875 sec.
+iter 130550 || ARM_L: 0.3301 ARM_C: 0.9862 TRM_s_L: 0.6881 TRM_s_C: 0.8052 TRM_m_L: 0.2195 TRM_m_C: 0.2405 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:571.91  small:326.55  middle:232.09  big:13.27 lr:0.00028
+timer: 0.9164 sec.
+iter 130560 || ARM_L: 0.5378 ARM_C: 1.1212 TRM_s_L: 0.7949 TRM_s_C: 1.1493 TRM_m_L: 0.3735 TRM_m_C: 0.7059 TRM_b_L: 0.7743 TRM_b_C: 0.3614 || 
+all:576.82  small:336.00  middle:221.18  big:19.64 lr:0.00028
+timer: 0.9134 sec.
+iter 130570 || ARM_L: 0.6187 ARM_C: 1.6593 TRM_s_L: 0.8429 TRM_s_C: 1.1730 TRM_m_L: 0.3754 TRM_m_C: 0.3239 TRM_b_L: 1.0627 TRM_b_C: 1.4179 || 
+all:598.27  small:321.82  middle:245.18  big:31.27 lr:0.00028
+timer: 0.9614 sec.
+iter 130580 || ARM_L: 0.5737 ARM_C: 1.1300 TRM_s_L: 0.9374 TRM_s_C: 1.3437 TRM_m_L: 0.2963 TRM_m_C: 0.8367 TRM_b_L: 0.3051 TRM_b_C: 0.3332 || 
+all:540.27  small:290.45  middle:230.82  big:19.00 lr:0.00028
+timer: 0.9025 sec.
+iter 130590 || ARM_L: 0.5349 ARM_C: 1.3211 TRM_s_L: 0.7239 TRM_s_C: 0.8366 TRM_m_L: 0.5449 TRM_m_C: 1.2773 TRM_b_L: 0.7233 TRM_b_C: 0.8368 || 
+all:578.73  small:330.91  middle:215.45  big:32.36 lr:0.00028
+timer: 0.8649 sec.
+iter 130600 || ARM_L: 0.5888 ARM_C: 1.3156 TRM_s_L: 0.8320 TRM_s_C: 0.8241 TRM_m_L: 0.2319 TRM_m_C: 0.4606 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:569.36  small:309.73  middle:232.82  big:26.82 lr:0.00028
+timer: 0.8648 sec.
+iter 130610 || ARM_L: 1.0217 ARM_C: 1.7445 TRM_s_L: 1.3609 TRM_s_C: 1.6887 TRM_m_L: 0.4708 TRM_m_C: 0.5272 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:574.82  small:296.91  middle:258.18  big:19.73 lr:0.00028
+timer: 0.8802 sec.
+iter 130620 || ARM_L: 0.4873 ARM_C: 1.3261 TRM_s_L: 0.9034 TRM_s_C: 0.7121 TRM_m_L: 0.3549 TRM_m_C: 0.5465 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:564.45  small:301.18  middle:235.82  big:27.45 lr:0.00028
+timer: 0.9127 sec.
+iter 130630 || ARM_L: 0.7854 ARM_C: 1.3922 TRM_s_L: 0.9803 TRM_s_C: 0.6103 TRM_m_L: 0.4894 TRM_m_C: 1.4544 TRM_b_L: 0.3011 TRM_b_C: 0.5092 || 
+all:749.82  small:467.45  middle:262.82  big:19.55 lr:0.00028
+timer: 0.8765 sec.
+iter 130640 || ARM_L: 0.7602 ARM_C: 1.4625 TRM_s_L: 0.8094 TRM_s_C: 2.7591 TRM_m_L: 0.3855 TRM_m_C: 0.6804 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:508.91  small:296.09  middle:198.00  big:14.82 lr:0.00028
+timer: 0.8893 sec.
+iter 130650 || ARM_L: 0.6702 ARM_C: 1.3224 TRM_s_L: 0.9714 TRM_s_C: 1.1891 TRM_m_L: 0.3421 TRM_m_C: 0.7622 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:562.27  small:317.82  middle:221.18  big:23.27 lr:0.00028
+timer: 0.9016 sec.
+iter 130660 || ARM_L: 0.6038 ARM_C: 1.1007 TRM_s_L: 1.6687 TRM_s_C: 1.5020 TRM_m_L: 0.4528 TRM_m_C: 0.6413 TRM_b_L: 0.3508 TRM_b_C: 1.7556 || 
+all:501.27  small:272.36  middle:180.64  big:48.27 lr:0.00028
+timer: 0.8628 sec.
+iter 130670 || ARM_L: 1.1557 ARM_C: 1.4646 TRM_s_L: 1.0888 TRM_s_C: 1.2478 TRM_m_L: 0.7115 TRM_m_C: 1.3215 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:523.27  small:328.55  middle:178.82  big:15.91 lr:0.00028
+timer: 0.9439 sec.
+iter 130680 || ARM_L: 0.3518 ARM_C: 1.1994 TRM_s_L: 0.6890 TRM_s_C: 0.3018 TRM_m_L: 0.4809 TRM_m_C: 0.1474 TRM_b_L: 0.2496 TRM_b_C: 0.1231 || 
+all:706.18  small:342.64  middle:340.64  big:22.91 lr:0.00028
+timer: 0.9287 sec.
+iter 130690 || ARM_L: 0.3172 ARM_C: 1.1533 TRM_s_L: 0.6315 TRM_s_C: 0.9614 TRM_m_L: 0.2110 TRM_m_C: 0.4771 TRM_b_L: 0.3839 TRM_b_C: 0.9192 || 
+all:571.00  small:350.09  middle:195.27  big:25.64 lr:0.00028
+timer: 0.8977 sec.
+iter 130700 || ARM_L: 0.4373 ARM_C: 1.0691 TRM_s_L: 0.8245 TRM_s_C: 1.1021 TRM_m_L: 0.2099 TRM_m_C: 0.0852 TRM_b_L: 0.6752 TRM_b_C: 0.3507 || 
+all:592.45  small:361.18  middle:227.27  big:4.00 lr:0.00028
+timer: 0.9267 sec.
+iter 130710 || ARM_L: 0.4201 ARM_C: 0.9935 TRM_s_L: 0.7376 TRM_s_C: 1.5818 TRM_m_L: 0.2193 TRM_m_C: 0.8937 TRM_b_L: 0.2397 TRM_b_C: 0.6461 || 
+all:567.18  small:316.45  middle:222.73  big:28.00 lr:0.00028
+timer: 0.9002 sec.
+iter 130720 || ARM_L: 0.7211 ARM_C: 1.7534 TRM_s_L: 0.7730 TRM_s_C: 0.8930 TRM_m_L: 0.6525 TRM_m_C: 0.8288 TRM_b_L: 0.1618 TRM_b_C: 0.4763 || 
+all:469.27  small:273.82  middle:177.18  big:18.27 lr:0.00028
+timer: 0.8932 sec.
+iter 130730 || ARM_L: 0.4766 ARM_C: 1.1953 TRM_s_L: 1.0424 TRM_s_C: 1.7676 TRM_m_L: 0.4055 TRM_m_C: 0.1005 TRM_b_L: 0.4217 TRM_b_C: 0.6597 || 
+all:601.18  small:341.45  middle:237.64  big:22.09 lr:0.00028
+timer: 0.9029 sec.
+iter 130740 || ARM_L: 0.2919 ARM_C: 1.1154 TRM_s_L: 0.6701 TRM_s_C: 0.1636 TRM_m_L: 0.1830 TRM_m_C: 0.0380 TRM_b_L: 0.2323 TRM_b_C: 0.4785 || 
+all:532.82  small:285.36  middle:221.45  big:26.00 lr:0.00028
+timer: 0.8951 sec.
+iter 130750 || ARM_L: 0.6610 ARM_C: 1.3953 TRM_s_L: 1.1857 TRM_s_C: 1.5285 TRM_m_L: 0.3327 TRM_m_C: 0.9540 TRM_b_L: 0.3212 TRM_b_C: 0.9213 || 
+all:568.00  small:294.91  middle:243.36  big:29.73 lr:0.00028
+timer: 0.8555 sec.
+iter 130760 || ARM_L: 1.1851 ARM_C: 1.4879 TRM_s_L: 1.1890 TRM_s_C: 0.9148 TRM_m_L: 0.6442 TRM_m_C: 0.9552 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:588.09  small:338.91  middle:233.91  big:15.27 lr:0.00028
+timer: 0.9292 sec.
+iter 130770 || ARM_L: 1.7288 ARM_C: 1.5090 TRM_s_L: 1.0902 TRM_s_C: 0.8026 TRM_m_L: 0.4121 TRM_m_C: 0.3306 TRM_b_L: 0.2743 TRM_b_C: 0.9696 || 
+all:581.09  small:362.18  middle:205.18  big:13.73 lr:0.00028
+timer: 0.8949 sec.
+iter 130780 || ARM_L: 0.4674 ARM_C: 1.0458 TRM_s_L: 0.7428 TRM_s_C: 0.4178 TRM_m_L: 0.3731 TRM_m_C: 0.0812 TRM_b_L: 0.1307 TRM_b_C: 0.2558 || 
+all:590.18  small:317.55  middle:265.00  big:7.64 lr:0.00028
+timer: 0.8871 sec.
+iter 130790 || ARM_L: 0.6611 ARM_C: 1.9264 TRM_s_L: 0.6995 TRM_s_C: 0.1004 TRM_m_L: 0.6404 TRM_m_C: 1.8139 TRM_b_L: 2.0926 TRM_b_C: 4.7756 || 
+all:683.73  small:346.18  middle:314.91  big:22.64 lr:0.00028
+timer: 0.8558 sec.
+iter 130800 || ARM_L: 0.5103 ARM_C: 1.1909 TRM_s_L: 0.8406 TRM_s_C: 0.5160 TRM_m_L: 0.5217 TRM_m_C: 1.0686 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:650.45  small:386.64  middle:251.09  big:12.73 lr:0.00028
+timer: 0.8628 sec.
+iter 130810 || ARM_L: 0.7526 ARM_C: 1.6325 TRM_s_L: 1.1797 TRM_s_C: 2.4631 TRM_m_L: 0.6276 TRM_m_C: 0.5721 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:668.09  small:342.09  middle:309.55  big:16.45 lr:0.00028
+timer: 0.8659 sec.
+iter 130820 || ARM_L: 0.8130 ARM_C: 1.4231 TRM_s_L: 0.9598 TRM_s_C: 1.0282 TRM_m_L: 0.5451 TRM_m_C: 1.1568 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:642.73  small:324.73  middle:291.36  big:26.64 lr:0.00028
+timer: 0.8687 sec.
+iter 130830 || ARM_L: 0.8180 ARM_C: 1.5187 TRM_s_L: 1.8302 TRM_s_C: 1.7175 TRM_m_L: 0.6240 TRM_m_C: 0.9888 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:688.91  small:369.18  middle:310.09  big:9.64 lr:0.00028
+timer: 0.8968 sec.
+iter 130840 || ARM_L: 0.8973 ARM_C: 1.9215 TRM_s_L: 1.1375 TRM_s_C: 0.7435 TRM_m_L: 1.1322 TRM_m_C: 1.4562 TRM_b_L: 0.4558 TRM_b_C: 0.5889 || 
+all:655.82  small:357.82  middle:273.82  big:24.18 lr:0.00028
+timer: 0.9049 sec.
+iter 130850 || ARM_L: 0.7636 ARM_C: 1.8521 TRM_s_L: 1.0660 TRM_s_C: 1.0315 TRM_m_L: 0.4785 TRM_m_C: 0.8171 TRM_b_L: 0.4020 TRM_b_C: 0.3237 || 
+all:623.00  small:354.91  middle:245.45  big:22.64 lr:0.00028
+timer: 0.8774 sec.
+iter 130860 || ARM_L: 0.4019 ARM_C: 1.2733 TRM_s_L: 0.8109 TRM_s_C: 0.4770 TRM_m_L: 0.3935 TRM_m_C: 0.6072 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:601.73  small:346.27  middle:223.18  big:32.27 lr:0.00028
+timer: 0.8620 sec.
+iter 130870 || ARM_L: 0.6788 ARM_C: 1.2243 TRM_s_L: 1.0226 TRM_s_C: 1.1067 TRM_m_L: 0.3056 TRM_m_C: 0.3324 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:483.64  small:315.73  middle:145.73  big:22.18 lr:0.00028
+timer: 0.8962 sec.
+iter 130880 || ARM_L: 0.5473 ARM_C: 1.5266 TRM_s_L: 0.9750 TRM_s_C: 1.1222 TRM_m_L: 0.4193 TRM_m_C: 0.7960 TRM_b_L: 0.1654 TRM_b_C: 0.3434 || 
+all:575.36  small:327.18  middle:228.36  big:19.82 lr:0.00028
+timer: 0.9009 sec.
+iter 130890 || ARM_L: 1.0388 ARM_C: 1.6091 TRM_s_L: 1.0522 TRM_s_C: 0.9291 TRM_m_L: 0.3204 TRM_m_C: 0.2801 TRM_b_L: 0.2965 TRM_b_C: 0.8939 || 
+all:549.00  small:346.27  middle:177.82  big:24.91 lr:0.00028
+timer: 0.9083 sec.
+iter 130900 || ARM_L: 0.7227 ARM_C: 1.2368 TRM_s_L: 1.0034 TRM_s_C: 1.5942 TRM_m_L: 0.2782 TRM_m_C: 0.3320 TRM_b_L: 0.3370 TRM_b_C: 0.6466 || 
+all:544.64  small:263.73  middle:249.09  big:31.82 lr:0.00028
+timer: 0.9493 sec.
+iter 130910 || ARM_L: 0.4875 ARM_C: 1.3302 TRM_s_L: 0.4870 TRM_s_C: 0.6824 TRM_m_L: 0.6918 TRM_m_C: 0.7412 TRM_b_L: 0.3803 TRM_b_C: 0.6031 || 
+all:598.18  small:322.27  middle:233.73  big:42.18 lr:0.00028
+timer: 0.9098 sec.
+iter 130920 || ARM_L: 0.7224 ARM_C: 1.3823 TRM_s_L: 0.7510 TRM_s_C: 0.5518 TRM_m_L: 0.5900 TRM_m_C: 0.9414 TRM_b_L: 0.7930 TRM_b_C: 1.2906 || 
+all:750.27  small:463.91  middle:248.18  big:38.18 lr:0.00028
+timer: 0.2931 sec.
+iter 130930 || ARM_L: 0.2239 ARM_C: 1.4488 TRM_s_L: 0.7754 TRM_s_C: 1.2573 TRM_m_L: 0.0000 TRM_m_C: 0.0000 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:546.64  small:325.64  middle:200.55  big:20.45 lr:0.00028
+timer: 0.9235 sec.
+iter 130940 || ARM_L: 1.0529 ARM_C: 1.7258 TRM_s_L: 0.9803 TRM_s_C: 1.5593 TRM_m_L: 0.6630 TRM_m_C: 0.1696 TRM_b_L: 0.4170 TRM_b_C: 1.7907 || 
+all:601.00  small:358.27  middle:220.55  big:22.18 lr:0.00028
+timer: 0.8770 sec.
+iter 130950 || ARM_L: 0.6770 ARM_C: 1.3998 TRM_s_L: 0.9291 TRM_s_C: 1.0627 TRM_m_L: 0.4860 TRM_m_C: 0.5129 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:566.27  small:311.82  middle:224.36  big:30.09 lr:0.00028
+timer: 0.8943 sec.
+iter 130960 || ARM_L: 1.2643 ARM_C: 1.9106 TRM_s_L: 1.0508 TRM_s_C: 1.3471 TRM_m_L: 0.6315 TRM_m_C: 1.3400 TRM_b_L: 0.4208 TRM_b_C: 1.4800 || 
+all:708.45  small:349.73  middle:328.64  big:30.09 lr:0.00028
+timer: 0.8924 sec.
+iter 130970 || ARM_L: 0.5864 ARM_C: 1.6697 TRM_s_L: 0.6373 TRM_s_C: 0.7784 TRM_m_L: 1.2517 TRM_m_C: 1.6839 TRM_b_L: 0.3106 TRM_b_C: 0.3251 || 
+all:542.64  small:318.82  middle:196.82  big:27.00 lr:0.00028
+timer: 0.8331 sec.
+iter 130980 || ARM_L: 0.9010 ARM_C: 1.8086 TRM_s_L: 0.8850 TRM_s_C: 0.9995 TRM_m_L: 0.0000 TRM_m_C: 0.0000 TRM_b_L: 1.0161 TRM_b_C: 1.1832 || 
+all:584.00  small:306.55  middle:257.55  big:19.91 lr:0.00028
+timer: 0.8597 sec.
+iter 130990 || ARM_L: 0.4669 ARM_C: 1.2797 TRM_s_L: 0.8596 TRM_s_C: 1.2590 TRM_m_L: 0.3698 TRM_m_C: 0.6996 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:615.73  small:372.36  middle:231.64  big:11.73 lr:0.00028
+timer: 0.8544 sec.
+iter 131000 || ARM_L: 1.3102 ARM_C: 2.0931 TRM_s_L: 1.1420 TRM_s_C: 1.4245 TRM_m_L: 0.9225 TRM_m_C: 1.4828 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:605.36  small:367.00  middle:195.00  big:43.36 lr:0.00028
+timer: 0.8933 sec.
+iter 131010 || ARM_L: 0.9515 ARM_C: 1.3214 TRM_s_L: 0.9334 TRM_s_C: 0.6660 TRM_m_L: 0.6560 TRM_m_C: 0.1959 TRM_b_L: 0.0982 TRM_b_C: 0.2896 || 
+all:518.18  small:312.45  middle:187.27  big:18.45 lr:0.00028
+timer: 0.9368 sec.
+iter 131020 || ARM_L: 0.4606 ARM_C: 1.1298 TRM_s_L: 0.5525 TRM_s_C: 0.2286 TRM_m_L: 0.6314 TRM_m_C: 0.4615 TRM_b_L: 0.0865 TRM_b_C: 0.2665 || 
+all:634.27  small:340.45  middle:271.55  big:22.27 lr:0.00028
+timer: 0.9052 sec.
+iter 131030 || ARM_L: 0.7333 ARM_C: 1.6200 TRM_s_L: 1.2922 TRM_s_C: 1.4666 TRM_m_L: 0.7761 TRM_m_C: 1.3865 TRM_b_L: 0.2799 TRM_b_C: 0.5473 || 
+all:621.82  small:346.55  middle:255.82  big:19.45 lr:0.00028
+timer: 0.9272 sec.
+iter 131040 || ARM_L: 0.4611 ARM_C: 1.3385 TRM_s_L: 0.8929 TRM_s_C: 1.1352 TRM_m_L: 0.3999 TRM_m_C: 0.0992 TRM_b_L: 0.5517 TRM_b_C: 0.5913 || 
+all:655.55  small:385.55  middle:248.45  big:21.55 lr:0.00028
+timer: 0.9005 sec.
+iter 131050 || ARM_L: 0.3311 ARM_C: 1.0145 TRM_s_L: 0.7314 TRM_s_C: 1.1232 TRM_m_L: 0.2276 TRM_m_C: 0.0257 TRM_b_L: 0.4091 TRM_b_C: 0.6854 || 
+all:481.36  small:315.91  middle:144.82  big:20.64 lr:0.00028
+timer: 0.8998 sec.
+iter 131060 || ARM_L: 0.5436 ARM_C: 1.7546 TRM_s_L: 0.7732 TRM_s_C: 1.0704 TRM_m_L: 0.4393 TRM_m_C: 0.5991 TRM_b_L: 0.5944 TRM_b_C: 4.7339 || 
+all:534.55  small:281.45  middle:230.36  big:22.73 lr:0.00028
+timer: 0.8528 sec.
+iter 131070 || ARM_L: 0.7610 ARM_C: 1.1418 TRM_s_L: 1.3235 TRM_s_C: 1.1744 TRM_m_L: 0.2929 TRM_m_C: 0.1617 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:473.82  small:303.64  middle:147.27  big:22.91 lr:0.00028
+timer: 0.8614 sec.
+iter 131080 || ARM_L: 0.5663 ARM_C: 1.3279 TRM_s_L: 1.0843 TRM_s_C: 1.2480 TRM_m_L: 0.5168 TRM_m_C: 1.0480 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:475.27  small:246.55  middle:206.09  big:22.64 lr:0.00028
+timer: 0.8970 sec.
+iter 131090 || ARM_L: 0.6656 ARM_C: 1.5137 TRM_s_L: 1.0600 TRM_s_C: 1.6793 TRM_m_L: 0.4811 TRM_m_C: 0.4173 TRM_b_L: 0.2260 TRM_b_C: 0.5585 || 
+all:547.00  small:272.27  middle:248.27  big:26.45 lr:0.00028
+timer: 0.8816 sec.
+iter 131100 || ARM_L: 0.7348 ARM_C: 1.7090 TRM_s_L: 1.1412 TRM_s_C: 1.1073 TRM_m_L: 0.6881 TRM_m_C: 0.6842 TRM_b_L: 0.9061 TRM_b_C: 2.7889 || 
+all:532.73  small:306.18  middle:204.82  big:21.73 lr:0.00028
+timer: 0.9236 sec.
+iter 131110 || ARM_L: 0.8269 ARM_C: 1.4781 TRM_s_L: 0.7820 TRM_s_C: 0.2074 TRM_m_L: 0.4967 TRM_m_C: 0.0765 TRM_b_L: 0.1539 TRM_b_C: 0.4109 || 
+all:604.82  small:332.82  middle:240.45  big:31.55 lr:0.00028
+timer: 0.9094 sec.
+iter 131120 || ARM_L: 0.8275 ARM_C: 1.6447 TRM_s_L: 0.8812 TRM_s_C: 1.0094 TRM_m_L: 0.4418 TRM_m_C: 0.7265 TRM_b_L: 1.6169 TRM_b_C: 2.5896 || 
+all:624.64  small:399.55  middle:204.55  big:20.55 lr:0.00028
+timer: 0.9079 sec.
+iter 131130 || ARM_L: 0.4606 ARM_C: 1.2776 TRM_s_L: 1.0057 TRM_s_C: 0.4432 TRM_m_L: 0.4178 TRM_m_C: 0.6622 TRM_b_L: 0.0925 TRM_b_C: 0.1842 || 
+all:600.91  small:319.00  middle:271.18  big:10.73 lr:0.00028
+timer: 0.8906 sec.
+iter 131140 || ARM_L: 0.5263 ARM_C: 1.1973 TRM_s_L: 1.1876 TRM_s_C: 1.7145 TRM_m_L: 0.2343 TRM_m_C: 0.3531 TRM_b_L: 0.2330 TRM_b_C: 0.3828 || 
+all:545.36  small:305.36  middle:223.73  big:16.27 lr:0.00028
+timer: 0.8602 sec.
+iter 131150 || ARM_L: 0.3808 ARM_C: 1.1714 TRM_s_L: 0.7283 TRM_s_C: 0.3274 TRM_m_L: 0.3221 TRM_m_C: 0.2105 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:536.09  small:304.45  middle:210.27  big:21.36 lr:0.00028
+timer: 0.8739 sec.
+iter 131160 || ARM_L: 0.8566 ARM_C: 1.6141 TRM_s_L: 1.0919 TRM_s_C: 1.2295 TRM_m_L: 0.6655 TRM_m_C: 0.9250 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:590.73  small:378.27  middle:196.18  big:16.27 lr:0.00028
+timer: 0.9088 sec.
+iter 131170 || ARM_L: 0.8894 ARM_C: 1.1512 TRM_s_L: 1.0603 TRM_s_C: 1.4538 TRM_m_L: 0.4870 TRM_m_C: 0.4155 TRM_b_L: 0.1069 TRM_b_C: 0.3056 || 
+all:578.09  small:325.91  middle:234.27  big:17.91 lr:0.00028
+timer: 0.9079 sec.
+iter 131180 || ARM_L: 0.6914 ARM_C: 1.1251 TRM_s_L: 1.1856 TRM_s_C: 1.5375 TRM_m_L: 0.2266 TRM_m_C: 0.4282 TRM_b_L: 0.7634 TRM_b_C: 3.7365 || 
+all:589.36  small:310.55  middle:244.45  big:34.36 lr:0.00028
+timer: 0.9126 sec.
+iter 131190 || ARM_L: 0.4297 ARM_C: 0.7982 TRM_s_L: 0.7130 TRM_s_C: 0.8268 TRM_m_L: 0.2448 TRM_m_C: 0.6761 TRM_b_L: 0.1620 TRM_b_C: 1.3859 || 
+all:531.64  small:288.82  middle:215.36  big:27.45 lr:0.00028
+timer: 0.9062 sec.
+iter 131200 || ARM_L: 0.9048 ARM_C: 1.4242 TRM_s_L: 1.1152 TRM_s_C: 1.6085 TRM_m_L: 0.7441 TRM_m_C: 0.2550 TRM_b_L: 2.8603 TRM_b_C: 4.3740 || 
+all:521.45  small:270.00  middle:234.45  big:17.00 lr:0.00028
+timer: 0.9024 sec.
+iter 131210 || ARM_L: 0.7889 ARM_C: 1.3226 TRM_s_L: 0.9009 TRM_s_C: 0.3069 TRM_m_L: 0.4528 TRM_m_C: 1.0275 TRM_b_L: 0.8591 TRM_b_C: 1.8259 || 
+all:576.91  small:300.73  middle:259.36  big:16.82 lr:0.00028
+timer: 0.8652 sec.
+iter 131220 || ARM_L: 0.7232 ARM_C: 1.2509 TRM_s_L: 1.0737 TRM_s_C: 1.1044 TRM_m_L: 0.4692 TRM_m_C: 1.1491 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:642.36  small:424.64  middle:203.27  big:14.45 lr:0.00028
+timer: 0.9361 sec.
+iter 131230 || ARM_L: 0.8810 ARM_C: 1.7525 TRM_s_L: 0.9892 TRM_s_C: 0.1373 TRM_m_L: 1.0874 TRM_m_C: 0.0865 TRM_b_L: 0.1054 TRM_b_C: 0.1474 || 
+all:566.18  small:330.91  middle:220.91  big:14.36 lr:0.00028
+timer: 0.9050 sec.
+iter 131240 || ARM_L: 0.7431 ARM_C: 1.3528 TRM_s_L: 1.1339 TRM_s_C: 0.5275 TRM_m_L: 0.1904 TRM_m_C: 0.3488 TRM_b_L: 0.1284 TRM_b_C: 0.3057 || 
+all:500.18  small:273.36  middle:204.82  big:22.00 lr:0.00028
+timer: 0.9225 sec.
+iter 131250 || ARM_L: 0.7607 ARM_C: 1.8427 TRM_s_L: 0.8685 TRM_s_C: 0.9586 TRM_m_L: 0.6132 TRM_m_C: 0.8734 TRM_b_L: 0.1736 TRM_b_C: 1.7078 || 
+all:587.55  small:299.27  middle:260.73  big:27.55 lr:0.00028
+timer: 0.8508 sec.
+iter 131260 || ARM_L: 0.7591 ARM_C: 1.3177 TRM_s_L: 0.7583 TRM_s_C: 1.4312 TRM_m_L: 0.2381 TRM_m_C: 0.4746 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:545.09  small:353.00  middle:176.36  big:15.73 lr:0.00028
+timer: 0.8644 sec.
+iter 131270 || ARM_L: 0.4661 ARM_C: 1.0209 TRM_s_L: 0.7101 TRM_s_C: 0.8109 TRM_m_L: 0.1777 TRM_m_C: 0.0340 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:653.36  small:325.91  middle:316.73  big:10.73 lr:0.00028
+timer: 0.8973 sec.
+iter 131280 || ARM_L: 0.6857 ARM_C: 1.8490 TRM_s_L: 1.0184 TRM_s_C: 0.0734 TRM_m_L: 0.5758 TRM_m_C: 0.2353 TRM_b_L: 0.1962 TRM_b_C: 0.3184 || 
+all:583.73  small:352.09  middle:208.55  big:23.09 lr:0.00028
+timer: 0.8862 sec.
+iter 131290 || ARM_L: 0.5127 ARM_C: 1.2721 TRM_s_L: 0.8825 TRM_s_C: 1.3266 TRM_m_L: 0.4984 TRM_m_C: 0.8340 TRM_b_L: 0.2528 TRM_b_C: 0.1505 || 
+all:513.91  small:275.36  middle:207.18  big:31.36 lr:0.00028
+timer: 0.9337 sec.
+iter 131300 || ARM_L: 0.5058 ARM_C: 1.1572 TRM_s_L: 0.5908 TRM_s_C: 0.8870 TRM_m_L: 0.4305 TRM_m_C: 0.6887 TRM_b_L: 0.2984 TRM_b_C: 0.3210 || 
+all:553.55  small:275.91  middle:253.18  big:24.45 lr:0.00028
+timer: 0.9050 sec.
+iter 131310 || ARM_L: 0.6333 ARM_C: 1.2390 TRM_s_L: 0.8477 TRM_s_C: 0.2923 TRM_m_L: 0.3908 TRM_m_C: 0.1025 TRM_b_L: 0.5171 TRM_b_C: 0.5622 || 
+all:569.91  small:365.18  middle:170.91  big:33.82 lr:0.00028
+timer: 0.9179 sec.
+iter 131320 || ARM_L: 0.4925 ARM_C: 1.0405 TRM_s_L: 0.9267 TRM_s_C: 0.1677 TRM_m_L: 0.3603 TRM_m_C: 0.0323 TRM_b_L: 0.1307 TRM_b_C: 0.2605 || 
+all:584.91  small:313.91  middle:256.55  big:14.45 lr:0.00028
+timer: 0.8877 sec.
+iter 131330 || ARM_L: 0.4711 ARM_C: 1.0907 TRM_s_L: 1.0170 TRM_s_C: 0.6620 TRM_m_L: 0.1981 TRM_m_C: 0.0836 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:522.00  small:312.64  middle:191.09  big:18.27 lr:0.00028
+timer: 0.8647 sec.
+iter 131340 || ARM_L: 1.0281 ARM_C: 1.9393 TRM_s_L: 1.0658 TRM_s_C: 1.2353 TRM_m_L: 0.3976 TRM_m_C: 0.5138 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:730.18  small:427.18  middle:277.45  big:25.55 lr:0.00028
+timer: 0.8538 sec.
+iter 131350 || ARM_L: 0.7461 ARM_C: 1.8765 TRM_s_L: 1.0004 TRM_s_C: 1.4695 TRM_m_L: 0.4031 TRM_m_C: 0.5995 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:572.00  small:299.64  middle:250.09  big:22.27 lr:0.00028
+timer: 0.8937 sec.
+iter 131360 || ARM_L: 0.3868 ARM_C: 1.3006 TRM_s_L: 0.6151 TRM_s_C: 0.8492 TRM_m_L: 0.4376 TRM_m_C: 0.8158 TRM_b_L: 0.2602 TRM_b_C: 0.1568 || 
+all:555.00  small:348.27  middle:182.55  big:24.18 lr:0.00028
+timer: 0.8583 sec.
+iter 131370 || ARM_L: 0.8750 ARM_C: 1.5549 TRM_s_L: 1.2196 TRM_s_C: 1.6048 TRM_m_L: 0.2860 TRM_m_C: 0.4261 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:553.18  small:267.09  middle:266.82  big:19.27 lr:0.00028
+timer: 0.9475 sec.
+iter 131380 || ARM_L: 0.7224 ARM_C: 1.4286 TRM_s_L: 1.0270 TRM_s_C: 1.0643 TRM_m_L: 0.1496 TRM_m_C: 0.1962 TRM_b_L: 0.2386 TRM_b_C: 0.3431 || 
+all:558.64  small:330.64  middle:205.36  big:22.64 lr:0.00028
+timer: 0.8598 sec.
+iter 131390 || ARM_L: 0.5090 ARM_C: 1.0479 TRM_s_L: 0.6551 TRM_s_C: 0.8771 TRM_m_L: 0.2741 TRM_m_C: 0.3774 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:532.73  small:302.36  middle:215.91  big:14.45 lr:0.00028
+timer: 0.9158 sec.
+iter 131400 || ARM_L: 0.4788 ARM_C: 1.3695 TRM_s_L: 1.0557 TRM_s_C: 0.7703 TRM_m_L: 0.4104 TRM_m_C: 0.2279 TRM_b_L: 0.1726 TRM_b_C: 0.7267 || 
+all:518.82  small:260.18  middle:232.64  big:26.00 lr:0.00028
+timer: 0.7854 sec.
+iter 131410 || ARM_L: 1.0020 ARM_C: 1.6158 TRM_s_L: 1.1215 TRM_s_C: 1.0199 TRM_m_L: 0.3426 TRM_m_C: 0.9036 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:645.09  small:401.82  middle:225.73  big:17.55 lr:0.00028
+timer: 0.7752 sec.
+iter 131420 || ARM_L: 1.0938 ARM_C: 1.2782 TRM_s_L: 2.3058 TRM_s_C: 0.8831 TRM_m_L: 0.1899 TRM_m_C: 0.0838 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:549.64  small:272.55  middle:258.55  big:18.55 lr:0.00028
+timer: 0.7917 sec.
+iter 131430 || ARM_L: 0.4886 ARM_C: 1.5078 TRM_s_L: 0.8152 TRM_s_C: 0.7859 TRM_m_L: 0.4470 TRM_m_C: 0.1125 TRM_b_L: 0.0839 TRM_b_C: 0.1943 || 
+all:563.00  small:350.91  middle:187.55  big:24.55 lr:0.00028
+timer: 0.7924 sec.
+iter 131440 || ARM_L: 0.6326 ARM_C: 1.4267 TRM_s_L: 1.1742 TRM_s_C: 2.1051 TRM_m_L: 0.6055 TRM_m_C: 0.7384 TRM_b_L: 0.1905 TRM_b_C: 0.3743 || 
+all:615.64  small:363.91  middle:231.55  big:20.18 lr:0.00028
+timer: 0.7567 sec.
+iter 131450 || ARM_L: 0.4981 ARM_C: 1.1246 TRM_s_L: 0.6986 TRM_s_C: 0.3388 TRM_m_L: 0.3401 TRM_m_C: 0.7659 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:554.45  small:345.55  middle:187.00  big:21.91 lr:0.00028
+timer: 0.7974 sec.
+iter 131460 || ARM_L: 1.2633 ARM_C: 1.7561 TRM_s_L: 1.1179 TRM_s_C: 0.3106 TRM_m_L: 0.2818 TRM_m_C: 0.4938 TRM_b_L: 0.2907 TRM_b_C: 2.5193 || 
+all:505.82  small:300.18  middle:184.09  big:21.55 lr:0.00028
+timer: 0.8020 sec.
+iter 131470 || ARM_L: 0.3732 ARM_C: 1.1428 TRM_s_L: 0.8610 TRM_s_C: 1.5453 TRM_m_L: 0.2500 TRM_m_C: 0.5507 TRM_b_L: 0.2301 TRM_b_C: 0.4210 || 
+all:525.73  small:279.64  middle:223.55  big:22.55 lr:0.00028
+timer: 0.7808 sec.
+iter 131480 || ARM_L: 0.5472 ARM_C: 1.6631 TRM_s_L: 1.0025 TRM_s_C: 1.1666 TRM_m_L: 0.0836 TRM_m_C: 0.2370 TRM_b_L: 0.3838 TRM_b_C: 0.6218 || 
+all:490.36  small:235.00  middle:228.00  big:27.36 lr:0.00028
+timer: 0.8017 sec.
+iter 131490 || ARM_L: 0.6522 ARM_C: 1.5235 TRM_s_L: 0.8134 TRM_s_C: 0.6053 TRM_m_L: 0.3404 TRM_m_C: 0.7342 TRM_b_L: 0.1386 TRM_b_C: 0.2752 || 
+all:605.00  small:344.55  middle:228.64  big:31.82 lr:0.00028
+timer: 0.8057 sec.
+iter 131500 || ARM_L: 0.8973 ARM_C: 1.7186 TRM_s_L: 0.7360 TRM_s_C: 0.6887 TRM_m_L: 0.3419 TRM_m_C: 0.7232 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:592.55  small:311.18  middle:266.09  big:15.27 lr:0.00028
+timer: 0.8042 sec.
+iter 131510 || ARM_L: 0.6094 ARM_C: 1.5461 TRM_s_L: 0.9918 TRM_s_C: 1.4499 TRM_m_L: 0.5049 TRM_m_C: 0.7032 TRM_b_L: 0.1673 TRM_b_C: 0.3247 || 
+all:489.18  small:319.91  middle:140.09  big:29.18 lr:0.00028
+timer: 0.7950 sec.
+iter 131520 || ARM_L: 0.2715 ARM_C: 1.2650 TRM_s_L: 0.6625 TRM_s_C: 0.2289 TRM_m_L: 0.3119 TRM_m_C: 0.1290 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:552.00  small:316.64  middle:207.00  big:28.36 lr:0.00028
+timer: 0.8127 sec.
+iter 131530 || ARM_L: 0.6281 ARM_C: 1.2981 TRM_s_L: 1.0516 TRM_s_C: 0.3568 TRM_m_L: 0.4656 TRM_m_C: 0.1620 TRM_b_L: 0.2643 TRM_b_C: 1.5003 || 
+all:663.09  small:361.73  middle:261.64  big:39.73 lr:0.00028
+timer: 0.7678 sec.
+iter 131540 || ARM_L: 0.5107 ARM_C: 1.0191 TRM_s_L: 1.0596 TRM_s_C: 1.0027 TRM_m_L: 0.2951 TRM_m_C: 0.4453 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:683.91  small:415.09  middle:249.45  big:19.36 lr:0.00028
+timer: 0.8027 sec.
+iter 131550 || ARM_L: 0.5410 ARM_C: 1.4438 TRM_s_L: 1.1099 TRM_s_C: 0.9344 TRM_m_L: 0.3385 TRM_m_C: 0.1451 TRM_b_L: 1.6564 TRM_b_C: 1.8471 || 
+all:593.91  small:349.18  middle:213.09  big:31.64 lr:0.00028
+timer: 0.8108 sec.
+iter 131560 || ARM_L: 0.3634 ARM_C: 1.2876 TRM_s_L: 0.6839 TRM_s_C: 0.4749 TRM_m_L: 0.4772 TRM_m_C: 0.7327 TRM_b_L: 0.1891 TRM_b_C: 0.2408 || 
+all:648.91  small:354.91  middle:275.45  big:18.55 lr:0.00028
+timer: 0.8054 sec.
+iter 131570 || ARM_L: 0.6924 ARM_C: 1.3183 TRM_s_L: 0.8462 TRM_s_C: 0.5836 TRM_m_L: 0.5700 TRM_m_C: 0.3357 TRM_b_L: 0.7238 TRM_b_C: 0.0632 || 
+all:682.82  small:417.27  middle:252.64  big:12.91 lr:0.00028
+timer: 0.7991 sec.
+iter 131580 || ARM_L: 0.7291 ARM_C: 1.2975 TRM_s_L: 0.8829 TRM_s_C: 0.8235 TRM_m_L: 0.7502 TRM_m_C: 0.6405 TRM_b_L: 0.4460 TRM_b_C: 1.8513 || 
+all:528.64  small:283.73  middle:226.55  big:18.36 lr:0.00028
+timer: 0.8041 sec.
+iter 131590 || ARM_L: 0.4423 ARM_C: 1.2339 TRM_s_L: 0.7746 TRM_s_C: 0.5961 TRM_m_L: 0.3654 TRM_m_C: 1.0141 TRM_b_L: 0.0917 TRM_b_C: 0.5650 || 
+all:590.27  small:322.27  middle:255.55  big:12.45 lr:0.00028
+timer: 0.7832 sec.
+iter 131600 || ARM_L: 0.5774 ARM_C: 1.2112 TRM_s_L: 0.7231 TRM_s_C: 1.0658 TRM_m_L: 0.5018 TRM_m_C: 0.9968 TRM_b_L: 0.2583 TRM_b_C: 1.1816 || 
+all:590.73  small:337.45  middle:229.45  big:23.82 lr:0.00028
+timer: 0.7589 sec.
+iter 131610 || ARM_L: 0.7307 ARM_C: 1.2525 TRM_s_L: 1.4991 TRM_s_C: 1.3692 TRM_m_L: 0.3063 TRM_m_C: 0.5058 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:486.55  small:291.27  middle:182.45  big:12.82 lr:0.00028
+timer: 0.8026 sec.
+iter 131620 || ARM_L: 0.7653 ARM_C: 1.4092 TRM_s_L: 1.1582 TRM_s_C: 1.2400 TRM_m_L: 0.2991 TRM_m_C: 0.8509 TRM_b_L: 0.1854 TRM_b_C: 0.6887 || 
+all:689.73  small:371.00  middle:302.64  big:16.09 lr:0.00028
+timer: 0.7946 sec.
+iter 131630 || ARM_L: 0.6378 ARM_C: 1.4804 TRM_s_L: 0.9815 TRM_s_C: 0.9281 TRM_m_L: 0.5702 TRM_m_C: 0.1290 TRM_b_L: 0.4551 TRM_b_C: 0.6653 || 
+all:516.09  small:314.82  middle:177.73  big:23.55 lr:0.00028
+timer: 0.7804 sec.
+iter 131640 || ARM_L: 0.5314 ARM_C: 1.1518 TRM_s_L: 1.2204 TRM_s_C: 1.2420 TRM_m_L: 0.4138 TRM_m_C: 0.2885 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:598.09  small:311.82  middle:264.27  big:22.00 lr:0.00028
+timer: 0.7644 sec.
+iter 131650 || ARM_L: 0.7378 ARM_C: 1.3428 TRM_s_L: 1.0246 TRM_s_C: 1.1201 TRM_m_L: 0.1479 TRM_m_C: 0.4233 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:621.36  small:411.55  middle:186.18  big:23.64 lr:0.00028
+timer: 0.7695 sec.
+iter 131660 || ARM_L: 0.8009 ARM_C: 2.0605 TRM_s_L: 0.8154 TRM_s_C: 1.0011 TRM_m_L: 0.7848 TRM_m_C: 1.2119 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:552.73  small:353.64  middle:179.27  big:19.82 lr:0.00028
+timer: 0.7987 sec.
+iter 131670 || ARM_L: 1.1230 ARM_C: 1.2624 TRM_s_L: 1.5664 TRM_s_C: 1.6600 TRM_m_L: 0.4621 TRM_m_C: 0.6693 TRM_b_L: 0.1758 TRM_b_C: 0.1647 || 
+all:543.55  small:302.91  middle:204.91  big:35.73 lr:0.00028
+timer: 0.8062 sec.
+iter 131680 || ARM_L: 0.5156 ARM_C: 1.3104 TRM_s_L: 0.7551 TRM_s_C: 0.3558 TRM_m_L: 0.5139 TRM_m_C: 0.4517 TRM_b_L: 0.1600 TRM_b_C: 0.5558 || 
+all:580.27  small:327.09  middle:227.73  big:25.45 lr:0.00028
+timer: 0.8039 sec.
+iter 131690 || ARM_L: 0.6505 ARM_C: 1.1555 TRM_s_L: 0.8442 TRM_s_C: 1.7441 TRM_m_L: 0.6243 TRM_m_C: 0.2345 TRM_b_L: 0.7809 TRM_b_C: 1.1643 || 
+all:589.18  small:297.91  middle:265.27  big:26.00 lr:0.00028
+timer: 0.8256 sec.
+iter 131700 || ARM_L: 0.6623 ARM_C: 1.5003 TRM_s_L: 1.0191 TRM_s_C: 0.2558 TRM_m_L: 0.2228 TRM_m_C: 0.5799 TRM_b_L: 0.1706 TRM_b_C: 0.5399 || 
+all:610.55  small:316.36  middle:260.27  big:33.91 lr:0.00028
+timer: 0.7767 sec.
+iter 131710 || ARM_L: 0.5009 ARM_C: 1.0340 TRM_s_L: 0.7741 TRM_s_C: 1.2756 TRM_m_L: 0.1661 TRM_m_C: 0.3122 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:578.55  small:329.82  middle:228.73  big:20.00 lr:0.00028
+timer: 0.8036 sec.
+iter 131720 || ARM_L: 0.4511 ARM_C: 1.1621 TRM_s_L: 0.7864 TRM_s_C: 0.6122 TRM_m_L: 0.4617 TRM_m_C: 0.0630 TRM_b_L: 0.3562 TRM_b_C: 0.3584 || 
+all:586.36  small:316.18  middle:245.55  big:24.64 lr:0.00028
+timer: 0.8093 sec.
+iter 131730 || ARM_L: 0.5179 ARM_C: 1.1318 TRM_s_L: 1.0326 TRM_s_C: 1.1574 TRM_m_L: 0.1924 TRM_m_C: 0.3559 TRM_b_L: 0.2426 TRM_b_C: 0.5638 || 
+all:491.00  small:299.64  middle:171.91  big:19.45 lr:0.00028
+timer: 0.8044 sec.
+iter 131740 || ARM_L: 0.5076 ARM_C: 1.4122 TRM_s_L: 0.5605 TRM_s_C: 0.4401 TRM_m_L: 0.4410 TRM_m_C: 0.5786 TRM_b_L: 0.4912 TRM_b_C: 0.4237 || 
+all:582.64  small:333.45  middle:233.00  big:16.18 lr:0.00028
+timer: 0.8942 sec.
+iter 131750 || ARM_L: 0.4537 ARM_C: 1.1658 TRM_s_L: 0.9186 TRM_s_C: 0.6308 TRM_m_L: 0.4891 TRM_m_C: 0.4201 TRM_b_L: 0.6237 TRM_b_C: 1.1122 || 
+all:585.00  small:311.64  middle:243.27  big:30.09 lr:0.00028
+timer: 0.8861 sec.
+iter 131760 || ARM_L: 0.5183 ARM_C: 1.2580 TRM_s_L: 0.8606 TRM_s_C: 1.2196 TRM_m_L: 0.5089 TRM_m_C: 0.4787 TRM_b_L: 0.3608 TRM_b_C: 0.2533 || 
+all:611.91  small:383.73  middle:211.00  big:17.18 lr:0.00028
+timer: 0.9121 sec.
+iter 131770 || ARM_L: 0.5401 ARM_C: 1.3499 TRM_s_L: 0.7947 TRM_s_C: 1.0111 TRM_m_L: 0.3550 TRM_m_C: 0.0434 TRM_b_L: 0.2566 TRM_b_C: 0.6296 || 
+all:533.36  small:289.18  middle:224.18  big:20.00 lr:0.00028
+timer: 0.8972 sec.
+iter 131780 || ARM_L: 0.8072 ARM_C: 1.6642 TRM_s_L: 1.1210 TRM_s_C: 1.0206 TRM_m_L: 0.6551 TRM_m_C: 1.3423 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:555.09  small:312.18  middle:227.45  big:15.45 lr:0.00028
+timer: 0.8500 sec.
+iter 131790 || ARM_L: 0.8067 ARM_C: 1.5919 TRM_s_L: 0.7585 TRM_s_C: 1.2147 TRM_m_L: 0.8547 TRM_m_C: 1.7704 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:552.27  small:298.55  middle:235.00  big:18.73 lr:0.00028
+timer: 0.8710 sec.
+iter 131800 || ARM_L: 0.6264 ARM_C: 1.6131 TRM_s_L: 0.8968 TRM_s_C: 1.2319 TRM_m_L: 0.6079 TRM_m_C: 0.1386 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:629.91  small:383.00  middle:227.55  big:19.36 lr:0.00028
+timer: 0.8640 sec.
+iter 131810 || ARM_L: 0.7100 ARM_C: 1.3457 TRM_s_L: 0.9214 TRM_s_C: 1.0951 TRM_m_L: 0.8458 TRM_m_C: 1.1940 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:638.36  small:398.27  middle:228.82  big:11.27 lr:0.00028
+timer: 0.8691 sec.
+iter 131820 || ARM_L: 0.4442 ARM_C: 1.1717 TRM_s_L: 0.9556 TRM_s_C: 0.3196 TRM_m_L: 0.4404 TRM_m_C: 0.3817 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:615.45  small:365.64  middle:236.18  big:13.64 lr:0.00028
+timer: 0.8513 sec.
+iter 131830 || ARM_L: 0.8465 ARM_C: 1.2453 TRM_s_L: 1.4575 TRM_s_C: 1.8681 TRM_m_L: 0.4626 TRM_m_C: 0.2807 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:520.55  small:352.18  middle:147.55  big:20.82 lr:0.00028
+timer: 0.8984 sec.
+iter 131840 || ARM_L: 1.3331 ARM_C: 1.6924 TRM_s_L: 1.1149 TRM_s_C: 1.4000 TRM_m_L: 1.2021 TRM_m_C: 1.7696 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:524.82  small:315.00  middle:192.55  big:17.27 lr:0.00028
+timer: 0.8517 sec.
+iter 131850 || ARM_L: 1.1545 ARM_C: 2.2940 TRM_s_L: 1.3935 TRM_s_C: 0.7879 TRM_m_L: 0.4562 TRM_m_C: 1.1870 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:447.00  small:259.91  middle:167.64  big:19.45 lr:0.00028
+timer: 0.9748 sec.
+iter 131860 || ARM_L: 1.5162 ARM_C: 1.7565 TRM_s_L: 1.6991 TRM_s_C: 1.4427 TRM_m_L: 0.7013 TRM_m_C: 0.6962 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:570.45  small:320.64  middle:236.91  big:12.91 lr:0.00028
+timer: 0.8570 sec.
+iter 131870 || ARM_L: 0.4788 ARM_C: 1.0697 TRM_s_L: 0.7378 TRM_s_C: 1.0298 TRM_m_L: 0.4270 TRM_m_C: 0.7218 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:517.45  small:337.45  middle:161.82  big:18.18 lr:0.00028
+timer: 0.9247 sec.
+iter 131880 || ARM_L: 0.4798 ARM_C: 1.1169 TRM_s_L: 1.1899 TRM_s_C: 1.3064 TRM_m_L: 0.3439 TRM_m_C: 1.3146 TRM_b_L: 0.2046 TRM_b_C: 0.6323 || 
+all:529.09  small:311.09  middle:196.27  big:21.73 lr:0.00028
+timer: 0.8710 sec.
+iter 131890 || ARM_L: 0.3270 ARM_C: 1.0679 TRM_s_L: 0.7412 TRM_s_C: 0.9535 TRM_m_L: 0.3464 TRM_m_C: 0.6937 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:540.64  small:300.18  middle:223.91  big:16.55 lr:0.00028
+timer: 0.8962 sec.
+iter 131900 || ARM_L: 0.7739 ARM_C: 1.4830 TRM_s_L: 0.9315 TRM_s_C: 1.1648 TRM_m_L: 0.3028 TRM_m_C: 0.3007 TRM_b_L: 1.3577 TRM_b_C: 0.8846 || 
+all:572.27  small:309.27  middle:244.09  big:18.91 lr:0.00028
+timer: 0.9159 sec.
+iter 131910 || ARM_L: 0.5276 ARM_C: 1.2672 TRM_s_L: 1.0348 TRM_s_C: 0.8532 TRM_m_L: 0.3754 TRM_m_C: 0.0579 TRM_b_L: 0.4865 TRM_b_C: 0.6557 || 
+all:524.45  small:338.91  middle:171.45  big:14.09 lr:0.00028
+timer: 0.8953 sec.
+iter 131920 || ARM_L: 0.5424 ARM_C: 1.2123 TRM_s_L: 0.9175 TRM_s_C: 0.7186 TRM_m_L: 0.4060 TRM_m_C: 0.6237 TRM_b_L: 0.0393 TRM_b_C: 0.1185 || 
+all:616.00  small:381.64  middle:225.64  big:8.73 lr:0.00028
+timer: 0.8970 sec.
+iter 131930 || ARM_L: 0.4756 ARM_C: 1.3127 TRM_s_L: 0.9531 TRM_s_C: 0.6310 TRM_m_L: 0.2115 TRM_m_C: 0.0707 TRM_b_L: 0.2057 TRM_b_C: 0.5859 || 
+all:524.91  small:255.09  middle:260.45  big:9.36 lr:0.00028
+timer: 0.9024 sec.
+iter 131940 || ARM_L: 1.1445 ARM_C: 1.7522 TRM_s_L: 0.9422 TRM_s_C: 1.0306 TRM_m_L: 0.2755 TRM_m_C: 0.5123 TRM_b_L: 0.2648 TRM_b_C: 0.9404 || 
+all:509.73  small:315.64  middle:179.45  big:14.64 lr:0.00028
+timer: 0.9025 sec.
+iter 131950 || ARM_L: 0.4796 ARM_C: 1.3249 TRM_s_L: 0.6279 TRM_s_C: 0.7926 TRM_m_L: 0.2937 TRM_m_C: 0.0803 TRM_b_L: 0.9641 TRM_b_C: 1.4985 || 
+all:529.73  small:268.64  middle:235.00  big:26.09 lr:0.00028
+timer: 0.9291 sec.
+iter 131960 || ARM_L: 0.3294 ARM_C: 1.0095 TRM_s_L: 0.9268 TRM_s_C: 0.9827 TRM_m_L: 0.2064 TRM_m_C: 0.3579 TRM_b_L: 0.1751 TRM_b_C: 0.3753 || 
+all:669.18  small:313.82  middle:342.18  big:13.18 lr:0.00028
+timer: 0.8513 sec.
+iter 131970 || ARM_L: 1.1482 ARM_C: 1.5976 TRM_s_L: 1.0732 TRM_s_C: 1.5430 TRM_m_L: 0.4622 TRM_m_C: 0.2498 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:530.91  small:314.55  middle:195.82  big:20.55 lr:0.00028
+timer: 0.8610 sec.
+iter 131980 || ARM_L: 1.2787 ARM_C: 1.7681 TRM_s_L: 1.2001 TRM_s_C: 1.3199 TRM_m_L: 0.3710 TRM_m_C: 0.3397 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:544.82  small:328.36  middle:211.91  big:4.55 lr:0.00028
+timer: 0.9012 sec.
+iter 131990 || ARM_L: 0.7123 ARM_C: 1.2567 TRM_s_L: 0.9570 TRM_s_C: 0.8226 TRM_m_L: 0.3634 TRM_m_C: 0.1358 TRM_b_L: 0.4911 TRM_b_C: 1.0116 || 
+all:538.55  small:285.55  middle:227.18  big:25.82 lr:0.00028
+timer: 0.9344 sec.
+iter 132000 || ARM_L: 1.0146 ARM_C: 1.2422 TRM_s_L: 1.1642 TRM_s_C: 1.2969 TRM_m_L: 0.4726 TRM_m_C: 0.9039 TRM_b_L: 0.8245 TRM_b_C: 1.3318 || 
+all:651.18  small:377.91  middle:267.27  big:6.00 lr:0.00028
+timer: 0.9005 sec.
+iter 132010 || ARM_L: 0.4731 ARM_C: 1.1307 TRM_s_L: 0.7810 TRM_s_C: 1.1197 TRM_m_L: 0.3604 TRM_m_C: 0.8201 TRM_b_L: 0.1946 TRM_b_C: 0.0721 || 
+all:622.82  small:376.18  middle:229.55  big:17.09 lr:0.00028
+timer: 0.9081 sec.
+iter 132020 || ARM_L: 0.4770 ARM_C: 1.4401 TRM_s_L: 0.9588 TRM_s_C: 0.9683 TRM_m_L: 0.3754 TRM_m_C: 0.6014 TRM_b_L: 0.3971 TRM_b_C: 1.9473 || 
+all:521.64  small:308.18  middle:182.45  big:31.00 lr:0.00028
+timer: 0.8973 sec.
+iter 132030 || ARM_L: 0.5847 ARM_C: 1.6119 TRM_s_L: 0.9151 TRM_s_C: 1.0621 TRM_m_L: 0.4574 TRM_m_C: 0.4392 TRM_b_L: 0.3849 TRM_b_C: 0.4968 || 
+all:503.09  small:304.00  middle:183.09  big:16.00 lr:0.00028
+timer: 0.9010 sec.
+iter 132040 || ARM_L: 0.8622 ARM_C: 1.3615 TRM_s_L: 1.6728 TRM_s_C: 1.9160 TRM_m_L: 0.2892 TRM_m_C: 0.5879 TRM_b_L: 0.3348 TRM_b_C: 0.3379 || 
+all:543.91  small:301.27  middle:206.09  big:36.55 lr:0.00028
+timer: 0.9526 sec.
+iter 132050 || ARM_L: 1.2640 ARM_C: 1.6067 TRM_s_L: 1.2993 TRM_s_C: 1.4081 TRM_m_L: 0.3842 TRM_m_C: 0.6225 TRM_b_L: 0.1032 TRM_b_C: 0.1505 || 
+all:542.00  small:323.18  middle:195.36  big:23.45 lr:0.00028
+timer: 0.8945 sec.
+iter 132060 || ARM_L: 0.6945 ARM_C: 1.3590 TRM_s_L: 1.0584 TRM_s_C: 1.2508 TRM_m_L: 0.6176 TRM_m_C: 1.1309 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:577.09  small:313.55  middle:241.00  big:22.55 lr:0.00028
+timer: 0.9046 sec.
+iter 132070 || ARM_L: 0.6595 ARM_C: 1.5275 TRM_s_L: 0.9570 TRM_s_C: 1.2749 TRM_m_L: 0.2894 TRM_m_C: 0.5523 TRM_b_L: 0.2767 TRM_b_C: 0.5809 || 
+all:504.91  small:298.55  middle:189.73  big:16.64 lr:0.00028
+timer: 0.9275 sec.
+iter 132080 || ARM_L: 0.4671 ARM_C: 1.2122 TRM_s_L: 0.9245 TRM_s_C: 1.3871 TRM_m_L: 0.3764 TRM_m_C: 1.1140 TRM_b_L: 0.2697 TRM_b_C: 0.1687 || 
+all:597.27  small:341.91  middle:232.09  big:23.27 lr:0.00028
+timer: 0.9343 sec.
+iter 132090 || ARM_L: 1.3312 ARM_C: 2.0642 TRM_s_L: 1.0365 TRM_s_C: 0.2067 TRM_m_L: 1.3077 TRM_m_C: 0.6333 TRM_b_L: 0.4485 TRM_b_C: 0.5797 || 
+all:557.45  small:340.45  middle:197.82  big:19.18 lr:0.00028
+timer: 0.9469 sec.
+iter 132100 || ARM_L: 0.6839 ARM_C: 1.3426 TRM_s_L: 1.1965 TRM_s_C: 1.3844 TRM_m_L: 0.2811 TRM_m_C: 0.5282 TRM_b_L: 0.2143 TRM_b_C: 0.3888 || 
+all:623.64  small:299.91  middle:311.27  big:12.45 lr:0.00028
+timer: 0.9351 sec.
+iter 132110 || ARM_L: 0.6788 ARM_C: 1.6411 TRM_s_L: 1.1154 TRM_s_C: 1.3670 TRM_m_L: 0.3888 TRM_m_C: 0.7229 TRM_b_L: 0.1397 TRM_b_C: 0.4076 || 
+all:626.45  small:316.64  middle:289.82  big:20.00 lr:0.00028
+timer: 0.9283 sec.
+iter 132120 || ARM_L: 0.8758 ARM_C: 1.6540 TRM_s_L: 1.2760 TRM_s_C: 1.6055 TRM_m_L: 0.7991 TRM_m_C: 1.2690 TRM_b_L: 0.1152 TRM_b_C: 0.4387 || 
+all:541.91  small:303.82  middle:221.82  big:16.27 lr:0.00028
+timer: 0.8930 sec.
+iter 132130 || ARM_L: 0.5007 ARM_C: 1.2660 TRM_s_L: 1.0224 TRM_s_C: 1.6758 TRM_m_L: 0.2151 TRM_m_C: 0.1509 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:558.55  small:329.73  middle:210.64  big:18.18 lr:0.00028
+timer: 0.9121 sec.
+iter 132140 || ARM_L: 0.7862 ARM_C: 1.4597 TRM_s_L: 0.8833 TRM_s_C: 1.7100 TRM_m_L: 0.2504 TRM_m_C: 0.5032 TRM_b_L: 0.3803 TRM_b_C: 0.6681 || 
+all:511.45  small:317.64  middle:174.82  big:19.00 lr:0.00028
+timer: 0.8622 sec.
+iter 132150 || ARM_L: 0.4299 ARM_C: 0.9591 TRM_s_L: 0.7741 TRM_s_C: 0.9039 TRM_m_L: 0.1886 TRM_m_C: 0.3822 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:508.91  small:302.00  middle:187.55  big:19.36 lr:0.00028
+timer: 0.8637 sec.
+iter 132160 || ARM_L: 0.7630 ARM_C: 1.3398 TRM_s_L: 1.7153 TRM_s_C: 2.5182 TRM_m_L: 0.4096 TRM_m_C: 0.4005 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:506.82  small:323.18  middle:163.73  big:19.91 lr:0.00028
+timer: 0.9027 sec.
+iter 132170 || ARM_L: 0.7342 ARM_C: 1.5908 TRM_s_L: 1.0632 TRM_s_C: 0.8346 TRM_m_L: 0.6967 TRM_m_C: 0.9251 TRM_b_L: 0.1543 TRM_b_C: 0.1725 || 
+all:545.73  small:291.64  middle:229.64  big:24.45 lr:0.00028
+timer: 0.9037 sec.
+iter 132180 || ARM_L: 0.7562 ARM_C: 1.3902 TRM_s_L: 0.9597 TRM_s_C: 0.6626 TRM_m_L: 0.1548 TRM_m_C: 0.0690 TRM_b_L: 0.1448 TRM_b_C: 0.5817 || 
+all:563.45  small:321.09  middle:221.09  big:21.27 lr:0.00028
+timer: 0.8973 sec.
+iter 132190 || ARM_L: 0.4833 ARM_C: 1.4190 TRM_s_L: 0.9230 TRM_s_C: 0.3977 TRM_m_L: 0.6118 TRM_m_C: 0.2423 TRM_b_L: 0.3069 TRM_b_C: 2.6668 || 
+all:532.82  small:282.00  middle:229.45  big:21.36 lr:0.00028
+timer: 0.9023 sec.
+iter 132200 || ARM_L: 0.8320 ARM_C: 1.1557 TRM_s_L: 0.6652 TRM_s_C: 0.6424 TRM_m_L: 0.4900 TRM_m_C: 0.7946 TRM_b_L: 0.1216 TRM_b_C: 0.7072 || 
+all:631.27  small:328.55  middle:278.27  big:24.45 lr:0.00028
+timer: 0.8987 sec.
+iter 132210 || ARM_L: 1.2727 ARM_C: 1.9616 TRM_s_L: 1.0700 TRM_s_C: 0.5858 TRM_m_L: 0.6621 TRM_m_C: 1.8854 TRM_b_L: 0.5341 TRM_b_C: 0.4313 || 
+all:597.64  small:299.82  middle:268.27  big:29.55 lr:0.00028
+timer: 0.8821 sec.
+iter 132220 || ARM_L: 0.6656 ARM_C: 1.2947 TRM_s_L: 0.9482 TRM_s_C: 1.1318 TRM_m_L: 0.3096 TRM_m_C: 0.3849 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:633.09  small:293.91  middle:310.00  big:29.18 lr:0.00028
+timer: 0.8959 sec.
+iter 132230 || ARM_L: 0.4879 ARM_C: 1.3231 TRM_s_L: 0.7940 TRM_s_C: 0.5532 TRM_m_L: 0.4752 TRM_m_C: 0.6448 TRM_b_L: 0.7490 TRM_b_C: 1.5281 || 
+all:653.82  small:343.09  middle:290.64  big:20.09 lr:0.00028
+timer: 0.8500 sec.
+iter 132240 || ARM_L: 0.6924 ARM_C: 1.3916 TRM_s_L: 0.7463 TRM_s_C: 1.2893 TRM_m_L: 0.5279 TRM_m_C: 1.1709 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:548.36  small:293.55  middle:233.36  big:21.45 lr:0.00028
+timer: 0.9142 sec.
+iter 132250 || ARM_L: 0.8163 ARM_C: 1.4595 TRM_s_L: 1.3102 TRM_s_C: 0.6093 TRM_m_L: 0.3338 TRM_m_C: 0.4076 TRM_b_L: 0.1766 TRM_b_C: 0.6193 || 
+all:569.55  small:374.91  middle:177.82  big:16.82 lr:0.00028
+timer: 0.3339 sec.
+iter 132260 || ARM_L: 0.5026 ARM_C: 0.9217 TRM_s_L: 1.0350 TRM_s_C: 0.9694 TRM_m_L: 0.2456 TRM_m_C: 0.4196 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:496.00  small:272.82  middle:200.36  big:22.82 lr:0.00028
+timer: 0.9017 sec.
+iter 132270 || ARM_L: 0.5575 ARM_C: 1.4452 TRM_s_L: 0.7963 TRM_s_C: 1.2204 TRM_m_L: 0.6821 TRM_m_C: 1.6680 TRM_b_L: 0.2919 TRM_b_C: 0.4404 || 
+all:633.27  small:351.36  middle:252.73  big:29.18 lr:0.00028
+timer: 0.9004 sec.
+iter 132280 || ARM_L: 0.3928 ARM_C: 1.1966 TRM_s_L: 0.6536 TRM_s_C: 0.5127 TRM_m_L: 0.2107 TRM_m_C: 0.5045 TRM_b_L: 0.2550 TRM_b_C: 0.3018 || 
+all:579.36  small:314.00  middle:237.45  big:27.91 lr:0.00028
+timer: 0.8964 sec.
+iter 132290 || ARM_L: 0.4145 ARM_C: 1.1909 TRM_s_L: 0.7713 TRM_s_C: 1.1404 TRM_m_L: 0.3136 TRM_m_C: 0.5237 TRM_b_L: 0.1519 TRM_b_C: 0.3799 || 
+all:530.00  small:272.09  middle:244.36  big:13.55 lr:0.00028
+timer: 0.9019 sec.
+iter 132300 || ARM_L: 0.4322 ARM_C: 1.2255 TRM_s_L: 0.7470 TRM_s_C: 0.7743 TRM_m_L: 0.2724 TRM_m_C: 0.3984 TRM_b_L: 0.2410 TRM_b_C: 0.4847 || 
+all:583.91  small:335.00  middle:225.91  big:23.00 lr:0.00028
+timer: 0.8951 sec.
+iter 132310 || ARM_L: 0.4429 ARM_C: 1.0368 TRM_s_L: 0.9366 TRM_s_C: 1.1219 TRM_m_L: 0.5907 TRM_m_C: 0.2523 TRM_b_L: 0.2302 TRM_b_C: 1.0337 || 
+all:591.18  small:320.09  middle:237.27  big:33.82 lr:0.00028
+timer: 0.8971 sec.
+iter 132320 || ARM_L: 0.4677 ARM_C: 1.3057 TRM_s_L: 0.6867 TRM_s_C: 0.9511 TRM_m_L: 0.5223 TRM_m_C: 0.8530 TRM_b_L: 0.4187 TRM_b_C: 2.2944 || 
+all:522.64  small:296.55  middle:203.91  big:22.18 lr:0.00028
+timer: 0.9066 sec.
+iter 132330 || ARM_L: 0.9639 ARM_C: 1.6600 TRM_s_L: 0.9773 TRM_s_C: 0.4117 TRM_m_L: 0.9813 TRM_m_C: 0.3673 TRM_b_L: 0.3316 TRM_b_C: 0.1724 || 
+all:625.09  small:351.91  middle:253.73  big:19.45 lr:0.00028
+timer: 0.8767 sec.
+iter 132340 || ARM_L: 1.2152 ARM_C: 1.7718 TRM_s_L: 1.2678 TRM_s_C: 1.7238 TRM_m_L: 0.3485 TRM_m_C: 0.2641 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:547.00  small:348.73  middle:169.55  big:28.73 lr:0.00028
+timer: 0.8620 sec.
+iter 132350 || ARM_L: 0.4839 ARM_C: 1.4764 TRM_s_L: 0.7802 TRM_s_C: 0.4143 TRM_m_L: 0.5909 TRM_m_C: 1.2582 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:705.09  small:378.36  middle:304.09  big:22.64 lr:0.00028
+timer: 0.9011 sec.
+iter 132360 || ARM_L: 0.9046 ARM_C: 1.3429 TRM_s_L: 1.0612 TRM_s_C: 1.0354 TRM_m_L: 0.5299 TRM_m_C: 1.0915 TRM_b_L: 0.2850 TRM_b_C: 0.6318 || 
+all:680.00  small:385.91  middle:258.27  big:35.82 lr:0.00028
+timer: 0.9070 sec.
+iter 132370 || ARM_L: 0.4636 ARM_C: 1.0313 TRM_s_L: 0.9653 TRM_s_C: 1.2365 TRM_m_L: 0.2802 TRM_m_C: 0.5833 TRM_b_L: 0.3776 TRM_b_C: 0.2515 || 
+all:503.45  small:291.73  middle:188.64  big:23.09 lr:0.00028
+timer: 0.9301 sec.
+iter 132380 || ARM_L: 0.5418 ARM_C: 1.3853 TRM_s_L: 0.6665 TRM_s_C: 0.4883 TRM_m_L: 0.5812 TRM_m_C: 0.9500 TRM_b_L: 0.3588 TRM_b_C: 3.9303 || 
+all:644.55  small:382.27  middle:230.45  big:31.82 lr:0.00028
+timer: 0.9238 sec.
+iter 132390 || ARM_L: 1.3171 ARM_C: 1.8741 TRM_s_L: 1.3066 TRM_s_C: 0.2419 TRM_m_L: 1.0001 TRM_m_C: 0.5227 TRM_b_L: 0.2853 TRM_b_C: 1.0208 || 
+all:576.45  small:315.27  middle:227.18  big:34.00 lr:0.00028
+timer: 0.9056 sec.
+iter 132400 || ARM_L: 1.1819 ARM_C: 1.7092 TRM_s_L: 1.7731 TRM_s_C: 1.4832 TRM_m_L: 0.4804 TRM_m_C: 0.9205 TRM_b_L: 0.6927 TRM_b_C: 1.0484 || 
+all:447.73  small:291.73  middle:135.91  big:20.09 lr:0.00028
+timer: 0.9269 sec.
+iter 132410 || ARM_L: 0.5721 ARM_C: 1.5094 TRM_s_L: 0.7026 TRM_s_C: 1.0053 TRM_m_L: 0.6556 TRM_m_C: 1.1203 TRM_b_L: 0.1014 TRM_b_C: 0.8405 || 
+all:560.91  small:347.55  middle:186.00  big:27.36 lr:0.00028
+timer: 0.9259 sec.
+iter 132420 || ARM_L: 0.9487 ARM_C: 1.3614 TRM_s_L: 1.0119 TRM_s_C: 1.4300 TRM_m_L: 0.4155 TRM_m_C: 0.8480 TRM_b_L: 1.0119 TRM_b_C: 1.5352 || 
+all:620.73  small:352.18  middle:250.45  big:18.09 lr:0.00028
+timer: 0.9188 sec.
+iter 132430 || ARM_L: 0.6329 ARM_C: 1.4207 TRM_s_L: 0.8654 TRM_s_C: 1.4507 TRM_m_L: 0.4872 TRM_m_C: 0.5636 TRM_b_L: 0.2716 TRM_b_C: 0.3509 || 
+all:597.27  small:307.09  middle:260.18  big:30.00 lr:0.00028
+timer: 0.8948 sec.
+iter 132440 || ARM_L: 0.3100 ARM_C: 1.1530 TRM_s_L: 0.7789 TRM_s_C: 0.1128 TRM_m_L: 0.3731 TRM_m_C: 0.1477 TRM_b_L: 0.6802 TRM_b_C: 1.8768 || 
+all:577.09  small:337.45  middle:213.73  big:25.91 lr:0.00028
+timer: 0.9102 sec.
+iter 132450 || ARM_L: 0.8893 ARM_C: 1.3118 TRM_s_L: 1.2110 TRM_s_C: 1.4017 TRM_m_L: 0.2861 TRM_m_C: 0.6115 TRM_b_L: 0.2122 TRM_b_C: 0.7313 || 
+all:567.00  small:330.45  middle:223.27  big:13.27 lr:0.00028
+timer: 0.8752 sec.
+iter 132460 || ARM_L: 0.9707 ARM_C: 1.3652 TRM_s_L: 1.9461 TRM_s_C: 1.8549 TRM_m_L: 0.4876 TRM_m_C: 0.7465 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:567.27  small:306.09  middle:233.45  big:27.73 lr:0.00028
+timer: 0.8608 sec.
+iter 132470 || ARM_L: 0.5773 ARM_C: 1.2559 TRM_s_L: 0.8281 TRM_s_C: 1.2674 TRM_m_L: 0.3965 TRM_m_C: 0.1062 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:716.45  small:404.00  middle:292.82  big:19.64 lr:0.00028
+timer: 0.8890 sec.
+iter 132480 || ARM_L: 0.6321 ARM_C: 1.2235 TRM_s_L: 1.0156 TRM_s_C: 0.9422 TRM_m_L: 0.3912 TRM_m_C: 1.0574 TRM_b_L: 0.8518 TRM_b_C: 6.9011 || 
+all:692.36  small:319.45  middle:344.00  big:28.91 lr:0.00028
+timer: 0.9396 sec.
+iter 132490 || ARM_L: 0.8848 ARM_C: 1.3756 TRM_s_L: 1.2527 TRM_s_C: 1.6254 TRM_m_L: 0.3290 TRM_m_C: 0.7559 TRM_b_L: 0.2364 TRM_b_C: 0.3586 || 
+all:676.55  small:355.64  middle:291.91  big:29.00 lr:0.00028
+timer: 0.8941 sec.
+iter 132500 || ARM_L: 0.9377 ARM_C: 1.6517 TRM_s_L: 0.9980 TRM_s_C: 1.1797 TRM_m_L: 0.2551 TRM_m_C: 0.3956 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:476.36  small:249.73  middle:210.09  big:16.55 lr:0.00028
+timer: 0.9243 sec.
+iter 132510 || ARM_L: 0.6251 ARM_C: 1.5500 TRM_s_L: 0.9281 TRM_s_C: 1.2000 TRM_m_L: 0.4480 TRM_m_C: 1.1529 TRM_b_L: 0.4263 TRM_b_C: 0.4226 || 
+all:587.64  small:335.73  middle:237.18  big:14.73 lr:0.00028
+timer: 0.9455 sec.
+iter 132520 || ARM_L: 2.0623 ARM_C: 2.0246 TRM_s_L: 5.0414 TRM_s_C: 1.7149 TRM_m_L: 0.3210 TRM_m_C: 0.5067 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:581.36  small:352.27  middle:219.45  big:9.64 lr:0.00028
+timer: 0.8901 sec.
+iter 132530 || ARM_L: 0.6778 ARM_C: 1.6960 TRM_s_L: 1.2661 TRM_s_C: 1.3418 TRM_m_L: 0.6713 TRM_m_C: 1.4027 TRM_b_L: 0.2152 TRM_b_C: 0.3375 || 
+all:500.45  small:289.91  middle:198.09  big:12.45 lr:0.00028
+timer: 0.9265 sec.
+iter 132540 || ARM_L: 0.3623 ARM_C: 1.1897 TRM_s_L: 0.6578 TRM_s_C: 0.7600 TRM_m_L: 0.3023 TRM_m_C: 0.5760 TRM_b_L: 0.2782 TRM_b_C: 0.3619 || 
+all:469.73  small:227.91  middle:214.27  big:27.55 lr:0.00028
+timer: 0.8582 sec.
+iter 132550 || ARM_L: 0.4347 ARM_C: 1.4199 TRM_s_L: 0.7944 TRM_s_C: 0.3884 TRM_m_L: 0.3602 TRM_m_C: 0.8953 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:619.27  small:307.91  middle:293.91  big:17.45 lr:0.00028
+timer: 0.9219 sec.
+iter 132560 || ARM_L: 0.5898 ARM_C: 1.4364 TRM_s_L: 0.9245 TRM_s_C: 0.2736 TRM_m_L: 0.2453 TRM_m_C: 0.1712 TRM_b_L: 1.4472 TRM_b_C: 3.9284 || 
+all:534.18  small:287.45  middle:221.73  big:25.00 lr:0.00028
+timer: 0.9065 sec.
+iter 132570 || ARM_L: 1.1811 ARM_C: 1.6976 TRM_s_L: 1.3083 TRM_s_C: 1.2600 TRM_m_L: 0.7071 TRM_m_C: 1.2708 TRM_b_L: 0.4153 TRM_b_C: 3.2936 || 
+all:570.27  small:294.09  middle:259.27  big:16.91 lr:0.00028
+timer: 0.8890 sec.
+iter 132580 || ARM_L: 0.4775 ARM_C: 1.4232 TRM_s_L: 0.9650 TRM_s_C: 1.3914 TRM_m_L: 0.2235 TRM_m_C: 0.4519 TRM_b_L: 0.2708 TRM_b_C: 0.6342 || 
+all:546.27  small:278.55  middle:234.27  big:33.45 lr:0.00028
+timer: 0.9040 sec.
+iter 132590 || ARM_L: 1.3991 ARM_C: 1.9536 TRM_s_L: 1.6131 TRM_s_C: 1.9212 TRM_m_L: 0.3751 TRM_m_C: 1.4948 TRM_b_L: 0.3136 TRM_b_C: 0.3328 || 
+all:656.64  small:401.45  middle:221.00  big:34.18 lr:0.00028
+timer: 0.8940 sec.
+iter 132600 || ARM_L: 0.9497 ARM_C: 1.5375 TRM_s_L: 1.0732 TRM_s_C: 1.2013 TRM_m_L: 0.2335 TRM_m_C: 0.2478 TRM_b_L: 0.0983 TRM_b_C: 0.1827 || 
+all:549.82  small:357.45  middle:177.91  big:14.45 lr:0.00028
+timer: 0.8570 sec.
+iter 132610 || ARM_L: 0.7892 ARM_C: 1.3259 TRM_s_L: 0.8791 TRM_s_C: 1.3315 TRM_m_L: 0.3004 TRM_m_C: 0.6828 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:585.27  small:342.55  middle:235.18  big:7.55 lr:0.00028
+timer: 0.9124 sec.
+iter 132620 || ARM_L: 0.5532 ARM_C: 1.3182 TRM_s_L: 1.1920 TRM_s_C: 0.2449 TRM_m_L: 0.4997 TRM_m_C: 0.2050 TRM_b_L: 0.2071 TRM_b_C: 0.9272 || 
+all:611.64  small:365.82  middle:223.64  big:22.18 lr:0.00028
+timer: 0.9299 sec.
+iter 132630 || ARM_L: 0.5715 ARM_C: 1.4494 TRM_s_L: 1.1207 TRM_s_C: 1.1068 TRM_m_L: 0.2893 TRM_m_C: 0.6502 TRM_b_L: 0.3874 TRM_b_C: 1.1291 || 
+all:620.27  small:333.73  middle:256.64  big:29.91 lr:0.00028
+timer: 0.8555 sec.
+iter 132640 || ARM_L: 1.4993 ARM_C: 1.9836 TRM_s_L: 1.4893 TRM_s_C: 2.8405 TRM_m_L: 0.3473 TRM_m_C: 1.3602 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:606.00  small:334.27  middle:251.00  big:20.73 lr:0.00028
+timer: 0.8922 sec.
+iter 132650 || ARM_L: 0.4958 ARM_C: 1.1761 TRM_s_L: 0.8547 TRM_s_C: 1.0509 TRM_m_L: 0.3442 TRM_m_C: 0.1467 TRM_b_L: 0.1813 TRM_b_C: 0.5233 || 
+all:504.00  small:308.55  middle:162.64  big:32.82 lr:0.00028
+timer: 0.9351 sec.
+iter 132660 || ARM_L: 0.5583 ARM_C: 1.1125 TRM_s_L: 0.8713 TRM_s_C: 1.3041 TRM_m_L: 0.4024 TRM_m_C: 1.3887 TRM_b_L: 0.1027 TRM_b_C: 0.5963 || 
+all:436.55  small:267.27  middle:140.27  big:29.00 lr:0.00028
+timer: 0.9214 sec.
+iter 132670 || ARM_L: 0.8140 ARM_C: 1.5826 TRM_s_L: 1.0527 TRM_s_C: 1.7584 TRM_m_L: 0.5058 TRM_m_C: 0.2613 TRM_b_L: 0.1777 TRM_b_C: 0.2417 || 
+all:593.27  small:326.00  middle:252.73  big:14.55 lr:0.00028
+timer: 0.9005 sec.
+iter 132680 || ARM_L: 0.4836 ARM_C: 1.4399 TRM_s_L: 0.9509 TRM_s_C: 0.3644 TRM_m_L: 0.2907 TRM_m_C: 0.0765 TRM_b_L: 0.3511 TRM_b_C: 0.4100 || 
+all:513.27  small:279.64  middle:218.09  big:15.55 lr:0.00028
+timer: 0.8507 sec.
+iter 132690 || ARM_L: 0.6585 ARM_C: 1.3540 TRM_s_L: 1.0054 TRM_s_C: 0.9934 TRM_m_L: 0.3768 TRM_m_C: 0.7386 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:466.45  small:238.27  middle:214.82  big:13.36 lr:0.00028
+timer: 0.8888 sec.
+iter 132700 || ARM_L: 0.8393 ARM_C: 1.5976 TRM_s_L: 1.2097 TRM_s_C: 0.7785 TRM_m_L: 0.1872 TRM_m_C: 0.7312 TRM_b_L: 0.1003 TRM_b_C: 0.3159 || 
+all:560.91  small:330.09  middle:197.64  big:33.18 lr:0.00028
+timer: 0.9426 sec.
+iter 132710 || ARM_L: 0.7058 ARM_C: 1.3501 TRM_s_L: 1.0256 TRM_s_C: 1.3428 TRM_m_L: 0.5467 TRM_m_C: 0.4228 TRM_b_L: 0.2479 TRM_b_C: 0.5889 || 
+all:732.64  small:445.64  middle:264.73  big:22.27 lr:0.00028
+timer: 0.9321 sec.
+iter 132720 || ARM_L: 0.6327 ARM_C: 1.5833 TRM_s_L: 0.8065 TRM_s_C: 1.0632 TRM_m_L: 0.1821 TRM_m_C: 0.0914 TRM_b_L: 0.3567 TRM_b_C: 0.8009 || 
+all:549.27  small:382.36  middle:147.64  big:19.27 lr:0.00028
+timer: 0.8568 sec.
+iter 132730 || ARM_L: 0.5401 ARM_C: 1.4862 TRM_s_L: 1.1335 TRM_s_C: 1.9874 TRM_m_L: 0.3795 TRM_m_C: 0.7191 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:623.45  small:352.73  middle:244.91  big:25.82 lr:0.00028
+timer: 0.9045 sec.
+iter 132740 || ARM_L: 0.5179 ARM_C: 1.1745 TRM_s_L: 0.9380 TRM_s_C: 0.6640 TRM_m_L: 0.3706 TRM_m_C: 0.0574 TRM_b_L: 0.3900 TRM_b_C: 0.9277 || 
+all:505.55  small:272.00  middle:218.82  big:14.73 lr:0.00028
+timer: 0.8970 sec.
+iter 132750 || ARM_L: 0.8241 ARM_C: 1.9007 TRM_s_L: 1.0279 TRM_s_C: 1.2249 TRM_m_L: 0.6840 TRM_m_C: 1.7147 TRM_b_L: 0.4328 TRM_b_C: 0.4733 || 
+all:689.36  small:471.27  middle:194.00  big:24.09 lr:0.00028
+timer: 0.8842 sec.
+iter 132760 || ARM_L: 0.7390 ARM_C: 1.5483 TRM_s_L: 1.1123 TRM_s_C: 1.1595 TRM_m_L: 0.4672 TRM_m_C: 0.9632 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:672.82  small:356.64  middle:284.18  big:32.00 lr:0.00028
+timer: 0.9400 sec.
+iter 132770 || ARM_L: 1.1522 ARM_C: 1.7059 TRM_s_L: 1.3462 TRM_s_C: 1.3134 TRM_m_L: 0.4105 TRM_m_C: 0.4364 TRM_b_L: 0.3444 TRM_b_C: 0.4694 || 
+all:608.36  small:315.45  middle:247.00  big:45.91 lr:0.00028
+timer: 0.9016 sec.
+iter 132780 || ARM_L: 0.7667 ARM_C: 1.4362 TRM_s_L: 0.8389 TRM_s_C: 0.1995 TRM_m_L: 0.2700 TRM_m_C: 0.0472 TRM_b_L: 0.2384 TRM_b_C: 0.7264 || 
+all:568.82  small:330.55  middle:203.27  big:35.00 lr:0.00028
+timer: 0.8919 sec.
+iter 132790 || ARM_L: 0.3791 ARM_C: 1.2732 TRM_s_L: 0.6644 TRM_s_C: 0.2630 TRM_m_L: 0.2811 TRM_m_C: 0.4022 TRM_b_L: 0.5936 TRM_b_C: 0.3384 || 
+all:577.73  small:299.18  middle:252.00  big:26.55 lr:0.00028
+timer: 0.8945 sec.
+iter 132800 || ARM_L: 0.9016 ARM_C: 1.4437 TRM_s_L: 0.8325 TRM_s_C: 1.1977 TRM_m_L: 0.9437 TRM_m_C: 2.1041 TRM_b_L: 0.1893 TRM_b_C: 0.3477 || 
+all:529.64  small:254.09  middle:264.36  big:11.18 lr:0.00028
+timer: 0.9449 sec.
+iter 132810 || ARM_L: 1.2027 ARM_C: 1.4067 TRM_s_L: 3.8561 TRM_s_C: 1.1114 TRM_m_L: 0.3293 TRM_m_C: 0.7249 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:609.36  small:338.55  middle:255.09  big:15.73 lr:0.00028
+timer: 0.7634 sec.
+iter 132820 || ARM_L: 0.8831 ARM_C: 1.7121 TRM_s_L: 0.9762 TRM_s_C: 0.7249 TRM_m_L: 0.7402 TRM_m_C: 1.0722 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:631.82  small:363.82  middle:252.18  big:15.82 lr:0.00028
+timer: 0.8078 sec.
+iter 132830 || ARM_L: 0.8613 ARM_C: 1.6463 TRM_s_L: 1.2524 TRM_s_C: 0.6934 TRM_m_L: 0.2555 TRM_m_C: 0.0622 TRM_b_L: 0.4571 TRM_b_C: 1.7539 || 
+all:572.18  small:303.00  middle:256.64  big:12.55 lr:0.00028
+timer: 0.8057 sec.
+iter 132840 || ARM_L: 0.5798 ARM_C: 1.4831 TRM_s_L: 0.9402 TRM_s_C: 1.3144 TRM_m_L: 0.3751 TRM_m_C: 1.5592 TRM_b_L: 0.3104 TRM_b_C: 0.3637 || 
+all:534.27  small:340.27  middle:179.27  big:14.73 lr:0.00028
+timer: 0.7692 sec.
+iter 132850 || ARM_L: 0.4469 ARM_C: 1.3216 TRM_s_L: 0.5016 TRM_s_C: 0.2846 TRM_m_L: 0.4412 TRM_m_C: 0.2272 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:569.91  small:353.91  middle:200.73  big:15.27 lr:0.00028
+timer: 0.7987 sec.
+iter 132860 || ARM_L: 1.0609 ARM_C: 1.4761 TRM_s_L: 1.2530 TRM_s_C: 1.2480 TRM_m_L: 0.7491 TRM_m_C: 1.3048 TRM_b_L: 0.2142 TRM_b_C: 0.4847 || 
+all:598.09  small:337.64  middle:243.18  big:17.27 lr:0.00028
+timer: 0.7709 sec.
+iter 132870 || ARM_L: 0.3513 ARM_C: 1.1816 TRM_s_L: 0.6197 TRM_s_C: 0.6346 TRM_m_L: 0.1916 TRM_m_C: 0.0233 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:630.82  small:416.27  middle:203.73  big:10.82 lr:0.00028
+timer: 0.7908 sec.
+iter 132880 || ARM_L: 0.6826 ARM_C: 1.6243 TRM_s_L: 0.9532 TRM_s_C: 0.4471 TRM_m_L: 0.7443 TRM_m_C: 1.1150 TRM_b_L: 0.4147 TRM_b_C: 0.2817 || 
+all:527.27  small:360.82  middle:148.18  big:18.27 lr:0.00028
+timer: 0.7698 sec.
+iter 132890 || ARM_L: 0.7052 ARM_C: 1.2247 TRM_s_L: 1.3664 TRM_s_C: 1.6935 TRM_m_L: 0.3767 TRM_m_C: 0.3427 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:560.09  small:289.00  middle:245.09  big:26.00 lr:0.00028
+timer: 0.8139 sec.
+iter 132900 || ARM_L: 0.8631 ARM_C: 1.5332 TRM_s_L: 1.0890 TRM_s_C: 1.6743 TRM_m_L: 0.7766 TRM_m_C: 1.1770 TRM_b_L: 0.5831 TRM_b_C: 0.8099 || 
+all:657.00  small:332.55  middle:307.91  big:16.55 lr:0.00028
+timer: 0.8051 sec.
+iter 132910 || ARM_L: 0.6052 ARM_C: 1.3895 TRM_s_L: 0.7659 TRM_s_C: 0.5723 TRM_m_L: 0.6481 TRM_m_C: 1.1461 TRM_b_L: 0.6994 TRM_b_C: 1.9550 || 
+all:557.36  small:305.09  middle:230.18  big:22.09 lr:0.00028
+timer: 0.7652 sec.
+iter 132920 || ARM_L: 0.8765 ARM_C: 1.2248 TRM_s_L: 1.2419 TRM_s_C: 1.0774 TRM_m_L: 0.5603 TRM_m_C: 0.3809 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:532.36  small:298.91  middle:213.64  big:19.82 lr:0.00028
+timer: 0.8329 sec.
+iter 132930 || ARM_L: 0.8539 ARM_C: 1.4910 TRM_s_L: 1.5239 TRM_s_C: 0.7443 TRM_m_L: 0.4299 TRM_m_C: 0.1985 TRM_b_L: 0.0979 TRM_b_C: 0.6147 || 
+all:566.27  small:278.18  middle:272.82  big:15.27 lr:0.00028
+timer: 0.8136 sec.
+iter 132940 || ARM_L: 0.7091 ARM_C: 1.5700 TRM_s_L: 0.9901 TRM_s_C: 0.3489 TRM_m_L: 0.4198 TRM_m_C: 0.0673 TRM_b_L: 0.2795 TRM_b_C: 0.3853 || 
+all:525.18  small:295.36  middle:217.45  big:12.36 lr:0.00028
+timer: 0.7713 sec.
+iter 132950 || ARM_L: 0.9079 ARM_C: 1.4403 TRM_s_L: 1.1186 TRM_s_C: 1.2447 TRM_m_L: 0.1727 TRM_m_C: 0.4420 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:593.00  small:316.09  middle:266.36  big:10.55 lr:0.00028
+timer: 0.7647 sec.
+iter 132960 || ARM_L: 0.5499 ARM_C: 1.5763 TRM_s_L: 0.7112 TRM_s_C: 0.6849 TRM_m_L: 0.5652 TRM_m_C: 1.1081 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:674.64  small:399.00  middle:248.18  big:27.45 lr:0.00028
+timer: 0.7459 sec.
+iter 132970 || ARM_L: 0.8750 ARM_C: 1.7510 TRM_s_L: 1.1341 TRM_s_C: 0.9183 TRM_m_L: 0.4072 TRM_m_C: 0.0542 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:585.82  small:312.82  middle:252.45  big:20.55 lr:0.00028
+timer: 0.8088 sec.
+iter 132980 || ARM_L: 0.6914 ARM_C: 1.2799 TRM_s_L: 1.1993 TRM_s_C: 0.7506 TRM_m_L: 0.5041 TRM_m_C: 0.5359 TRM_b_L: 0.1676 TRM_b_C: 0.2205 || 
+all:516.27  small:278.73  middle:213.73  big:23.82 lr:0.00028
+timer: 0.7571 sec.
+iter 132990 || ARM_L: 0.9378 ARM_C: 1.4391 TRM_s_L: 1.0861 TRM_s_C: 1.2445 TRM_m_L: 0.2962 TRM_m_C: 0.2967 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:540.00  small:338.00  middle:187.00  big:15.00 lr:0.00028
+timer: 0.8239 sec.
+iter 133000 || ARM_L: 0.4141 ARM_C: 1.1235 TRM_s_L: 0.8566 TRM_s_C: 0.4730 TRM_m_L: 0.3219 TRM_m_C: 0.5035 TRM_b_L: 0.3848 TRM_b_C: 0.5983 || 
+all:574.73  small:301.91  middle:250.00  big:22.82 lr:0.00028
+timer: 0.7671 sec.
+iter 133010 || ARM_L: 0.7176 ARM_C: 1.4596 TRM_s_L: 0.8537 TRM_s_C: 0.2835 TRM_m_L: 0.6911 TRM_m_C: 1.1563 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:613.36  small:254.18  middle:320.55  big:38.64 lr:0.00028
+timer: 0.7812 sec.
+iter 133020 || ARM_L: 0.7281 ARM_C: 1.4783 TRM_s_L: 0.9979 TRM_s_C: 1.1480 TRM_m_L: 0.1927 TRM_m_C: 0.4949 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:582.18  small:354.18  middle:203.18  big:24.82 lr:0.00028
+timer: 0.8314 sec.
+iter 133030 || ARM_L: 0.6607 ARM_C: 1.6418 TRM_s_L: 0.7470 TRM_s_C: 0.3998 TRM_m_L: 0.6536 TRM_m_C: 1.2610 TRM_b_L: 1.6003 TRM_b_C: 2.8031 || 
+all:579.55  small:332.00  middle:224.64  big:22.91 lr:0.00028
+timer: 0.7945 sec.
+iter 133040 || ARM_L: 0.6424 ARM_C: 1.9416 TRM_s_L: 1.0688 TRM_s_C: 1.4493 TRM_m_L: 0.2271 TRM_m_C: 0.4285 TRM_b_L: 0.1090 TRM_b_C: 0.3736 || 
+all:505.64  small:303.82  middle:188.55  big:13.27 lr:0.00028
+timer: 0.7621 sec.
+iter 133050 || ARM_L: 0.4724 ARM_C: 1.2905 TRM_s_L: 0.8237 TRM_s_C: 0.2749 TRM_m_L: 0.4888 TRM_m_C: 0.0378 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:603.09  small:319.27  middle:260.00  big:23.82 lr:0.00028
+timer: 0.7628 sec.
+iter 133060 || ARM_L: 0.7528 ARM_C: 1.6903 TRM_s_L: 0.9525 TRM_s_C: 1.4060 TRM_m_L: 0.8803 TRM_m_C: 0.2757 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:507.45  small:286.91  middle:195.91  big:24.64 lr:0.00028
+timer: 0.7967 sec.
+iter 133070 || ARM_L: 0.4643 ARM_C: 1.1611 TRM_s_L: 0.7547 TRM_s_C: 0.0940 TRM_m_L: 0.3097 TRM_m_C: 0.2204 TRM_b_L: 0.4738 TRM_b_C: 0.3989 || 
+all:721.27  small:429.45  middle:266.73  big:25.09 lr:0.00028
+timer: 0.7983 sec.
+iter 133080 || ARM_L: 0.7605 ARM_C: 1.6160 TRM_s_L: 1.1941 TRM_s_C: 1.2882 TRM_m_L: 0.4796 TRM_m_C: 1.1233 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:526.55  small:287.36  middle:216.00  big:23.18 lr:0.00028
+timer: 0.7669 sec.
+iter 133090 || ARM_L: 0.8147 ARM_C: 1.2892 TRM_s_L: 0.9505 TRM_s_C: 0.7987 TRM_m_L: 0.4028 TRM_m_C: 0.3961 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:473.27  small:275.00  middle:183.45  big:14.82 lr:0.00028
+timer: 0.8230 sec.
+iter 133100 || ARM_L: 0.5793 ARM_C: 1.2651 TRM_s_L: 0.7167 TRM_s_C: 1.4955 TRM_m_L: 0.3855 TRM_m_C: 0.6198 TRM_b_L: 0.3175 TRM_b_C: 0.5559 || 
+all:558.18  small:250.91  middle:283.55  big:23.73 lr:0.00028
+timer: 0.8081 sec.
+iter 133110 || ARM_L: 0.5524 ARM_C: 1.2358 TRM_s_L: 1.0167 TRM_s_C: 0.9867 TRM_m_L: 0.2218 TRM_m_C: 0.4310 TRM_b_L: 0.3494 TRM_b_C: 1.1251 || 
+all:637.18  small:412.45  middle:200.82  big:23.91 lr:0.00028
+timer: 0.7676 sec.
+iter 133120 || ARM_L: 0.8737 ARM_C: 1.5471 TRM_s_L: 1.1759 TRM_s_C: 1.8684 TRM_m_L: 0.5108 TRM_m_C: 1.3760 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:553.64  small:269.82  middle:263.91  big:19.91 lr:0.00028
+timer: 0.8068 sec.
+iter 133130 || ARM_L: 1.0344 ARM_C: 1.6331 TRM_s_L: 1.2561 TRM_s_C: 1.4590 TRM_m_L: 0.4061 TRM_m_C: 0.0758 TRM_b_L: 0.4434 TRM_b_C: 0.3791 || 
+all:625.18  small:321.82  middle:283.00  big:20.36 lr:0.00028
+timer: 0.7695 sec.
+iter 133140 || ARM_L: 0.3126 ARM_C: 1.0026 TRM_s_L: 0.6589 TRM_s_C: 1.1334 TRM_m_L: 0.3102 TRM_m_C: 0.4991 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:478.18  small:267.82  middle:190.64  big:19.73 lr:0.00028
+timer: 0.7775 sec.
+iter 133150 || ARM_L: 1.3023 ARM_C: 1.6475 TRM_s_L: 1.0696 TRM_s_C: 1.2713 TRM_m_L: 0.6662 TRM_m_C: 1.3079 TRM_b_L: 0.4471 TRM_b_C: 0.3974 || 
+all:539.73  small:323.73  middle:194.55  big:21.45 lr:0.00028
+timer: 0.7648 sec.
+iter 133160 || ARM_L: 0.9953 ARM_C: 1.9232 TRM_s_L: 0.9118 TRM_s_C: 1.4697 TRM_m_L: 0.9494 TRM_m_C: 2.1983 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:529.36  small:279.45  middle:216.00  big:33.91 lr:0.00028
+timer: 0.7929 sec.
+iter 133170 || ARM_L: 0.7340 ARM_C: 1.3561 TRM_s_L: 0.8354 TRM_s_C: 0.8531 TRM_m_L: 0.2978 TRM_m_C: 1.5059 TRM_b_L: 0.3528 TRM_b_C: 0.2590 || 
+all:625.18  small:347.18  middle:260.55  big:17.45 lr:0.00028
+timer: 0.8016 sec.
+iter 133180 || ARM_L: 0.5172 ARM_C: 1.4317 TRM_s_L: 0.8515 TRM_s_C: 1.0303 TRM_m_L: 0.2976 TRM_m_C: 0.4693 TRM_b_L: 0.7292 TRM_b_C: 0.7297 || 
+all:625.64  small:351.36  middle:260.55  big:13.73 lr:0.00028
+timer: 0.8003 sec.
+iter 133190 || ARM_L: 0.8661 ARM_C: 1.5121 TRM_s_L: 1.1070 TRM_s_C: 1.6211 TRM_m_L: 0.3242 TRM_m_C: 1.0832 TRM_b_L: 0.1234 TRM_b_C: 0.1906 || 
+all:549.73  small:285.55  middle:255.55  big:8.64 lr:0.00028
+timer: 0.7935 sec.
+iter 133200 || ARM_L: 0.9130 ARM_C: 1.7311 TRM_s_L: 1.1292 TRM_s_C: 1.4364 TRM_m_L: 0.4103 TRM_m_C: 0.9356 TRM_b_L: 0.1001 TRM_b_C: 0.2820 || 
+all:502.91  small:279.00  middle:204.09  big:19.82 lr:0.00028
+timer: 0.7536 sec.
+iter 133210 || ARM_L: 0.5494 ARM_C: 1.2272 TRM_s_L: 0.8161 TRM_s_C: 0.4120 TRM_m_L: 0.2376 TRM_m_C: 0.1173 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:594.00  small:359.64  middle:202.55  big:31.82 lr:0.00028
+timer: 0.7889 sec.
+iter 133220 || ARM_L: 1.0235 ARM_C: 1.8186 TRM_s_L: 1.1194 TRM_s_C: 1.0991 TRM_m_L: 0.5480 TRM_m_C: 1.4959 TRM_b_L: 0.4152 TRM_b_C: 0.5548 || 
+all:646.36  small:394.91  middle:225.36  big:26.09 lr:0.00028
+timer: 0.7838 sec.
+iter 133230 || ARM_L: 0.8340 ARM_C: 1.6128 TRM_s_L: 1.2945 TRM_s_C: 0.9593 TRM_m_L: 0.3273 TRM_m_C: 0.0615 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:550.36  small:343.73  middle:193.45  big:13.18 lr:0.00028
+timer: 0.8049 sec.
+iter 133240 || ARM_L: 1.0805 ARM_C: 1.7710 TRM_s_L: 1.1358 TRM_s_C: 1.4115 TRM_m_L: 0.4706 TRM_m_C: 1.9376 TRM_b_L: 0.4021 TRM_b_C: 0.7426 || 
+all:563.09  small:272.91  middle:252.45  big:37.73 lr:0.00028
+timer: 0.7578 sec.
+iter 133250 || ARM_L: 0.4668 ARM_C: 1.4077 TRM_s_L: 0.9881 TRM_s_C: 1.2803 TRM_m_L: 0.2444 TRM_m_C: 0.9413 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:503.36  small:293.64  middle:183.27  big:26.45 lr:0.00028
+timer: 0.7772 sec.
+iter 133260 || ARM_L: 0.9457 ARM_C: 1.8284 TRM_s_L: 1.2405 TRM_s_C: 1.9186 TRM_m_L: 0.5393 TRM_m_C: 1.0224 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:677.64  small:356.91  middle:298.73  big:22.00 lr:0.00028
+timer: 0.8042 sec.
+iter 133270 || ARM_L: 0.4556 ARM_C: 1.1731 TRM_s_L: 0.8969 TRM_s_C: 1.0340 TRM_m_L: 0.2855 TRM_m_C: 0.9840 TRM_b_L: 0.1260 TRM_b_C: 0.2573 || 
+all:585.18  small:381.36  middle:186.09  big:17.73 lr:0.00028
+timer: 0.7993 sec.
+iter 133280 || ARM_L: 0.4551 ARM_C: 1.0423 TRM_s_L: 0.6410 TRM_s_C: 0.2538 TRM_m_L: 0.4868 TRM_m_C: 0.5181 TRM_b_L: 0.3183 TRM_b_C: 0.4560 || 
+all:688.45  small:390.55  middle:268.73  big:29.18 lr:0.00028
+timer: 0.7926 sec.
+iter 133290 || ARM_L: 0.5884 ARM_C: 1.4447 TRM_s_L: 0.8998 TRM_s_C: 1.1642 TRM_m_L: 0.2926 TRM_m_C: 0.7381 TRM_b_L: 0.1319 TRM_b_C: 0.2724 || 
+all:588.27  small:322.00  middle:249.45  big:16.82 lr:0.00028
+timer: 0.7640 sec.
+iter 133300 || ARM_L: 0.6721 ARM_C: 1.4153 TRM_s_L: 1.0498 TRM_s_C: 1.3881 TRM_m_L: 0.2538 TRM_m_C: 0.4866 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:585.91  small:355.45  middle:216.82  big:13.64 lr:0.00028
+timer: 0.7663 sec.
+iter 133310 || ARM_L: 0.3903 ARM_C: 1.0206 TRM_s_L: 0.6045 TRM_s_C: 0.6355 TRM_m_L: 0.1939 TRM_m_C: 0.3464 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:524.36  small:282.00  middle:222.09  big:20.27 lr:0.00028
+timer: 0.8124 sec.
+iter 133320 || ARM_L: 1.0957 ARM_C: 1.5514 TRM_s_L: 0.8010 TRM_s_C: 0.2028 TRM_m_L: 1.1126 TRM_m_C: 0.1611 TRM_b_L: 0.3168 TRM_b_C: 0.2327 || 
+all:542.91  small:323.73  middle:194.64  big:24.55 lr:0.00028
+timer: 0.7915 sec.
+iter 133330 || ARM_L: 0.6839 ARM_C: 1.4145 TRM_s_L: 0.9519 TRM_s_C: 1.3436 TRM_m_L: 0.2865 TRM_m_C: 0.2737 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:407.36  small:240.00  middle:156.82  big:10.55 lr:0.00028
+timer: 0.8231 sec.
+iter 133340 || ARM_L: 0.7109 ARM_C: 1.9540 TRM_s_L: 1.0701 TRM_s_C: 0.2859 TRM_m_L: 0.3928 TRM_m_C: 0.1069 TRM_b_L: 0.2814 TRM_b_C: 0.2139 || 
+all:633.91  small:337.91  middle:283.55  big:12.45 lr:0.00028
+timer: 0.8102 sec.
+iter 133350 || ARM_L: 0.6420 ARM_C: 1.5082 TRM_s_L: 0.8815 TRM_s_C: 0.4534 TRM_m_L: 0.3266 TRM_m_C: 0.1837 TRM_b_L: 0.3241 TRM_b_C: 0.5473 || 
+all:598.36  small:303.82  middle:272.91  big:21.64 lr:0.00028
+timer: 0.8087 sec.
+iter 133360 || ARM_L: 0.4751 ARM_C: 1.2200 TRM_s_L: 1.2473 TRM_s_C: 1.2281 TRM_m_L: 0.3745 TRM_m_C: 0.8835 TRM_b_L: 0.2418 TRM_b_C: 0.2865 || 
+all:555.18  small:284.27  middle:245.27  big:25.64 lr:0.00028
+timer: 0.7721 sec.
+iter 133370 || ARM_L: 0.4789 ARM_C: 1.1333 TRM_s_L: 0.8735 TRM_s_C: 0.6428 TRM_m_L: 0.1548 TRM_m_C: 0.0351 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:599.82  small:391.00  middle:191.09  big:17.73 lr:0.00028
+timer: 0.7739 sec.
+iter 133380 || ARM_L: 0.3870 ARM_C: 1.1354 TRM_s_L: 0.8340 TRM_s_C: 1.1164 TRM_m_L: 0.2119 TRM_m_C: 0.2717 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:486.27  small:249.91  middle:224.82  big:11.55 lr:0.00028
+timer: 0.7620 sec.
+iter 133390 || ARM_L: 0.9756 ARM_C: 1.6575 TRM_s_L: 0.9972 TRM_s_C: 1.0800 TRM_m_L: 0.5767 TRM_m_C: 0.9709 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:547.91  small:280.55  middle:251.73  big:15.64 lr:0.00028
+timer: 0.7797 sec.
+iter 133400 || ARM_L: 0.6484 ARM_C: 1.4742 TRM_s_L: 1.0701 TRM_s_C: 0.9448 TRM_m_L: 0.1934 TRM_m_C: 0.6258 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:637.27  small:309.00  middle:306.18  big:22.09 lr:0.00028
+timer: 0.7944 sec.
+iter 133410 || ARM_L: 0.2704 ARM_C: 1.2459 TRM_s_L: 0.7391 TRM_s_C: 0.3519 TRM_m_L: 0.2931 TRM_m_C: 0.5076 TRM_b_L: 0.1272 TRM_b_C: 0.4924 || 
+all:571.36  small:269.82  middle:288.36  big:13.18 lr:0.00028
+timer: 0.7599 sec.
+iter 133420 || ARM_L: 0.6860 ARM_C: 1.3942 TRM_s_L: 0.7100 TRM_s_C: 0.4969 TRM_m_L: 0.6744 TRM_m_C: 0.1825 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:562.55  small:307.73  middle:221.55  big:33.27 lr:0.00028
+timer: 0.7836 sec.
+iter 133430 || ARM_L: 0.9160 ARM_C: 1.3356 TRM_s_L: 1.7202 TRM_s_C: 1.3759 TRM_m_L: 0.4147 TRM_m_C: 1.0028 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:596.73  small:333.55  middle:247.00  big:16.18 lr:0.00028
+timer: 0.7994 sec.
+iter 133440 || ARM_L: 0.8037 ARM_C: 1.5039 TRM_s_L: 0.9717 TRM_s_C: 1.1219 TRM_m_L: 0.5419 TRM_m_C: 0.3240 TRM_b_L: 0.8131 TRM_b_C: 0.9088 || 
+all:573.36  small:318.18  middle:224.64  big:30.55 lr:0.00028
+timer: 0.7946 sec.
+iter 133450 || ARM_L: 0.7424 ARM_C: 1.2560 TRM_s_L: 0.8101 TRM_s_C: 1.2105 TRM_m_L: 0.5019 TRM_m_C: 0.6074 TRM_b_L: 0.3010 TRM_b_C: 0.9776 || 
+all:587.00  small:319.64  middle:241.82  big:25.55 lr:0.00028
+timer: 0.7995 sec.
+iter 133460 || ARM_L: 0.4439 ARM_C: 1.3381 TRM_s_L: 0.4914 TRM_s_C: 0.1388 TRM_m_L: 0.5484 TRM_m_C: 1.3691 TRM_b_L: 0.4901 TRM_b_C: 0.2538 || 
+all:561.00  small:323.27  middle:215.45  big:22.27 lr:0.00028
+timer: 0.8030 sec.
+iter 133470 || ARM_L: 0.6564 ARM_C: 1.2656 TRM_s_L: 1.2768 TRM_s_C: 2.0181 TRM_m_L: 0.4122 TRM_m_C: 0.8167 TRM_b_L: 0.4144 TRM_b_C: 0.6605 || 
+all:542.64  small:281.64  middle:221.45  big:39.55 lr:0.00028
+timer: 0.8035 sec.
+iter 133480 || ARM_L: 1.2560 ARM_C: 1.5178 TRM_s_L: 1.2587 TRM_s_C: 1.4277 TRM_m_L: 0.4709 TRM_m_C: 0.7328 TRM_b_L: 0.2731 TRM_b_C: 0.4952 || 
+all:545.73  small:263.18  middle:264.27  big:18.27 lr:0.00028
+timer: 0.8133 sec.
+iter 133490 || ARM_L: 0.8262 ARM_C: 1.5009 TRM_s_L: 0.9653 TRM_s_C: 1.5870 TRM_m_L: 0.4674 TRM_m_C: 0.9289 TRM_b_L: 0.1302 TRM_b_C: 0.4666 || 
+all:579.64  small:319.45  middle:236.64  big:23.55 lr:0.00028
+timer: 0.7622 sec.
+iter 133500 || ARM_L: 0.6709 ARM_C: 1.7330 TRM_s_L: 1.0938 TRM_s_C: 1.4085 TRM_m_L: 0.4739 TRM_m_C: 0.3815 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:562.09  small:367.18  middle:171.64  big:23.27 lr:0.00028
+timer: 0.7956 sec.
+iter 133510 || ARM_L: 0.8351 ARM_C: 1.6504 TRM_s_L: 1.1398 TRM_s_C: 1.5924 TRM_m_L: 0.4407 TRM_m_C: 0.6874 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:490.45  small:272.73  middle:206.55  big:11.18 lr:0.00028
+timer: 0.7646 sec.
+iter 133520 || ARM_L: 0.6173 ARM_C: 1.3757 TRM_s_L: 0.8801 TRM_s_C: 0.3308 TRM_m_L: 0.4169 TRM_m_C: 0.1094 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:581.45  small:351.91  middle:214.82  big:14.73 lr:0.00028
+timer: 0.7882 sec.
+iter 133530 || ARM_L: 0.5240 ARM_C: 1.1862 TRM_s_L: 1.0643 TRM_s_C: 0.9344 TRM_m_L: 0.3001 TRM_m_C: 0.1130 TRM_b_L: 0.1298 TRM_b_C: 0.2047 || 
+all:527.18  small:277.36  middle:237.64  big:12.18 lr:0.00028
+timer: 0.8055 sec.
+iter 133540 || ARM_L: 1.0244 ARM_C: 1.8009 TRM_s_L: 0.9628 TRM_s_C: 0.7168 TRM_m_L: 0.8531 TRM_m_C: 1.0254 TRM_b_L: 0.5511 TRM_b_C: 0.1399 || 
+all:571.27  small:381.09  middle:174.45  big:15.73 lr:0.00028
+timer: 0.7687 sec.
+iter 133550 || ARM_L: 0.6407 ARM_C: 1.4265 TRM_s_L: 0.7971 TRM_s_C: 0.9222 TRM_m_L: 0.3566 TRM_m_C: 0.4531 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:576.27  small:312.82  middle:238.36  big:25.09 lr:0.00028
+timer: 0.8077 sec.
+iter 133560 || ARM_L: 0.3674 ARM_C: 1.1796 TRM_s_L: 0.9097 TRM_s_C: 0.7285 TRM_m_L: 0.1355 TRM_m_C: 0.2926 TRM_b_L: 0.2779 TRM_b_C: 0.3695 || 
+all:564.00  small:291.09  middle:263.36  big:9.55 lr:0.00028
+timer: 0.8074 sec.
+iter 133570 || ARM_L: 0.7352 ARM_C: 1.3547 TRM_s_L: 0.7371 TRM_s_C: 0.1517 TRM_m_L: 0.7244 TRM_m_C: 0.5065 TRM_b_L: 0.2660 TRM_b_C: 0.1129 || 
+all:580.36  small:323.09  middle:232.18  big:25.09 lr:0.00028
+timer: 0.8051 sec.
+iter 133580 || ARM_L: 0.4675 ARM_C: 1.2439 TRM_s_L: 0.4196 TRM_s_C: 1.0691 TRM_m_L: 0.5245 TRM_m_C: 1.1260 TRM_b_L: 0.4133 TRM_b_C: 0.4698 || 
+all:651.82  small:352.55  middle:278.45  big:20.82 lr:0.00028
+timer: 0.2990 sec.
+iter 133590 || ARM_L: 1.7829 ARM_C: 1.1562 TRM_s_L: 2.5694 TRM_s_C: 1.5732 TRM_m_L: 0.1283 TRM_m_C: 0.2411 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:519.09  small:338.36  middle:159.27  big:21.45 lr:0.00028
+timer: 0.7994 sec.
+iter 133600 || ARM_L: 0.8747 ARM_C: 1.5478 TRM_s_L: 1.1342 TRM_s_C: 0.3701 TRM_m_L: 0.2722 TRM_m_C: 0.0529 TRM_b_L: 0.1198 TRM_b_C: 0.4294 || 
+all:571.18  small:307.55  middle:220.82  big:42.82 lr:0.00028
+timer: 0.8123 sec.
+iter 133610 || ARM_L: 1.0653 ARM_C: 1.5489 TRM_s_L: 1.0282 TRM_s_C: 1.4644 TRM_m_L: 0.2715 TRM_m_C: 0.4294 TRM_b_L: 0.2564 TRM_b_C: 0.6225 || 
+all:617.00  small:354.45  middle:246.45  big:16.09 lr:0.00028
+timer: 0.7627 sec.
+iter 133620 || ARM_L: 0.7487 ARM_C: 1.3321 TRM_s_L: 0.8570 TRM_s_C: 1.2249 TRM_m_L: 0.5257 TRM_m_C: 0.6985 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:636.45  small:327.00  middle:281.00  big:28.45 lr:0.00028
+timer: 0.7798 sec.
+iter 133630 || ARM_L: 0.9152 ARM_C: 1.3370 TRM_s_L: 0.7113 TRM_s_C: 0.9150 TRM_m_L: 0.6057 TRM_m_C: 0.2692 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:698.82  small:373.36  middle:308.09  big:17.36 lr:0.00028
+timer: 0.8158 sec.
+iter 133640 || ARM_L: 0.4953 ARM_C: 1.2903 TRM_s_L: 0.8385 TRM_s_C: 0.9532 TRM_m_L: 0.3583 TRM_m_C: 0.6882 TRM_b_L: 0.2934 TRM_b_C: 0.2980 || 
+all:602.00  small:335.09  middle:241.45  big:25.45 lr:0.00028
+timer: 0.7714 sec.
+iter 133650 || ARM_L: 1.2266 ARM_C: 1.7169 TRM_s_L: 1.1916 TRM_s_C: 1.3891 TRM_m_L: 0.4472 TRM_m_C: 0.2293 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:483.91  small:325.45  middle:139.55  big:18.91 lr:0.00028
+timer: 0.7569 sec.
+iter 133660 || ARM_L: 0.6101 ARM_C: 1.3995 TRM_s_L: 0.6944 TRM_s_C: 0.9433 TRM_m_L: 0.6198 TRM_m_C: 0.9835 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:595.27  small:278.00  middle:282.18  big:35.09 lr:0.00028
+timer: 0.7842 sec.
+iter 133670 || ARM_L: 0.7654 ARM_C: 1.2592 TRM_s_L: 0.9160 TRM_s_C: 1.5798 TRM_m_L: 0.2435 TRM_m_C: 0.1655 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:693.00  small:315.00  middle:356.91  big:21.09 lr:0.00028
+timer: 0.7937 sec.
+iter 133680 || ARM_L: 0.4238 ARM_C: 1.1332 TRM_s_L: 0.5573 TRM_s_C: 1.0576 TRM_m_L: 0.3990 TRM_m_C: 0.4921 TRM_b_L: 0.0915 TRM_b_C: 0.2315 || 
+all:617.27  small:349.18  middle:250.27  big:17.82 lr:0.00028
+timer: 0.8262 sec.
+iter 133690 || ARM_L: 0.6536 ARM_C: 1.2776 TRM_s_L: 1.1415 TRM_s_C: 0.7515 TRM_m_L: 0.3977 TRM_m_C: 0.8033 TRM_b_L: 1.1468 TRM_b_C: 2.9455 || 
+all:480.00  small:271.64  middle:185.18  big:23.18 lr:0.00028
+timer: 0.7724 sec.
+iter 133700 || ARM_L: 0.9357 ARM_C: 1.6393 TRM_s_L: 0.9526 TRM_s_C: 1.0032 TRM_m_L: 0.3931 TRM_m_C: 0.6847 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:580.09  small:338.73  middle:214.36  big:27.00 lr:0.00028
+timer: 0.7684 sec.
+iter 133710 || ARM_L: 0.4446 ARM_C: 0.9095 TRM_s_L: 0.8044 TRM_s_C: 1.1638 TRM_m_L: 0.2253 TRM_m_C: 0.4927 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:412.18  small:255.55  middle:140.91  big:15.73 lr:0.00028
+timer: 0.7686 sec.
+iter 133720 || ARM_L: 0.4161 ARM_C: 1.0367 TRM_s_L: 0.9288 TRM_s_C: 0.4782 TRM_m_L: 0.3437 TRM_m_C: 0.0847 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:541.64  small:261.73  middle:254.82  big:25.09 lr:0.00028
+timer: 0.8259 sec.
+iter 133730 || ARM_L: 0.5287 ARM_C: 1.2098 TRM_s_L: 0.8874 TRM_s_C: 1.3896 TRM_m_L: 0.5213 TRM_m_C: 1.1546 TRM_b_L: 0.5439 TRM_b_C: 1.2973 || 
+all:519.27  small:273.64  middle:217.55  big:28.09 lr:0.00028
+timer: 0.7788 sec.
+iter 133740 || ARM_L: 0.3625 ARM_C: 1.1213 TRM_s_L: 1.3067 TRM_s_C: 0.6805 TRM_m_L: 0.3680 TRM_m_C: 0.0932 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:595.55  small:312.09  middle:268.82  big:14.64 lr:0.00028
+timer: 0.7593 sec.
+iter 133750 || ARM_L: 0.7536 ARM_C: 1.6985 TRM_s_L: 0.8395 TRM_s_C: 0.7256 TRM_m_L: 0.6084 TRM_m_C: 1.9091 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:590.91  small:331.27  middle:241.09  big:18.55 lr:0.00028
+timer: 0.7690 sec.
+iter 133760 || ARM_L: 0.7632 ARM_C: 1.1526 TRM_s_L: 1.1523 TRM_s_C: 1.3012 TRM_m_L: 0.3067 TRM_m_C: 0.6907 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:551.64  small:297.09  middle:238.91  big:15.64 lr:0.00028
+timer: 0.7606 sec.
+iter 133770 || ARM_L: 0.7527 ARM_C: 1.4165 TRM_s_L: 1.0260 TRM_s_C: 0.5998 TRM_m_L: 0.1173 TRM_m_C: 0.0417 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:504.27  small:300.27  middle:188.00  big:16.00 lr:0.00028
+timer: 0.8077 sec.
+iter 133780 || ARM_L: 0.8315 ARM_C: 1.4800 TRM_s_L: 0.9518 TRM_s_C: 1.4700 TRM_m_L: 0.2064 TRM_m_C: 0.4993 TRM_b_L: 0.4913 TRM_b_C: 0.2252 || 
+all:602.00  small:357.09  middle:216.09  big:28.82 lr:0.00028
+timer: 0.7727 sec.
+iter 133790 || ARM_L: 0.7783 ARM_C: 1.4331 TRM_s_L: 0.8841 TRM_s_C: 0.6849 TRM_m_L: 0.4051 TRM_m_C: 1.3161 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:508.00  small:246.91  middle:240.09  big:21.00 lr:0.00028
+timer: 0.7545 sec.
+iter 133800 || ARM_L: 0.6134 ARM_C: 1.5436 TRM_s_L: 0.9002 TRM_s_C: 0.9718 TRM_m_L: 0.2662 TRM_m_C: 0.4094 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:641.73  small:441.09  middle:181.36  big:19.27 lr:0.00028
+timer: 0.7972 sec.
+iter 133810 || ARM_L: 0.3212 ARM_C: 0.8858 TRM_s_L: 0.6425 TRM_s_C: 0.6545 TRM_m_L: 0.2841 TRM_m_C: 0.1765 TRM_b_L: 0.3520 TRM_b_C: 0.4413 || 
+all:497.00  small:292.45  middle:172.73  big:31.82 lr:0.00028
+timer: 0.7896 sec.
+iter 133820 || ARM_L: 0.6320 ARM_C: 1.5469 TRM_s_L: 1.1493 TRM_s_C: 1.1054 TRM_m_L: 0.4827 TRM_m_C: 0.9748 TRM_b_L: 0.3362 TRM_b_C: 0.5733 || 
+all:656.91  small:381.18  middle:253.45  big:22.27 lr:0.00028
+timer: 0.7952 sec.
+iter 133830 || ARM_L: 0.9664 ARM_C: 2.0103 TRM_s_L: 1.0863 TRM_s_C: 1.3108 TRM_m_L: 0.1656 TRM_m_C: 0.3715 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:564.00  small:331.18  middle:203.00  big:29.82 lr:0.00028
+timer: 0.7761 sec.
+iter 133840 || ARM_L: 0.7116 ARM_C: 1.4438 TRM_s_L: 0.7677 TRM_s_C: 0.6685 TRM_m_L: 0.2025 TRM_m_C: 0.0547 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:574.55  small:363.09  middle:195.82  big:15.64 lr:0.00028
+timer: 0.8065 sec.
+iter 133850 || ARM_L: 0.7278 ARM_C: 1.5262 TRM_s_L: 0.8558 TRM_s_C: 0.4447 TRM_m_L: 0.6356 TRM_m_C: 2.0431 TRM_b_L: 0.4275 TRM_b_C: 1.6992 || 
+all:598.64  small:334.91  middle:245.09  big:18.64 lr:0.00028
+timer: 0.7682 sec.
+iter 133860 || ARM_L: 0.4065 ARM_C: 1.2273 TRM_s_L: 0.7397 TRM_s_C: 0.5958 TRM_m_L: 0.4176 TRM_m_C: 0.3194 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:547.18  small:258.18  middle:263.64  big:25.36 lr:0.00028
+timer: 0.7936 sec.
+iter 133870 || ARM_L: 0.5236 ARM_C: 1.1450 TRM_s_L: 0.8284 TRM_s_C: 0.5763 TRM_m_L: 0.4410 TRM_m_C: 0.5820 TRM_b_L: 0.2054 TRM_b_C: 0.1706 || 
+all:566.73  small:312.64  middle:229.36  big:24.73 lr:0.00028
+timer: 0.8208 sec.
+iter 133880 || ARM_L: 0.8936 ARM_C: 1.8594 TRM_s_L: 0.9647 TRM_s_C: 1.5420 TRM_m_L: 0.9525 TRM_m_C: 1.2792 TRM_b_L: 0.2180 TRM_b_C: 0.2891 || 
+all:580.09  small:307.27  middle:254.73  big:18.09 lr:0.00028
+timer: 0.7646 sec.
+iter 133890 || ARM_L: 0.7675 ARM_C: 1.6003 TRM_s_L: 1.4896 TRM_s_C: 0.8699 TRM_m_L: 0.3707 TRM_m_C: 0.1884 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:618.18  small:372.27  middle:226.18  big:19.73 lr:0.00028
+timer: 0.7685 sec.
+iter 133900 || ARM_L: 0.5846 ARM_C: 1.2447 TRM_s_L: 1.0602 TRM_s_C: 1.1804 TRM_m_L: 0.1747 TRM_m_C: 0.5016 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:574.36  small:372.64  middle:182.27  big:19.45 lr:0.00028
+timer: 0.8064 sec.
+iter 133910 || ARM_L: 1.8595 ARM_C: 1.4126 TRM_s_L: 1.6931 TRM_s_C: 1.5997 TRM_m_L: 0.2195 TRM_m_C: 0.5046 TRM_b_L: 0.1978 TRM_b_C: 3.9931 || 
+all:571.91  small:326.55  middle:235.64  big:9.73 lr:0.00028
+timer: 0.8002 sec.
+iter 133920 || ARM_L: 0.5986 ARM_C: 1.5089 TRM_s_L: 0.9650 TRM_s_C: 1.0022 TRM_m_L: 0.5173 TRM_m_C: 0.6472 TRM_b_L: 0.2169 TRM_b_C: 0.8584 || 
+all:542.00  small:334.73  middle:182.91  big:24.36 lr:0.00028
+timer: 0.8011 sec.
+iter 133930 || ARM_L: 0.6725 ARM_C: 1.4555 TRM_s_L: 1.0008 TRM_s_C: 0.4747 TRM_m_L: 0.6480 TRM_m_C: 1.2842 TRM_b_L: 0.2761 TRM_b_C: 0.1933 || 
+all:595.09  small:336.00  middle:233.18  big:25.91 lr:0.00028
+timer: 0.8143 sec.
+iter 133940 || ARM_L: 0.6237 ARM_C: 1.2876 TRM_s_L: 0.8630 TRM_s_C: 1.1516 TRM_m_L: 0.2554 TRM_m_C: 0.1248 TRM_b_L: 0.6013 TRM_b_C: 0.9257 || 
+all:616.36  small:277.73  middle:294.00  big:44.64 lr:0.00028
+timer: 0.8049 sec.
+iter 133950 || ARM_L: 0.4602 ARM_C: 1.2043 TRM_s_L: 0.8959 TRM_s_C: 0.2043 TRM_m_L: 0.3034 TRM_m_C: 0.0234 TRM_b_L: 0.5924 TRM_b_C: 0.4551 || 
+all:566.00  small:297.45  middle:241.64  big:26.91 lr:0.00028
+timer: 0.7667 sec.
+iter 133960 || ARM_L: 0.5725 ARM_C: 1.0517 TRM_s_L: 1.1526 TRM_s_C: 1.3426 TRM_m_L: 0.3759 TRM_m_C: 0.4302 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:510.45  small:305.82  middle:194.00  big:10.64 lr:0.00028
+timer: 0.7493 sec.
+iter 133970 || ARM_L: 0.7975 ARM_C: 1.5665 TRM_s_L: 1.4484 TRM_s_C: 1.5563 TRM_m_L: 0.4939 TRM_m_C: 0.7034 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:554.09  small:270.27  middle:276.73  big:7.09 lr:0.00028
+timer: 0.7785 sec.
+iter 133980 || ARM_L: 1.2880 ARM_C: 1.7065 TRM_s_L: 1.1698 TRM_s_C: 0.5719 TRM_m_L: 0.6292 TRM_m_C: 1.2654 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:648.64  small:367.27  middle:257.27  big:24.09 lr:0.00028
+timer: 0.7968 sec.
+iter 133990 || ARM_L: 0.5070 ARM_C: 1.2897 TRM_s_L: 0.6278 TRM_s_C: 0.9280 TRM_m_L: 0.4157 TRM_m_C: 0.8702 TRM_b_L: 0.2473 TRM_b_C: 0.4819 || 
+all:564.91  small:296.64  middle:248.18  big:20.09 lr:0.00028
+timer: 0.7793 sec.
+iter 134000 || ARM_L: 0.5743 ARM_C: 1.2359 TRM_s_L: 1.0770 TRM_s_C: 0.3737 TRM_m_L: 0.3091 TRM_m_C: 0.1206 TRM_b_L: 0.2305 TRM_b_C: 0.4322 || 
+all:496.64  small:250.64  middle:209.73  big:36.27 lr:0.00028
+timer: 0.8270 sec.
+iter 134010 || ARM_L: 0.4388 ARM_C: 1.0595 TRM_s_L: 0.7216 TRM_s_C: 0.7820 TRM_m_L: 0.5469 TRM_m_C: 0.4426 TRM_b_L: 0.4711 TRM_b_C: 0.7168 || 
+all:547.18  small:283.82  middle:253.64  big:9.73 lr:0.00028
+timer: 0.7581 sec.
+iter 134020 || ARM_L: 1.4048 ARM_C: 1.8063 TRM_s_L: 1.2906 TRM_s_C: 0.7323 TRM_m_L: 0.6573 TRM_m_C: 1.5296 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:581.73  small:342.36  middle:219.45  big:19.91 lr:0.00028
+timer: 0.8300 sec.
+iter 134030 || ARM_L: 0.6782 ARM_C: 1.5378 TRM_s_L: 0.9079 TRM_s_C: 0.5047 TRM_m_L: 0.4746 TRM_m_C: 0.4457 TRM_b_L: 0.2737 TRM_b_C: 0.4682 || 
+all:527.73  small:277.18  middle:234.64  big:15.91 lr:0.00028
+timer: 0.7640 sec.
+iter 134040 || ARM_L: 0.5428 ARM_C: 1.2568 TRM_s_L: 1.0940 TRM_s_C: 0.5827 TRM_m_L: 0.4514 TRM_m_C: 0.6961 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:569.55  small:308.09  middle:244.55  big:16.91 lr:0.00028
+timer: 0.8036 sec.
+iter 134050 || ARM_L: 0.2949 ARM_C: 1.0120 TRM_s_L: 0.5874 TRM_s_C: 1.1231 TRM_m_L: 0.4066 TRM_m_C: 0.1959 TRM_b_L: 0.2534 TRM_b_C: 0.4124 || 
+all:646.45  small:377.55  middle:244.82  big:24.09 lr:0.00028
+timer: 0.7579 sec.
+iter 134060 || ARM_L: 0.8227 ARM_C: 1.3361 TRM_s_L: 1.0074 TRM_s_C: 1.5778 TRM_m_L: 0.2660 TRM_m_C: 0.6917 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:575.36  small:338.18  middle:206.00  big:31.18 lr:0.00028
+timer: 0.8058 sec.
+iter 134070 || ARM_L: 0.4993 ARM_C: 1.1112 TRM_s_L: 0.5947 TRM_s_C: 0.3344 TRM_m_L: 0.4851 TRM_m_C: 1.7450 TRM_b_L: 1.2866 TRM_b_C: 0.5374 || 
+all:589.27  small:316.18  middle:255.64  big:17.45 lr:0.00028
+timer: 0.8031 sec.
+iter 134080 || ARM_L: 1.3618 ARM_C: 1.5421 TRM_s_L: 1.5877 TRM_s_C: 2.2249 TRM_m_L: 0.4438 TRM_m_C: 1.2343 TRM_b_L: 0.1236 TRM_b_C: 3.8878 || 
+all:589.64  small:305.91  middle:263.64  big:20.09 lr:0.00028
+timer: 0.8087 sec.
+iter 134090 || ARM_L: 1.2143 ARM_C: 1.5641 TRM_s_L: 1.3943 TRM_s_C: 1.4117 TRM_m_L: 0.2431 TRM_m_C: 0.4374 TRM_b_L: 0.2770 TRM_b_C: 4.0443 || 
+all:559.09  small:366.73  middle:174.09  big:18.27 lr:0.00028
+timer: 0.8033 sec.
+iter 134100 || ARM_L: 0.6224 ARM_C: 1.3180 TRM_s_L: 0.8580 TRM_s_C: 1.0919 TRM_m_L: 0.6195 TRM_m_C: 2.0350 TRM_b_L: 0.2426 TRM_b_C: 0.6425 || 
+all:498.64  small:281.45  middle:180.45  big:36.73 lr:0.00028
+timer: 0.7953 sec.
+iter 134110 || ARM_L: 1.2515 ARM_C: 1.8401 TRM_s_L: 1.1074 TRM_s_C: 0.5737 TRM_m_L: 0.4681 TRM_m_C: 0.9089 TRM_b_L: 1.3049 TRM_b_C: 2.8193 || 
+all:575.27  small:254.36  middle:299.91  big:21.00 lr:0.00028
+timer: 0.7895 sec.
+iter 134120 || ARM_L: 0.9869 ARM_C: 1.8644 TRM_s_L: 0.7716 TRM_s_C: 1.5253 TRM_m_L: 0.3290 TRM_m_C: 0.2092 TRM_b_L: 0.5515 TRM_b_C: 0.4183 || 
+all:562.82  small:298.18  middle:242.91  big:21.73 lr:0.00028
+timer: 0.7609 sec.
+iter 134130 || ARM_L: 0.8023 ARM_C: 1.1816 TRM_s_L: 0.9570 TRM_s_C: 0.7038 TRM_m_L: 0.3660 TRM_m_C: 0.4548 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:558.64  small:289.64  middle:240.27  big:28.73 lr:0.00028
+timer: 0.7624 sec.
+iter 134140 || ARM_L: 0.8039 ARM_C: 1.4436 TRM_s_L: 1.0394 TRM_s_C: 1.8849 TRM_m_L: 0.4643 TRM_m_C: 1.3248 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:741.45  small:421.64  middle:290.91  big:28.91 lr:0.00028
+timer: 0.7916 sec.
+iter 134150 || ARM_L: 1.0316 ARM_C: 1.3053 TRM_s_L: 1.6623 TRM_s_C: 1.1976 TRM_m_L: 0.2700 TRM_m_C: 0.9123 TRM_b_L: 0.0569 TRM_b_C: 0.3641 || 
+all:632.64  small:295.45  middle:300.09  big:37.09 lr:0.00028
+timer: 0.7538 sec.
+iter 134160 || ARM_L: 0.4630 ARM_C: 1.2588 TRM_s_L: 0.9102 TRM_s_C: 1.0728 TRM_m_L: 0.2790 TRM_m_C: 0.9065 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:569.27  small:321.73  middle:228.45  big:19.09 lr:0.00028
+timer: 0.7697 sec.
+iter 134170 || ARM_L: 0.5023 ARM_C: 1.3259 TRM_s_L: 0.9747 TRM_s_C: 0.3521 TRM_m_L: 0.4659 TRM_m_C: 0.1092 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:574.27  small:295.64  middle:250.36  big:28.27 lr:0.00028
+timer: 0.7653 sec.
+iter 134180 || ARM_L: 0.4312 ARM_C: 1.0805 TRM_s_L: 0.9685 TRM_s_C: 1.9074 TRM_m_L: 0.3934 TRM_m_C: 1.0125 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:594.00  small:299.64  middle:250.82  big:43.55 lr:0.00028
+timer: 0.7706 sec.
+iter 134190 || ARM_L: 0.4633 ARM_C: 1.2887 TRM_s_L: 0.9109 TRM_s_C: 0.2215 TRM_m_L: 0.2648 TRM_m_C: 0.3057 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:541.73  small:290.18  middle:240.00  big:11.55 lr:0.00028
+timer: 0.8060 sec.
+iter 134200 || ARM_L: 0.7660 ARM_C: 1.4655 TRM_s_L: 1.1287 TRM_s_C: 1.4946 TRM_m_L: 0.4296 TRM_m_C: 0.7078 TRM_b_L: 0.1514 TRM_b_C: 0.9466 || 
+all:503.45  small:282.82  middle:197.00  big:23.64 lr:0.00028
+timer: 0.8018 sec.
+iter 134210 || ARM_L: 0.3943 ARM_C: 1.2404 TRM_s_L: 0.7518 TRM_s_C: 0.4610 TRM_m_L: 0.2582 TRM_m_C: 0.4594 TRM_b_L: 0.1532 TRM_b_C: 0.1396 || 
+all:603.27  small:385.45  middle:193.64  big:24.18 lr:0.00028
+timer: 0.7702 sec.
+iter 134220 || ARM_L: 0.6261 ARM_C: 1.1778 TRM_s_L: 0.9558 TRM_s_C: 1.3099 TRM_m_L: 0.3696 TRM_m_C: 1.2894 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:558.09  small:359.18  middle:197.27  big:1.64 lr:0.00028
+timer: 0.7878 sec.
+iter 134230 || ARM_L: 0.4268 ARM_C: 1.0090 TRM_s_L: 0.6198 TRM_s_C: 0.7453 TRM_m_L: 0.3831 TRM_m_C: 0.5579 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:551.64  small:349.09  middle:194.82  big:7.73 lr:0.00028
+timer: 0.8279 sec.
+iter 134240 || ARM_L: 1.3514 ARM_C: 2.0766 TRM_s_L: 1.1090 TRM_s_C: 0.3964 TRM_m_L: 0.8844 TRM_m_C: 0.8639 TRM_b_L: 1.0489 TRM_b_C: 4.1599 || 
+all:576.91  small:334.64  middle:220.82  big:21.45 lr:0.00028
+timer: 0.8032 sec.
+iter 134250 || ARM_L: 0.4924 ARM_C: 1.1660 TRM_s_L: 0.7311 TRM_s_C: 2.6072 TRM_m_L: 0.1386 TRM_m_C: 0.3433 TRM_b_L: 0.2613 TRM_b_C: 0.7715 || 
+all:638.45  small:274.45  middle:321.09  big:42.91 lr:0.00028
+timer: 0.8057 sec.
+iter 134260 || ARM_L: 0.7509 ARM_C: 1.4122 TRM_s_L: 1.0735 TRM_s_C: 0.5311 TRM_m_L: 0.2590 TRM_m_C: 0.4970 TRM_b_L: 0.3426 TRM_b_C: 0.1549 || 
+all:563.45  small:326.45  middle:212.09  big:24.91 lr:0.00028
+timer: 0.8254 sec.
+iter 134270 || ARM_L: 1.5897 ARM_C: 1.5722 TRM_s_L: 3.2471 TRM_s_C: 1.1582 TRM_m_L: 0.2532 TRM_m_C: 0.7609 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:643.18  small:368.73  middle:254.18  big:20.27 lr:0.00028
+timer: 0.8253 sec.
+iter 134280 || ARM_L: 0.5887 ARM_C: 1.5714 TRM_s_L: 0.8040 TRM_s_C: 0.7639 TRM_m_L: 0.3558 TRM_m_C: 1.2499 TRM_b_L: 0.1401 TRM_b_C: 0.1717 || 
+all:571.73  small:326.73  middle:227.55  big:17.45 lr:0.00028
+timer: 0.8008 sec.
+iter 134290 || ARM_L: 0.5946 ARM_C: 1.3607 TRM_s_L: 1.1328 TRM_s_C: 1.2892 TRM_m_L: 0.2429 TRM_m_C: 0.8245 TRM_b_L: 0.3823 TRM_b_C: 1.2697 || 
+all:609.36  small:339.64  middle:253.00  big:16.73 lr:0.00028
+timer: 0.7868 sec.
+iter 134300 || ARM_L: 0.5658 ARM_C: 1.4713 TRM_s_L: 0.7190 TRM_s_C: 0.4456 TRM_m_L: 0.5209 TRM_m_C: 1.0636 TRM_b_L: 0.9716 TRM_b_C: 1.4820 || 
+all:612.27  small:309.00  middle:286.09  big:17.18 lr:0.00028
+timer: 0.7982 sec.
+iter 134310 || ARM_L: 1.2361 ARM_C: 1.7349 TRM_s_L: 1.1142 TRM_s_C: 1.6590 TRM_m_L: 0.4214 TRM_m_C: 1.5552 TRM_b_L: 0.0684 TRM_b_C: 0.5185 || 
+all:543.82  small:321.36  middle:200.36  big:22.09 lr:0.00028
+timer: 0.7767 sec.
+iter 134320 || ARM_L: 1.4700 ARM_C: 1.8290 TRM_s_L: 1.1364 TRM_s_C: 1.6113 TRM_m_L: 0.8379 TRM_m_C: 1.5343 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:648.91  small:354.82  middle:267.55  big:26.55 lr:0.00028
+timer: 0.7730 sec.
+iter 134330 || ARM_L: 0.7511 ARM_C: 1.1449 TRM_s_L: 0.9589 TRM_s_C: 0.8471 TRM_m_L: 0.3157 TRM_m_C: 0.5726 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:527.82  small:264.73  middle:242.82  big:20.27 lr:0.00028
+timer: 0.7667 sec.
+iter 134340 || ARM_L: 0.8504 ARM_C: 1.7191 TRM_s_L: 1.0486 TRM_s_C: 1.2981 TRM_m_L: 0.9130 TRM_m_C: 0.6861 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:667.18  small:384.91  middle:267.73  big:14.55 lr:0.00028
+timer: 0.8073 sec.
+iter 134350 || ARM_L: 1.0023 ARM_C: 1.2632 TRM_s_L: 1.0693 TRM_s_C: 1.4401 TRM_m_L: 0.5938 TRM_m_C: 0.7677 TRM_b_L: 0.5568 TRM_b_C: 0.2466 || 
+all:574.36  small:329.45  middle:220.55  big:24.36 lr:0.00028
+timer: 0.8051 sec.
+iter 134360 || ARM_L: 0.6071 ARM_C: 1.2901 TRM_s_L: 0.7563 TRM_s_C: 0.2694 TRM_m_L: 0.2073 TRM_m_C: 0.0433 TRM_b_L: 0.7504 TRM_b_C: 1.3853 || 
+all:683.55  small:354.82  middle:277.00  big:51.73 lr:0.00028
+timer: 0.8255 sec.
+iter 134370 || ARM_L: 0.3584 ARM_C: 1.0762 TRM_s_L: 0.5767 TRM_s_C: 0.3554 TRM_m_L: 0.2941 TRM_m_C: 2.0844 TRM_b_L: 0.4207 TRM_b_C: 0.9461 || 
+all:597.55  small:319.91  middle:234.36  big:43.27 lr:0.00028
+timer: 0.7663 sec.
+iter 134380 || ARM_L: 0.4917 ARM_C: 1.2585 TRM_s_L: 0.7533 TRM_s_C: 0.4078 TRM_m_L: 0.4623 TRM_m_C: 0.8154 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:553.91  small:318.64  middle:222.82  big:12.45 lr:0.00028
+timer: 0.7879 sec.
+iter 134390 || ARM_L: 0.6143 ARM_C: 1.3056 TRM_s_L: 0.9632 TRM_s_C: 1.0340 TRM_m_L: 0.3490 TRM_m_C: 0.3889 TRM_b_L: 0.2223 TRM_b_C: 0.1557 || 
+all:482.91  small:285.64  middle:184.09  big:13.18 lr:0.00028
+timer: 0.7584 sec.
+iter 134400 || ARM_L: 0.7725 ARM_C: 1.5735 TRM_s_L: 0.8947 TRM_s_C: 1.2911 TRM_m_L: 0.4874 TRM_m_C: 0.8689 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:521.55  small:366.45  middle:125.73  big:29.36 lr:0.00028
+timer: 0.8025 sec.
+iter 134410 || ARM_L: 1.2904 ARM_C: 1.4720 TRM_s_L: 1.7511 TRM_s_C: 0.6286 TRM_m_L: 0.3805 TRM_m_C: 0.0390 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:547.91  small:313.45  middle:220.00  big:14.45 lr:0.00028
+timer: 0.7544 sec.
+iter 134420 || ARM_L: 0.6677 ARM_C: 1.5438 TRM_s_L: 0.9160 TRM_s_C: 1.1523 TRM_m_L: 0.4998 TRM_m_C: 1.0047 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:590.64  small:346.27  middle:223.36  big:21.00 lr:0.00028
+timer: 0.8274 sec.
+iter 134430 || ARM_L: 0.7260 ARM_C: 1.7185 TRM_s_L: 0.8286 TRM_s_C: 0.6313 TRM_m_L: 0.3534 TRM_m_C: 0.7187 TRM_b_L: 0.5062 TRM_b_C: 0.6334 || 
+all:500.82  small:305.73  middle:162.91  big:32.18 lr:0.00028
+timer: 0.7891 sec.
+iter 134440 || ARM_L: 0.8511 ARM_C: 1.5893 TRM_s_L: 0.8208 TRM_s_C: 0.4595 TRM_m_L: 0.8609 TRM_m_C: 0.8340 TRM_b_L: 0.3838 TRM_b_C: 0.4012 || 
+all:618.73  small:279.82  middle:309.18  big:29.73 lr:0.00028
+timer: 0.7579 sec.
+iter 134450 || ARM_L: 0.6885 ARM_C: 1.5780 TRM_s_L: 0.7121 TRM_s_C: 0.9429 TRM_m_L: 0.2240 TRM_m_C: 0.4708 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:626.18  small:348.36  middle:256.73  big:21.09 lr:0.00028
+timer: 0.8050 sec.
+iter 134460 || ARM_L: 0.6594 ARM_C: 1.1103 TRM_s_L: 1.0861 TRM_s_C: 1.1006 TRM_m_L: 0.2308 TRM_m_C: 0.5655 TRM_b_L: 0.1954 TRM_b_C: 0.3371 || 
+all:550.00  small:306.09  middle:210.36  big:33.55 lr:0.00028
+timer: 0.7920 sec.
+iter 134470 || ARM_L: 0.6862 ARM_C: 1.3434 TRM_s_L: 0.7272 TRM_s_C: 0.9488 TRM_m_L: 0.2293 TRM_m_C: 0.3225 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:582.27  small:353.00  middle:220.82  big:8.45 lr:0.00028
+timer: 0.7934 sec.
+iter 134480 || ARM_L: 0.2786 ARM_C: 1.0017 TRM_s_L: 0.6081 TRM_s_C: 1.0081 TRM_m_L: 0.2568 TRM_m_C: 0.6297 TRM_b_L: 0.4088 TRM_b_C: 1.0943 || 
+all:555.91  small:319.45  middle:218.55  big:17.91 lr:0.00028
+timer: 0.8380 sec.
+iter 134490 || ARM_L: 0.4439 ARM_C: 1.3017 TRM_s_L: 0.6972 TRM_s_C: 0.4495 TRM_m_L: 0.3701 TRM_m_C: 0.1757 TRM_b_L: 0.4093 TRM_b_C: 0.5033 || 
+all:574.00  small:348.09  middle:209.45  big:16.45 lr:0.00028
+timer: 0.7959 sec.
+iter 134500 || ARM_L: 0.5972 ARM_C: 1.4385 TRM_s_L: 0.8144 TRM_s_C: 1.0807 TRM_m_L: 0.2627 TRM_m_C: 0.6456 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:577.00  small:350.45  middle:209.27  big:17.27 lr:0.00028
+timer: 0.7977 sec.
+iter 134510 || ARM_L: 0.9069 ARM_C: 1.4165 TRM_s_L: 1.1850 TRM_s_C: 1.5354 TRM_m_L: 0.2203 TRM_m_C: 0.3257 TRM_b_L: 0.3203 TRM_b_C: 2.4369 || 
+all:599.36  small:321.18  middle:272.45  big:5.73 lr:0.00028
+timer: 0.8115 sec.
+iter 134520 || ARM_L: 0.5829 ARM_C: 1.2675 TRM_s_L: 0.7532 TRM_s_C: 0.2992 TRM_m_L: 0.6235 TRM_m_C: 0.8952 TRM_b_L: 0.2117 TRM_b_C: 0.2339 || 
+all:587.55  small:356.64  middle:209.18  big:21.73 lr:0.00028
+timer: 0.7641 sec.
+iter 134530 || ARM_L: 1.1900 ARM_C: 1.7040 TRM_s_L: 1.3801 TRM_s_C: 0.5469 TRM_m_L: 0.4492 TRM_m_C: 0.3305 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:505.18  small:255.45  middle:238.73  big:11.00 lr:0.00028
+timer: 0.8067 sec.
+iter 134540 || ARM_L: 0.4753 ARM_C: 1.2743 TRM_s_L: 0.9522 TRM_s_C: 0.5479 TRM_m_L: 0.4041 TRM_m_C: 0.6544 TRM_b_L: 0.2731 TRM_b_C: 0.5353 || 
+all:566.73  small:303.36  middle:237.73  big:25.64 lr:0.00028
+timer: 0.8380 sec.
+iter 134550 || ARM_L: 1.3076 ARM_C: 1.4068 TRM_s_L: 1.5426 TRM_s_C: 1.8135 TRM_m_L: 0.4468 TRM_m_C: 0.5806 TRM_b_L: 0.1749 TRM_b_C: 0.0745 || 
+all:612.91  small:330.45  middle:255.55  big:26.91 lr:0.00028
+timer: 0.7914 sec.
+iter 134560 || ARM_L: 0.7306 ARM_C: 1.6623 TRM_s_L: 0.8767 TRM_s_C: 1.6399 TRM_m_L: 0.5634 TRM_m_C: 0.4440 TRM_b_L: 0.2388 TRM_b_C: 0.3006 || 
+all:561.73  small:325.09  middle:211.45  big:25.18 lr:0.00028
+timer: 0.7613 sec.
+iter 134570 || ARM_L: 0.3479 ARM_C: 1.1512 TRM_s_L: 0.7797 TRM_s_C: 1.5950 TRM_m_L: 0.2991 TRM_m_C: 0.4319 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:580.64  small:349.09  middle:208.45  big:23.09 lr:0.00028
+timer: 0.8045 sec.
+iter 134580 || ARM_L: 1.1157 ARM_C: 1.7014 TRM_s_L: 1.7810 TRM_s_C: 1.9040 TRM_m_L: 0.4151 TRM_m_C: 0.5099 TRM_b_L: 0.1450 TRM_b_C: 0.3073 || 
+all:484.27  small:271.64  middle:193.36  big:19.27 lr:0.00028
+timer: 0.7912 sec.
+iter 134590 || ARM_L: 0.6172 ARM_C: 1.2891 TRM_s_L: 0.9266 TRM_s_C: 1.2917 TRM_m_L: 0.4154 TRM_m_C: 0.6537 TRM_b_L: 0.2625 TRM_b_C: 1.0672 || 
+all:497.36  small:311.91  middle:170.64  big:14.82 lr:0.00028
+timer: 0.7524 sec.
+iter 134600 || ARM_L: 0.4792 ARM_C: 1.1565 TRM_s_L: 0.9347 TRM_s_C: 1.1384 TRM_m_L: 0.3553 TRM_m_C: 1.0007 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:542.18  small:317.18  middle:191.27  big:33.73 lr:0.00028
+timer: 0.8159 sec.
+iter 134610 || ARM_L: 0.4284 ARM_C: 1.3172 TRM_s_L: 0.7337 TRM_s_C: 0.1406 TRM_m_L: 0.6037 TRM_m_C: 0.7758 TRM_b_L: 0.1620 TRM_b_C: 0.2126 || 
+all:652.09  small:361.64  middle:272.91  big:17.55 lr:0.00028
+timer: 0.8081 sec.
+iter 134620 || ARM_L: 0.8779 ARM_C: 1.7267 TRM_s_L: 0.9375 TRM_s_C: 0.4594 TRM_m_L: 0.6987 TRM_m_C: 0.4704 TRM_b_L: 0.2248 TRM_b_C: 0.6266 || 
+all:607.36  small:300.18  middle:271.91  big:35.27 lr:0.00028
+timer: 0.7890 sec.
+iter 134630 || ARM_L: 1.4703 ARM_C: 2.0102 TRM_s_L: 1.4033 TRM_s_C: 2.3050 TRM_m_L: 0.5295 TRM_m_C: 1.2157 TRM_b_L: 0.4247 TRM_b_C: 0.3764 || 
+all:666.18  small:366.55  middle:261.09  big:38.55 lr:0.00028
+timer: 0.8123 sec.
+iter 134640 || ARM_L: 0.6879 ARM_C: 1.1285 TRM_s_L: 1.3459 TRM_s_C: 1.5395 TRM_m_L: 0.4214 TRM_m_C: 0.3243 TRM_b_L: 0.4178 TRM_b_C: 0.8114 || 
+all:583.82  small:305.00  middle:235.55  big:43.27 lr:0.00028
+timer: 0.7954 sec.
+iter 134650 || ARM_L: 0.7181 ARM_C: 2.0345 TRM_s_L: 0.9302 TRM_s_C: 0.9562 TRM_m_L: 0.4291 TRM_m_C: 0.5875 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:463.73  small:232.64  middle:201.45  big:29.64 lr:0.00028
+timer: 0.8082 sec.
+iter 134660 || ARM_L: 0.9966 ARM_C: 1.6488 TRM_s_L: 1.1338 TRM_s_C: 1.0775 TRM_m_L: 0.3280 TRM_m_C: 0.7382 TRM_b_L: 1.2979 TRM_b_C: 0.7953 || 
+all:577.36  small:382.64  middle:181.09  big:13.64 lr:0.00028
+timer: 0.8041 sec.
+iter 134670 || ARM_L: 0.4559 ARM_C: 1.2845 TRM_s_L: 0.5926 TRM_s_C: 0.3631 TRM_m_L: 0.5605 TRM_m_C: 0.9831 TRM_b_L: 0.2857 TRM_b_C: 0.3475 || 
+all:645.73  small:370.91  middle:254.36  big:20.45 lr:0.00028
+timer: 0.7607 sec.
+iter 134680 || ARM_L: 0.4486 ARM_C: 1.4870 TRM_s_L: 0.7342 TRM_s_C: 0.1308 TRM_m_L: 0.4560 TRM_m_C: 0.2817 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:571.73  small:297.18  middle:246.27  big:28.27 lr:0.00028
+timer: 0.7953 sec.
+iter 134690 || ARM_L: 0.6535 ARM_C: 1.1981 TRM_s_L: 0.7542 TRM_s_C: 0.8444 TRM_m_L: 0.2122 TRM_m_C: 0.2091 TRM_b_L: 0.1462 TRM_b_C: 0.0984 || 
+all:604.73  small:353.73  middle:210.18  big:40.82 lr:0.00028
+timer: 0.7688 sec.
+iter 134700 || ARM_L: 0.9266 ARM_C: 1.6685 TRM_s_L: 1.4004 TRM_s_C: 1.5034 TRM_m_L: 0.7694 TRM_m_C: 1.2107 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:525.18  small:299.09  middle:206.55  big:19.55 lr:0.00028
+timer: 0.8042 sec.
+iter 134710 || ARM_L: 0.4287 ARM_C: 1.2618 TRM_s_L: 0.9287 TRM_s_C: 0.9551 TRM_m_L: 0.3843 TRM_m_C: 0.4684 TRM_b_L: 0.1269 TRM_b_C: 0.6021 || 
+all:556.91  small:316.82  middle:228.27  big:11.82 lr:0.00028
+timer: 0.8003 sec.
+iter 134720 || ARM_L: 0.7765 ARM_C: 1.3018 TRM_s_L: 0.7886 TRM_s_C: 0.7723 TRM_m_L: 0.8173 TRM_m_C: 1.2785 TRM_b_L: 0.1880 TRM_b_C: 0.6621 || 
+all:591.82  small:381.64  middle:183.45  big:26.73 lr:0.00028
+timer: 0.7946 sec.
+iter 134730 || ARM_L: 0.4796 ARM_C: 1.3211 TRM_s_L: 1.0490 TRM_s_C: 0.8749 TRM_m_L: 0.4402 TRM_m_C: 1.2437 TRM_b_L: 0.2344 TRM_b_C: 0.6616 || 
+all:583.18  small:346.36  middle:215.82  big:21.00 lr:0.00028
+timer: 0.7647 sec.
+iter 134740 || ARM_L: 1.0788 ARM_C: 1.6109 TRM_s_L: 0.7981 TRM_s_C: 0.8565 TRM_m_L: 0.5019 TRM_m_C: 1.5421 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:504.64  small:300.00  middle:186.91  big:17.73 lr:0.00028
+timer: 0.7657 sec.
+iter 134750 || ARM_L: 0.8124 ARM_C: 1.4949 TRM_s_L: 0.8455 TRM_s_C: 0.4234 TRM_m_L: 0.2260 TRM_m_C: 0.0137 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:595.64  small:361.91  middle:208.91  big:24.82 lr:0.00028
+timer: 0.8442 sec.
+iter 134760 || ARM_L: 1.0143 ARM_C: 1.4031 TRM_s_L: 1.7365 TRM_s_C: 1.6106 TRM_m_L: 0.3081 TRM_m_C: 0.5446 TRM_b_L: 0.2754 TRM_b_C: 0.3846 || 
+all:632.82  small:372.00  middle:232.18  big:28.64 lr:0.00028
+timer: 0.7888 sec.
+iter 134770 || ARM_L: 0.5878 ARM_C: 1.3866 TRM_s_L: 1.3421 TRM_s_C: 1.7635 TRM_m_L: 0.3954 TRM_m_C: 0.6439 TRM_b_L: 0.5098 TRM_b_C: 0.3881 || 
+all:511.64  small:240.45  middle:221.73  big:49.45 lr:0.00028
+timer: 0.8349 sec.
+iter 134780 || ARM_L: 1.0429 ARM_C: 1.5506 TRM_s_L: 1.2024 TRM_s_C: 1.5702 TRM_m_L: 0.3535 TRM_m_C: 0.8613 TRM_b_L: 0.2154 TRM_b_C: 0.2595 || 
+all:535.36  small:278.82  middle:233.73  big:22.82 lr:0.00028
+timer: 0.7785 sec.
+iter 134790 || ARM_L: 0.5250 ARM_C: 1.1918 TRM_s_L: 0.7724 TRM_s_C: 0.4314 TRM_m_L: 0.5008 TRM_m_C: 0.0992 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:583.00  small:341.55  middle:225.73  big:15.73 lr:0.00028
+timer: 0.7906 sec.
+iter 134800 || ARM_L: 1.0152 ARM_C: 1.5426 TRM_s_L: 0.8015 TRM_s_C: 1.0792 TRM_m_L: 0.8094 TRM_m_C: 0.2823 TRM_b_L: 0.6725 TRM_b_C: 1.7044 || 
+all:526.27  small:304.18  middle:200.55  big:21.55 lr:0.00028
+timer: 0.7898 sec.
+iter 134810 || ARM_L: 0.5158 ARM_C: 1.3476 TRM_s_L: 1.0766 TRM_s_C: 2.0391 TRM_m_L: 0.4250 TRM_m_C: 0.7634 TRM_b_L: 0.4118 TRM_b_C: 0.3436 || 
+all:634.91  small:406.82  middle:197.55  big:30.55 lr:0.00028
+timer: 0.7633 sec.
+iter 134820 || ARM_L: 1.3576 ARM_C: 1.3347 TRM_s_L: 1.3712 TRM_s_C: 0.5081 TRM_m_L: 0.5312 TRM_m_C: 0.8083 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:584.82  small:334.18  middle:231.18  big:19.45 lr:0.00028
+timer: 0.7563 sec.
+iter 134830 || ARM_L: 1.0970 ARM_C: 1.6134 TRM_s_L: 1.0877 TRM_s_C: 1.5790 TRM_m_L: 0.4159 TRM_m_C: 0.6994 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:607.64  small:347.18  middle:240.45  big:20.00 lr:0.00028
+timer: 0.8074 sec.
+iter 134840 || ARM_L: 0.4728 ARM_C: 1.3683 TRM_s_L: 0.7430 TRM_s_C: 1.3874 TRM_m_L: 0.2943 TRM_m_C: 0.2346 TRM_b_L: 0.4329 TRM_b_C: 0.1908 || 
+all:613.64  small:321.91  middle:264.36  big:27.36 lr:0.00028
+timer: 0.7704 sec.
+iter 134850 || ARM_L: 0.5094 ARM_C: 1.8080 TRM_s_L: 1.1064 TRM_s_C: 1.0858 TRM_m_L: 0.4588 TRM_m_C: 0.9393 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:556.45  small:274.73  middle:270.00  big:11.73 lr:0.00028
+timer: 0.8454 sec.
+iter 134860 || ARM_L: 0.4093 ARM_C: 1.3656 TRM_s_L: 0.7841 TRM_s_C: 0.1356 TRM_m_L: 0.5613 TRM_m_C: 1.0623 TRM_b_L: 0.2557 TRM_b_C: 0.1516 || 
+all:634.91  small:320.00  middle:297.91  big:17.00 lr:0.00028
+timer: 0.8314 sec.
+iter 134870 || ARM_L: 0.8167 ARM_C: 1.6770 TRM_s_L: 0.7594 TRM_s_C: 0.6396 TRM_m_L: 0.6127 TRM_m_C: 1.5590 TRM_b_L: 0.4783 TRM_b_C: 0.2553 || 
+all:591.27  small:337.27  middle:221.18  big:32.82 lr:0.00028
+timer: 0.7939 sec.
+iter 134880 || ARM_L: 0.5750 ARM_C: 1.3076 TRM_s_L: 1.1205 TRM_s_C: 0.5950 TRM_m_L: 0.1646 TRM_m_C: 1.1077 TRM_b_L: 0.2188 TRM_b_C: 0.4378 || 
+all:623.18  small:372.82  middle:236.91  big:13.45 lr:0.00028
+timer: 0.8021 sec.
+iter 134890 || ARM_L: 0.5136 ARM_C: 1.1732 TRM_s_L: 0.6978 TRM_s_C: 0.7675 TRM_m_L: 0.3277 TRM_m_C: 0.2921 TRM_b_L: 0.2254 TRM_b_C: 0.4339 || 
+all:508.55  small:263.82  middle:213.00  big:31.73 lr:0.00028
+timer: 0.7988 sec.
+iter 134900 || ARM_L: 0.4347 ARM_C: 1.2584 TRM_s_L: 0.8585 TRM_s_C: 0.8278 TRM_m_L: 0.2399 TRM_m_C: 0.6715 TRM_b_L: 0.1026 TRM_b_C: 0.3855 || 
+all:573.82  small:306.55  middle:235.91  big:31.36 lr:0.00028
+timer: 0.8031 sec.
+iter 134910 || ARM_L: 0.4884 ARM_C: 1.0791 TRM_s_L: 0.8775 TRM_s_C: 0.9403 TRM_m_L: 0.5155 TRM_m_C: 0.6205 TRM_b_L: 0.2330 TRM_b_C: 0.7449 || 
+all:546.55  small:308.64  middle:226.27  big:11.64 lr:0.00028
+timer: 0.2596 sec.
+iter 134920 || ARM_L: 4.4511 ARM_C: 2.1720 TRM_s_L: 1.5349 TRM_s_C: 3.0714 TRM_m_L: 0.0000 TRM_m_C: 0.0000 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:486.64  small:253.82  middle:210.91  big:21.91 lr:0.00028
+timer: 0.7931 sec.
+iter 134930 || ARM_L: 0.2255 ARM_C: 0.9854 TRM_s_L: 0.5573 TRM_s_C: 0.9784 TRM_m_L: 0.2419 TRM_m_C: 0.4854 TRM_b_L: 0.3504 TRM_b_C: 0.7972 || 
+all:507.91  small:299.18  middle:174.91  big:33.82 lr:0.00028
+timer: 0.7569 sec.
+iter 134940 || ARM_L: 0.6519 ARM_C: 1.0928 TRM_s_L: 0.9454 TRM_s_C: 1.7940 TRM_m_L: 0.5138 TRM_m_C: 1.0291 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:609.91  small:339.82  middle:237.45  big:32.64 lr:0.00028
+timer: 0.7885 sec.
+iter 134950 || ARM_L: 0.7477 ARM_C: 1.3915 TRM_s_L: 0.9078 TRM_s_C: 1.1756 TRM_m_L: 0.4152 TRM_m_C: 1.4404 TRM_b_L: 0.1770 TRM_b_C: 0.3814 || 
+all:610.64  small:376.18  middle:204.36  big:30.09 lr:0.00028
+timer: 0.7683 sec.
+iter 134960 || ARM_L: 0.9291 ARM_C: 1.7260 TRM_s_L: 1.2525 TRM_s_C: 1.1920 TRM_m_L: 0.8623 TRM_m_C: 2.4030 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:515.18  small:293.82  middle:197.55  big:23.82 lr:0.00028
+timer: 0.7596 sec.
+iter 134970 || ARM_L: 0.7229 ARM_C: 1.7877 TRM_s_L: 0.7751 TRM_s_C: 0.7793 TRM_m_L: 0.7420 TRM_m_C: 1.3007 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:572.36  small:320.55  middle:233.18  big:18.64 lr:0.00028
+timer: 0.7908 sec.
+iter 134980 || ARM_L: 0.9685 ARM_C: 1.6368 TRM_s_L: 1.0224 TRM_s_C: 1.4924 TRM_m_L: 0.4661 TRM_m_C: 0.3965 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:529.27  small:291.36  middle:212.82  big:25.09 lr:0.00028
+timer: 0.7947 sec.
+iter 134990 || ARM_L: 1.6005 ARM_C: 1.4923 TRM_s_L: 1.8106 TRM_s_C: 1.9520 TRM_m_L: 0.5504 TRM_m_C: 1.4564 TRM_b_L: 0.4265 TRM_b_C: 0.4862 || 
+all:594.09  small:322.09  middle:257.91  big:14.09 lr:0.00028
+timer: 0.7994 sec.
+iter 135000 || ARM_L: 0.4178 ARM_C: 1.1394 TRM_s_L: 0.7554 TRM_s_C: 1.3306 TRM_m_L: 0.5205 TRM_m_C: 0.4311 TRM_b_L: 0.1775 TRM_b_C: 0.2773 || 
+all:473.45  small:224.91  middle:227.82  big:20.73 lr:0.00028
+Saving state, iter: 135000
+timer: 0.8132 sec.
+iter 135010 || ARM_L: 0.5135 ARM_C: 1.3809 TRM_s_L: 0.9723 TRM_s_C: 1.3473 TRM_m_L: 0.3856 TRM_m_C: 0.7476 TRM_b_L: 0.4326 TRM_b_C: 0.7958 || 
+all:582.64  small:300.36  middle:259.09  big:23.18 lr:0.00028
+timer: 0.8059 sec.
+iter 135020 || ARM_L: 1.0654 ARM_C: 1.5911 TRM_s_L: 1.3756 TRM_s_C: 0.8530 TRM_m_L: 0.6416 TRM_m_C: 1.7624 TRM_b_L: 0.4457 TRM_b_C: 0.6233 || 
+all:541.45  small:315.64  middle:201.36  big:24.45 lr:0.00028
+timer: 0.7602 sec.
+iter 135030 || ARM_L: 1.2312 ARM_C: 1.3619 TRM_s_L: 1.9107 TRM_s_C: 1.2309 TRM_m_L: 0.2089 TRM_m_C: 0.3510 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:584.91  small:299.36  middle:272.64  big:12.91 lr:0.00028
+timer: 0.7628 sec.
+iter 135040 || ARM_L: 0.6469 ARM_C: 1.4824 TRM_s_L: 1.0319 TRM_s_C: 1.3465 TRM_m_L: 0.4820 TRM_m_C: 1.0434 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:526.27  small:315.91  middle:190.55  big:19.82 lr:0.00028
+timer: 0.8069 sec.
+iter 135050 || ARM_L: 0.3837 ARM_C: 1.1959 TRM_s_L: 0.6501 TRM_s_C: 0.5870 TRM_m_L: 0.2739 TRM_m_C: 1.0433 TRM_b_L: 0.1077 TRM_b_C: 0.3742 || 
+all:446.82  small:277.00  middle:149.64  big:20.18 lr:0.00028
+timer: 0.7927 sec.
+iter 135060 || ARM_L: 0.5919 ARM_C: 1.2504 TRM_s_L: 0.9234 TRM_s_C: 0.8869 TRM_m_L: 0.3632 TRM_m_C: 1.4503 TRM_b_L: 0.3190 TRM_b_C: 0.5532 || 
+all:506.18  small:298.18  middle:183.64  big:24.36 lr:0.00028
+timer: 0.7668 sec.
+iter 135070 || ARM_L: 0.8156 ARM_C: 1.5009 TRM_s_L: 0.9499 TRM_s_C: 1.1577 TRM_m_L: 0.6831 TRM_m_C: 0.7540 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:614.73  small:327.82  middle:269.55  big:17.36 lr:0.00028
+timer: 0.7604 sec.
+iter 135080 || ARM_L: 0.9095 ARM_C: 1.6386 TRM_s_L: 1.1596 TRM_s_C: 1.0691 TRM_m_L: 0.4405 TRM_m_C: 0.4128 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:595.55  small:338.36  middle:240.45  big:16.73 lr:0.00028
+timer: 0.8165 sec.
+iter 135090 || ARM_L: 0.3928 ARM_C: 1.4297 TRM_s_L: 0.9071 TRM_s_C: 1.3333 TRM_m_L: 0.5152 TRM_m_C: 1.4790 TRM_b_L: 0.1890 TRM_b_C: 1.7147 || 
+all:571.73  small:281.18  middle:269.82  big:20.73 lr:0.00028
+timer: 0.8003 sec.
+iter 135100 || ARM_L: 0.6600 ARM_C: 1.2766 TRM_s_L: 1.2287 TRM_s_C: 1.0978 TRM_m_L: 0.1924 TRM_m_C: 0.2958 TRM_b_L: 0.5110 TRM_b_C: 0.4133 || 
+all:549.91  small:272.00  middle:248.73  big:29.18 lr:0.00028
+timer: 0.7562 sec.
+iter 135110 || ARM_L: 0.5022 ARM_C: 1.3724 TRM_s_L: 0.7604 TRM_s_C: 0.3698 TRM_m_L: 0.2725 TRM_m_C: 0.2679 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:495.18  small:320.91  middle:160.82  big:13.45 lr:0.00028
+timer: 0.7588 sec.
+iter 135120 || ARM_L: 1.1807 ARM_C: 1.4408 TRM_s_L: 1.1264 TRM_s_C: 1.2101 TRM_m_L: 0.1446 TRM_m_C: 0.8617 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:606.27  small:392.36  middle:188.45  big:25.45 lr:0.00028
+timer: 0.8036 sec.
+iter 135130 || ARM_L: 0.9326 ARM_C: 1.6537 TRM_s_L: 1.2245 TRM_s_C: 1.3026 TRM_m_L: 0.3930 TRM_m_C: 0.7842 TRM_b_L: 0.1138 TRM_b_C: 0.1754 || 
+all:547.45  small:332.55  middle:190.45  big:24.45 lr:0.00028
+timer: 0.7602 sec.
+iter 135140 || ARM_L: 0.9093 ARM_C: 1.6522 TRM_s_L: 1.3490 TRM_s_C: 1.7386 TRM_m_L: 0.6444 TRM_m_C: 0.8877 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:617.64  small:309.36  middle:286.73  big:21.55 lr:0.00028
+timer: 0.8343 sec.
+iter 135150 || ARM_L: 0.8020 ARM_C: 1.3990 TRM_s_L: 1.4240 TRM_s_C: 0.1359 TRM_m_L: 0.3599 TRM_m_C: 0.0575 TRM_b_L: 0.3846 TRM_b_C: 0.4821 || 
+all:573.00  small:325.45  middle:222.64  big:24.91 lr:0.00028
+timer: 0.7583 sec.
+iter 135160 || ARM_L: 0.6540 ARM_C: 1.3497 TRM_s_L: 0.9568 TRM_s_C: 0.7492 TRM_m_L: 0.5835 TRM_m_C: 1.1342 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:564.27  small:324.09  middle:222.36  big:17.82 lr:0.00028
+timer: 0.7665 sec.
+iter 135170 || ARM_L: 0.6220 ARM_C: 1.4886 TRM_s_L: 0.7016 TRM_s_C: 1.3883 TRM_m_L: 0.3539 TRM_m_C: 0.5937 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:553.45  small:340.82  middle:180.91  big:31.73 lr:0.00028
+timer: 0.7682 sec.
+iter 135180 || ARM_L: 0.7903 ARM_C: 1.3890 TRM_s_L: 0.8180 TRM_s_C: 1.2615 TRM_m_L: 0.3741 TRM_m_C: 0.3821 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:525.45  small:283.00  middle:228.36  big:14.09 lr:0.00028
+timer: 0.7960 sec.
+iter 135190 || ARM_L: 0.6119 ARM_C: 1.4736 TRM_s_L: 0.9520 TRM_s_C: 1.1007 TRM_m_L: 0.6762 TRM_m_C: 1.3510 TRM_b_L: 0.1626 TRM_b_C: 0.4593 || 
+all:564.09  small:322.64  middle:211.91  big:29.55 lr:0.00028
+timer: 0.8519 sec.
+iter 135200 || ARM_L: 0.9057 ARM_C: 1.5325 TRM_s_L: 0.8220 TRM_s_C: 1.0813 TRM_m_L: 0.5125 TRM_m_C: 1.3995 TRM_b_L: 0.6048 TRM_b_C: 0.2798 || 
+all:634.00  small:421.36  middle:183.55  big:29.09 lr:0.00028
+timer: 0.9014 sec.
+iter 135210 || ARM_L: 0.6076 ARM_C: 1.3970 TRM_s_L: 1.0025 TRM_s_C: 0.1424 TRM_m_L: 0.3365 TRM_m_C: 0.0395 TRM_b_L: 0.1672 TRM_b_C: 0.3683 || 
+all:670.18  small:428.18  middle:225.45  big:16.55 lr:0.00028
+timer: 0.8557 sec.
+iter 135220 || ARM_L: 0.6143 ARM_C: 1.5881 TRM_s_L: 0.8241 TRM_s_C: 1.2838 TRM_m_L: 0.4856 TRM_m_C: 0.6429 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:501.82  small:243.18  middle:247.82  big:10.82 lr:0.00028
+timer: 0.9194 sec.
+iter 135230 || ARM_L: 0.5615 ARM_C: 1.1851 TRM_s_L: 0.8944 TRM_s_C: 1.0261 TRM_m_L: 0.7961 TRM_m_C: 1.0642 TRM_b_L: 0.8258 TRM_b_C: 1.5289 || 
+all:574.00  small:280.64  middle:271.36  big:22.00 lr:0.00028
+timer: 0.9013 sec.
+iter 135240 || ARM_L: 1.1882 ARM_C: 2.2988 TRM_s_L: 0.8048 TRM_s_C: 1.3418 TRM_m_L: 0.7648 TRM_m_C: 1.5876 TRM_b_L: 0.1914 TRM_b_C: 0.4547 || 
+all:567.91  small:326.64  middle:225.09  big:16.18 lr:0.00028
+timer: 0.9399 sec.
+iter 135250 || ARM_L: 1.4252 ARM_C: 1.9689 TRM_s_L: 1.4733 TRM_s_C: 2.4029 TRM_m_L: 0.6859 TRM_m_C: 1.0837 TRM_b_L: 0.2371 TRM_b_C: 1.4938 || 
+all:702.09  small:329.55  middle:348.73  big:23.82 lr:0.00028
+timer: 0.8856 sec.
+iter 135260 || ARM_L: 0.5974 ARM_C: 1.3402 TRM_s_L: 0.9866 TRM_s_C: 1.0540 TRM_m_L: 0.3381 TRM_m_C: 0.5933 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:604.55  small:335.18  middle:257.45  big:11.91 lr:0.00028
+timer: 0.8470 sec.
+iter 135270 || ARM_L: 0.6105 ARM_C: 1.3705 TRM_s_L: 0.6328 TRM_s_C: 1.8753 TRM_m_L: 0.4988 TRM_m_C: 0.8790 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:540.27  small:281.91  middle:239.00  big:19.36 lr:0.00028
+timer: 0.9103 sec.
+iter 135280 || ARM_L: 0.4772 ARM_C: 1.2480 TRM_s_L: 0.6788 TRM_s_C: 0.6566 TRM_m_L: 0.2515 TRM_m_C: 0.3049 TRM_b_L: 0.1010 TRM_b_C: 3.2920 || 
+all:643.18  small:377.18  middle:243.55  big:22.45 lr:0.00028
+timer: 0.8931 sec.
+iter 135290 || ARM_L: 0.6069 ARM_C: 1.0622 TRM_s_L: 1.2445 TRM_s_C: 1.6261 TRM_m_L: 0.2551 TRM_m_C: 0.2825 TRM_b_L: 0.1864 TRM_b_C: 0.4561 || 
+all:601.27  small:310.91  middle:275.55  big:14.82 lr:0.00028
+timer: 0.8842 sec.
+iter 135300 || ARM_L: 0.9340 ARM_C: 1.3705 TRM_s_L: 0.9850 TRM_s_C: 0.8707 TRM_m_L: 0.6191 TRM_m_C: 0.7026 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:558.64  small:311.91  middle:227.91  big:18.82 lr:0.00028
+timer: 0.9028 sec.
+iter 135310 || ARM_L: 0.5308 ARM_C: 1.2793 TRM_s_L: 0.7514 TRM_s_C: 0.2266 TRM_m_L: 0.4060 TRM_m_C: 0.1958 TRM_b_L: 0.7239 TRM_b_C: 1.0144 || 
+all:601.00  small:349.64  middle:217.36  big:34.00 lr:0.00028
+timer: 0.8703 sec.
+iter 135320 || ARM_L: 0.4808 ARM_C: 1.2311 TRM_s_L: 0.9190 TRM_s_C: 0.7854 TRM_m_L: 0.3843 TRM_m_C: 0.5915 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:443.27  small:293.09  middle:131.64  big:18.55 lr:0.00028
+timer: 0.8878 sec.
+iter 135330 || ARM_L: 0.6397 ARM_C: 1.1069 TRM_s_L: 0.6795 TRM_s_C: 0.8954 TRM_m_L: 0.6061 TRM_m_C: 1.0274 TRM_b_L: 0.3661 TRM_b_C: 0.6065 || 
+all:556.91  small:276.82  middle:260.00  big:20.09 lr:0.00028
+timer: 0.9005 sec.
+iter 135340 || ARM_L: 0.3803 ARM_C: 1.1226 TRM_s_L: 0.7224 TRM_s_C: 0.7122 TRM_m_L: 0.4227 TRM_m_C: 1.0082 TRM_b_L: 0.2803 TRM_b_C: 0.7778 || 
+all:646.00  small:379.91  middle:234.55  big:31.55 lr:0.00028
+timer: 0.8935 sec.
+iter 135350 || ARM_L: 0.3484 ARM_C: 0.9582 TRM_s_L: 0.7881 TRM_s_C: 0.1891 TRM_m_L: 0.2759 TRM_m_C: 0.0270 TRM_b_L: 0.3729 TRM_b_C: 0.3803 || 
+all:547.00  small:333.45  middle:191.64  big:21.91 lr:0.00028
+timer: 0.9144 sec.
+iter 135360 || ARM_L: 0.5329 ARM_C: 1.0734 TRM_s_L: 0.9700 TRM_s_C: 1.0036 TRM_m_L: 0.3679 TRM_m_C: 0.0572 TRM_b_L: 0.4516 TRM_b_C: 0.5908 || 
+all:536.36  small:298.09  middle:207.91  big:30.36 lr:0.00028
+timer: 0.8535 sec.
+iter 135370 || ARM_L: 0.9675 ARM_C: 1.5275 TRM_s_L: 0.8502 TRM_s_C: 1.4594 TRM_m_L: 0.6417 TRM_m_C: 1.0425 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:627.36  small:380.91  middle:231.18  big:15.27 lr:0.00028
+timer: 0.8504 sec.
+iter 135380 || ARM_L: 0.4927 ARM_C: 1.1473 TRM_s_L: 0.8539 TRM_s_C: 1.1882 TRM_m_L: 0.5210 TRM_m_C: 0.5563 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:560.27  small:310.00  middle:225.09  big:25.18 lr:0.00028
+timer: 0.8799 sec.
+iter 135390 || ARM_L: 0.7458 ARM_C: 1.4663 TRM_s_L: 1.2620 TRM_s_C: 1.9843 TRM_m_L: 0.2648 TRM_m_C: 0.5259 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:524.45  small:339.73  middle:168.55  big:16.18 lr:0.00028
+timer: 0.8588 sec.
+iter 135400 || ARM_L: 0.8446 ARM_C: 1.3964 TRM_s_L: 1.2965 TRM_s_C: 1.7096 TRM_m_L: 0.3656 TRM_m_C: 1.1636 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:571.73  small:344.00  middle:220.45  big:7.27 lr:0.00028
+timer: 0.8956 sec.
+iter 135410 || ARM_L: 0.7963 ARM_C: 1.3970 TRM_s_L: 0.8088 TRM_s_C: 0.8117 TRM_m_L: 0.5279 TRM_m_C: 0.3016 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:558.45  small:269.73  middle:275.91  big:12.82 lr:0.00028
+timer: 0.9124 sec.
+iter 135420 || ARM_L: 0.7423 ARM_C: 1.5802 TRM_s_L: 0.7339 TRM_s_C: 0.7113 TRM_m_L: 0.8064 TRM_m_C: 1.5437 TRM_b_L: 0.7097 TRM_b_C: 1.2120 || 
+all:547.82  small:308.73  middle:210.00  big:29.09 lr:0.00028
+timer: 0.8936 sec.
+iter 135430 || ARM_L: 0.7349 ARM_C: 1.6132 TRM_s_L: 1.1166 TRM_s_C: 1.6468 TRM_m_L: 0.7208 TRM_m_C: 0.8898 TRM_b_L: 0.1961 TRM_b_C: 0.6763 || 
+all:552.27  small:281.36  middle:248.45  big:22.45 lr:0.00028
+timer: 0.9217 sec.
+iter 135440 || ARM_L: 0.4779 ARM_C: 1.2284 TRM_s_L: 0.6862 TRM_s_C: 0.9107 TRM_m_L: 0.4998 TRM_m_C: 1.1226 TRM_b_L: 0.5856 TRM_b_C: 0.5396 || 
+all:506.27  small:314.82  middle:173.18  big:18.27 lr:0.00028
+timer: 0.8736 sec.
+iter 135450 || ARM_L: 0.5768 ARM_C: 1.4559 TRM_s_L: 1.3507 TRM_s_C: 1.8939 TRM_m_L: 0.2900 TRM_m_C: 0.4014 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:536.91  small:379.18  middle:149.91  big:7.82 lr:0.00028
+timer: 0.8488 sec.
+iter 135460 || ARM_L: 0.7582 ARM_C: 1.5578 TRM_s_L: 0.9282 TRM_s_C: 1.2006 TRM_m_L: 0.3890 TRM_m_C: 0.0821 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:499.18  small:346.36  middle:140.64  big:12.18 lr:0.00028
+timer: 0.8664 sec.
+iter 135470 || ARM_L: 0.8446 ARM_C: 1.1582 TRM_s_L: 0.9400 TRM_s_C: 0.9535 TRM_m_L: 0.2706 TRM_m_C: 0.5620 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:556.45  small:341.55  middle:201.73  big:13.18 lr:0.00028
+timer: 0.9132 sec.
+iter 135480 || ARM_L: 1.2546 ARM_C: 1.5914 TRM_s_L: 1.1753 TRM_s_C: 1.4476 TRM_m_L: 0.6842 TRM_m_C: 1.2030 TRM_b_L: 0.2059 TRM_b_C: 0.9764 || 
+all:524.00  small:295.27  middle:199.09  big:29.64 lr:0.00028
+timer: 0.8674 sec.
+iter 135490 || ARM_L: 0.6884 ARM_C: 1.2754 TRM_s_L: 1.0956 TRM_s_C: 1.3439 TRM_m_L: 0.5417 TRM_m_C: 0.7640 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:575.73  small:333.00  middle:231.73  big:11.00 lr:0.00028
+timer: 0.8923 sec.
+iter 135500 || ARM_L: 0.8246 ARM_C: 1.5705 TRM_s_L: 1.0400 TRM_s_C: 1.1478 TRM_m_L: 0.6298 TRM_m_C: 1.1801 TRM_b_L: 0.2356 TRM_b_C: 0.2680 || 
+all:556.36  small:325.55  middle:206.55  big:24.27 lr:0.00028
+timer: 0.9024 sec.
+iter 135510 || ARM_L: 0.8187 ARM_C: 1.7598 TRM_s_L: 0.9397 TRM_s_C: 1.0296 TRM_m_L: 0.4493 TRM_m_C: 0.8976 TRM_b_L: 0.2640 TRM_b_C: 0.1687 || 
+all:540.45  small:357.27  middle:168.91  big:14.27 lr:0.00028
+timer: 0.9017 sec.
+iter 135520 || ARM_L: 0.3131 ARM_C: 1.1021 TRM_s_L: 0.7578 TRM_s_C: 0.3472 TRM_m_L: 0.3202 TRM_m_C: 0.0677 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:566.45  small:370.45  middle:174.82  big:21.18 lr:0.00028
+timer: 0.9246 sec.
+iter 135530 || ARM_L: 0.9719 ARM_C: 1.8239 TRM_s_L: 1.0355 TRM_s_C: 0.7864 TRM_m_L: 0.7024 TRM_m_C: 1.5966 TRM_b_L: 0.3348 TRM_b_C: 0.7299 || 
+all:517.91  small:272.00  middle:233.18  big:12.73 lr:0.00028
+timer: 0.8519 sec.
+iter 135540 || ARM_L: 0.8260 ARM_C: 1.6456 TRM_s_L: 0.9439 TRM_s_C: 0.8888 TRM_m_L: 0.5378 TRM_m_C: 0.6031 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:664.91  small:408.91  middle:241.27  big:14.73 lr:0.00028
+timer: 0.9372 sec.
+iter 135550 || ARM_L: 1.1746 ARM_C: 1.5641 TRM_s_L: 1.2355 TRM_s_C: 1.4237 TRM_m_L: 0.2096 TRM_m_C: 0.7866 TRM_b_L: 0.0999 TRM_b_C: 0.1274 || 
+all:570.55  small:317.27  middle:240.82  big:12.45 lr:0.00028
+timer: 0.9112 sec.
+iter 135560 || ARM_L: 0.5481 ARM_C: 1.3410 TRM_s_L: 0.6209 TRM_s_C: 1.1290 TRM_m_L: 0.3324 TRM_m_C: 0.4280 TRM_b_L: 1.0488 TRM_b_C: 0.5115 || 
+all:544.64  small:328.36  middle:188.45  big:27.82 lr:0.00028
+timer: 0.8894 sec.
+iter 135570 || ARM_L: 0.5071 ARM_C: 1.3691 TRM_s_L: 0.8031 TRM_s_C: 0.3093 TRM_m_L: 0.3897 TRM_m_C: 0.1762 TRM_b_L: 0.3403 TRM_b_C: 0.9671 || 
+all:565.73  small:295.73  middle:217.82  big:52.18 lr:0.00028
+timer: 0.8918 sec.
+iter 135580 || ARM_L: 0.9322 ARM_C: 1.6083 TRM_s_L: 0.8761 TRM_s_C: 0.7520 TRM_m_L: 0.6426 TRM_m_C: 0.8511 TRM_b_L: 2.0045 TRM_b_C: 1.2087 || 
+all:564.27  small:380.00  middle:164.82  big:19.45 lr:0.00028
+timer: 0.8797 sec.
+iter 135590 || ARM_L: 0.4946 ARM_C: 1.3047 TRM_s_L: 0.8326 TRM_s_C: 0.8096 TRM_m_L: 0.8450 TRM_m_C: 1.0657 TRM_b_L: 0.2329 TRM_b_C: 0.4274 || 
+all:532.09  small:321.00  middle:190.36  big:20.73 lr:0.00028
+timer: 0.9017 sec.
+iter 135600 || ARM_L: 1.2679 ARM_C: 1.5656 TRM_s_L: 1.4303 TRM_s_C: 1.4728 TRM_m_L: 0.2184 TRM_m_C: 0.1554 TRM_b_L: 0.1962 TRM_b_C: 0.3402 || 
+all:608.00  small:317.91  middle:256.36  big:33.73 lr:0.00028
+timer: 0.8987 sec.
+iter 135610 || ARM_L: 0.3129 ARM_C: 1.1068 TRM_s_L: 0.4965 TRM_s_C: 0.0915 TRM_m_L: 0.4074 TRM_m_C: 0.0441 TRM_b_L: 0.1524 TRM_b_C: 0.2861 || 
+all:561.27  small:267.09  middle:280.45  big:13.73 lr:0.00028
+timer: 0.8544 sec.
+iter 135620 || ARM_L: 0.6471 ARM_C: 1.2602 TRM_s_L: 0.8674 TRM_s_C: 0.6881 TRM_m_L: 0.3695 TRM_m_C: 0.5278 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:601.82  small:376.82  middle:212.64  big:12.36 lr:0.00028
+timer: 0.8918 sec.
+iter 135630 || ARM_L: 0.4071 ARM_C: 0.9354 TRM_s_L: 1.2207 TRM_s_C: 0.5610 TRM_m_L: 0.1958 TRM_m_C: 0.0580 TRM_b_L: 0.2005 TRM_b_C: 0.5183 || 
+all:503.73  small:283.18  middle:201.36  big:19.18 lr:0.00028
+timer: 0.8999 sec.
+iter 135640 || ARM_L: 1.1057 ARM_C: 1.7066 TRM_s_L: 1.0277 TRM_s_C: 1.1344 TRM_m_L: 0.2551 TRM_m_C: 0.6714 TRM_b_L: 0.3471 TRM_b_C: 0.4957 || 
+all:601.18  small:378.00  middle:210.18  big:13.00 lr:0.00028
+timer: 0.8589 sec.
+iter 135650 || ARM_L: 0.5738 ARM_C: 1.4048 TRM_s_L: 0.8193 TRM_s_C: 1.4792 TRM_m_L: 0.4817 TRM_m_C: 0.5796 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:557.45  small:307.82  middle:234.36  big:15.27 lr:0.00028
+timer: 0.8676 sec.
+iter 135660 || ARM_L: 0.6365 ARM_C: 1.1066 TRM_s_L: 0.8014 TRM_s_C: 0.7580 TRM_m_L: 0.3096 TRM_m_C: 0.7332 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:552.09  small:306.36  middle:231.91  big:13.82 lr:0.00028
+timer: 0.9108 sec.
+iter 135670 || ARM_L: 0.7113 ARM_C: 1.1412 TRM_s_L: 1.7905 TRM_s_C: 1.3837 TRM_m_L: 0.2856 TRM_m_C: 0.3686 TRM_b_L: 0.0594 TRM_b_C: 0.9461 || 
+all:571.00  small:301.18  middle:246.82  big:23.00 lr:0.00028
+timer: 0.8963 sec.
+iter 135680 || ARM_L: 0.6602 ARM_C: 1.3911 TRM_s_L: 0.9380 TRM_s_C: 1.1580 TRM_m_L: 0.2599 TRM_m_C: 0.4881 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:522.36  small:292.73  middle:199.91  big:29.73 lr:0.00028
+timer: 0.8955 sec.
+iter 135690 || ARM_L: 0.5959 ARM_C: 1.4240 TRM_s_L: 1.3012 TRM_s_C: 1.5564 TRM_m_L: 0.5731 TRM_m_C: 0.9010 TRM_b_L: 0.0953 TRM_b_C: 0.2006 || 
+all:593.45  small:284.36  middle:299.09  big:10.00 lr:0.00028
+timer: 0.8644 sec.
+iter 135700 || ARM_L: 0.9775 ARM_C: 1.4959 TRM_s_L: 1.0548 TRM_s_C: 1.0653 TRM_m_L: 0.2670 TRM_m_C: 0.4568 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:499.00  small:306.36  middle:171.45  big:21.18 lr:0.00028
+timer: 0.8510 sec.
+iter 135710 || ARM_L: 0.8007 ARM_C: 1.5643 TRM_s_L: 0.9938 TRM_s_C: 1.1483 TRM_m_L: 0.8092 TRM_m_C: 0.9013 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:542.09  small:340.82  middle:184.09  big:17.18 lr:0.00028
+timer: 0.8996 sec.
+iter 135720 || ARM_L: 0.6906 ARM_C: 1.4146 TRM_s_L: 1.1401 TRM_s_C: 1.7602 TRM_m_L: 0.4024 TRM_m_C: 0.4611 TRM_b_L: 0.3767 TRM_b_C: 0.2887 || 
+all:469.55  small:274.18  middle:180.27  big:15.09 lr:0.00028
+timer: 0.8868 sec.
+iter 135730 || ARM_L: 0.8432 ARM_C: 1.3917 TRM_s_L: 1.0382 TRM_s_C: 1.0538 TRM_m_L: 0.4337 TRM_m_C: 0.7000 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:539.36  small:291.27  middle:228.82  big:19.27 lr:0.00028
+timer: 0.8822 sec.
+iter 135740 || ARM_L: 0.9246 ARM_C: 1.4038 TRM_s_L: 0.9890 TRM_s_C: 1.5955 TRM_m_L: 0.2631 TRM_m_C: 0.3596 TRM_b_L: 0.2110 TRM_b_C: 0.9033 || 
+all:530.55  small:319.64  middle:186.18  big:24.73 lr:0.00028
+timer: 0.9486 sec.
+iter 135750 || ARM_L: 0.3895 ARM_C: 1.2759 TRM_s_L: 1.0292 TRM_s_C: 1.3718 TRM_m_L: 0.4786 TRM_m_C: 0.5142 TRM_b_L: 0.3180 TRM_b_C: 0.5158 || 
+all:612.45  small:401.64  middle:189.18  big:21.64 lr:0.00028
+timer: 0.8950 sec.
+iter 135760 || ARM_L: 0.9058 ARM_C: 1.7199 TRM_s_L: 0.8235 TRM_s_C: 1.2688 TRM_m_L: 0.4878 TRM_m_C: 0.3561 TRM_b_L: 1.0359 TRM_b_C: 1.5265 || 
+all:605.55  small:355.00  middle:236.27  big:14.27 lr:0.00028
+timer: 0.9140 sec.
+iter 135770 || ARM_L: 0.7009 ARM_C: 1.4454 TRM_s_L: 0.8703 TRM_s_C: 0.9530 TRM_m_L: 0.3159 TRM_m_C: 0.0951 TRM_b_L: 1.9621 TRM_b_C: 1.8169 || 
+all:594.55  small:314.55  middle:247.55  big:32.45 lr:0.00028
+timer: 0.8975 sec.
+iter 135780 || ARM_L: 0.8787 ARM_C: 1.7420 TRM_s_L: 0.8908 TRM_s_C: 0.9831 TRM_m_L: 0.5684 TRM_m_C: 0.5298 TRM_b_L: 0.2333 TRM_b_C: 0.5780 || 
+all:565.27  small:345.09  middle:199.36  big:20.82 lr:0.00028
+timer: 0.9017 sec.
+iter 135790 || ARM_L: 0.4308 ARM_C: 1.3236 TRM_s_L: 0.7729 TRM_s_C: 1.1090 TRM_m_L: 0.3847 TRM_m_C: 1.9013 TRM_b_L: 0.5108 TRM_b_C: 1.6857 || 
+all:547.91  small:307.64  middle:204.09  big:36.18 lr:0.00028
+timer: 0.8968 sec.
+iter 135800 || ARM_L: 0.4016 ARM_C: 1.0416 TRM_s_L: 0.4637 TRM_s_C: 0.7792 TRM_m_L: 1.1474 TRM_m_C: 2.5029 TRM_b_L: 0.1907 TRM_b_C: 0.5485 || 
+all:583.00  small:320.18  middle:240.73  big:22.09 lr:0.00028
+timer: 0.8586 sec.
+iter 135810 || ARM_L: 1.1491 ARM_C: 1.4129 TRM_s_L: 1.7787 TRM_s_C: 1.2417 TRM_m_L: 0.4166 TRM_m_C: 1.0045 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:494.82  small:268.36  middle:199.27  big:27.18 lr:0.00028
+timer: 0.9666 sec.
+iter 135820 || ARM_L: 1.3251 ARM_C: 1.4220 TRM_s_L: 4.3025 TRM_s_C: 1.5599 TRM_m_L: 0.7592 TRM_m_C: 1.4610 TRM_b_L: 0.2535 TRM_b_C: 0.5061 || 
+all:601.45  small:338.55  middle:229.00  big:33.91 lr:0.00028
+timer: 0.9185 sec.
+iter 135830 || ARM_L: 0.5048 ARM_C: 1.4260 TRM_s_L: 1.0457 TRM_s_C: 0.3914 TRM_m_L: 0.2990 TRM_m_C: 0.0488 TRM_b_L: 0.4114 TRM_b_C: 0.9933 || 
+all:544.91  small:288.73  middle:243.36  big:12.82 lr:0.00028
+timer: 0.8601 sec.
+iter 135840 || ARM_L: 0.6968 ARM_C: 1.2411 TRM_s_L: 1.0789 TRM_s_C: 1.7946 TRM_m_L: 0.3988 TRM_m_C: 1.0155 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:677.64  small:348.91  middle:311.27  big:17.45 lr:0.00028
+timer: 0.9387 sec.
+iter 135850 || ARM_L: 1.2063 ARM_C: 1.6588 TRM_s_L: 1.6021 TRM_s_C: 2.6561 TRM_m_L: 0.5660 TRM_m_C: 0.8024 TRM_b_L: 0.6731 TRM_b_C: 0.2083 || 
+all:566.09  small:307.00  middle:238.09  big:21.00 lr:0.00028
+timer: 0.8653 sec.
+iter 135860 || ARM_L: 0.8057 ARM_C: 1.6214 TRM_s_L: 1.0256 TRM_s_C: 1.0201 TRM_m_L: 0.5157 TRM_m_C: 1.0264 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:500.36  small:294.27  middle:176.64  big:29.45 lr:0.00028
+timer: 0.8914 sec.
+iter 135870 || ARM_L: 0.5727 ARM_C: 1.1340 TRM_s_L: 0.7634 TRM_s_C: 0.7974 TRM_m_L: 0.8836 TRM_m_C: 1.0918 TRM_b_L: 0.1232 TRM_b_C: 0.0779 || 
+all:597.18  small:312.55  middle:272.36  big:12.27 lr:0.00028
+timer: 0.8614 sec.
+iter 135880 || ARM_L: 0.5604 ARM_C: 1.1715 TRM_s_L: 0.8309 TRM_s_C: 0.7857 TRM_m_L: 0.2351 TRM_m_C: 0.1586 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:592.00  small:390.36  middle:185.82  big:15.82 lr:0.00028
+timer: 0.8634 sec.
+iter 135890 || ARM_L: 1.0482 ARM_C: 1.8067 TRM_s_L: 1.1386 TRM_s_C: 1.7781 TRM_m_L: 0.5047 TRM_m_C: 0.9515 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:590.64  small:335.36  middle:235.00  big:20.27 lr:0.00028
+timer: 0.9110 sec.
+iter 135900 || ARM_L: 0.4959 ARM_C: 1.2002 TRM_s_L: 1.0910 TRM_s_C: 1.3840 TRM_m_L: 0.5332 TRM_m_C: 0.8362 TRM_b_L: 0.6510 TRM_b_C: 1.6669 || 
+all:655.18  small:296.45  middle:333.18  big:25.55 lr:0.00028
+timer: 0.8621 sec.
+iter 135910 || ARM_L: 1.0495 ARM_C: 1.9445 TRM_s_L: 1.0144 TRM_s_C: 1.2726 TRM_m_L: 0.5244 TRM_m_C: 0.8672 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:527.00  small:326.91  middle:180.27  big:19.82 lr:0.00028
+timer: 0.8993 sec.
+iter 135920 || ARM_L: 0.8050 ARM_C: 1.2684 TRM_s_L: 0.7746 TRM_s_C: 0.8037 TRM_m_L: 0.4114 TRM_m_C: 0.5305 TRM_b_L: 0.2502 TRM_b_C: 1.7501 || 
+all:625.00  small:359.09  middle:250.00  big:15.91 lr:0.00028
+timer: 0.8659 sec.
+iter 135930 || ARM_L: 0.6557 ARM_C: 1.6661 TRM_s_L: 0.6819 TRM_s_C: 0.9108 TRM_m_L: 1.1060 TRM_m_C: 0.7354 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:572.64  small:382.45  middle:172.09  big:18.09 lr:0.00028
+timer: 0.8666 sec.
+iter 135940 || ARM_L: 1.0492 ARM_C: 1.4795 TRM_s_L: 0.9890 TRM_s_C: 1.3485 TRM_m_L: 0.3658 TRM_m_C: 0.3860 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:522.18  small:365.18  middle:143.36  big:13.64 lr:0.00028
+timer: 0.8880 sec.
+iter 135950 || ARM_L: 1.0987 ARM_C: 1.4797 TRM_s_L: 1.1141 TRM_s_C: 1.2165 TRM_m_L: 0.5952 TRM_m_C: 1.2951 TRM_b_L: 0.2488 TRM_b_C: 0.5499 || 
+all:589.73  small:315.09  middle:237.18  big:37.45 lr:0.00028
+timer: 0.9330 sec.
+iter 135960 || ARM_L: 0.4560 ARM_C: 1.2628 TRM_s_L: 0.8227 TRM_s_C: 0.9802 TRM_m_L: 0.3865 TRM_m_C: 0.4162 TRM_b_L: 0.4332 TRM_b_C: 0.7174 || 
+all:570.09  small:257.64  middle:283.64  big:28.82 lr:0.00028
+timer: 0.8971 sec.
+iter 135970 || ARM_L: 0.8177 ARM_C: 1.3560 TRM_s_L: 1.2276 TRM_s_C: 1.1991 TRM_m_L: 0.2876 TRM_m_C: 0.5423 TRM_b_L: 0.2217 TRM_b_C: 2.4147 || 
+all:647.27  small:384.55  middle:239.36  big:23.36 lr:0.00028
+timer: 0.9069 sec.
+iter 135980 || ARM_L: 0.6235 ARM_C: 1.5756 TRM_s_L: 0.9741 TRM_s_C: 1.1374 TRM_m_L: 0.4846 TRM_m_C: 0.7496 TRM_b_L: 1.0509 TRM_b_C: 2.9077 || 
+all:614.00  small:317.00  middle:261.00  big:36.00 lr:0.00028
+timer: 0.8584 sec.
+iter 135990 || ARM_L: 0.6133 ARM_C: 1.3069 TRM_s_L: 0.9435 TRM_s_C: 1.4472 TRM_m_L: 0.3928 TRM_m_C: 1.2268 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:514.27  small:331.45  middle:175.27  big:7.55 lr:0.00028
+timer: 0.8488 sec.
+iter 136000 || ARM_L: 0.4053 ARM_C: 1.5742 TRM_s_L: 0.8411 TRM_s_C: 0.9457 TRM_m_L: 0.5035 TRM_m_C: 1.1657 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:541.55  small:290.27  middle:229.91  big:21.36 lr:0.00028
+timer: 0.8854 sec.
+iter 136010 || ARM_L: 1.2726 ARM_C: 1.8445 TRM_s_L: 1.4195 TRM_s_C: 1.3448 TRM_m_L: 0.5871 TRM_m_C: 1.3368 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:554.55  small:333.82  middle:194.55  big:26.18 lr:0.00028
+timer: 0.8982 sec.
+iter 136020 || ARM_L: 0.4248 ARM_C: 1.4445 TRM_s_L: 0.8323 TRM_s_C: 0.7610 TRM_m_L: 0.3997 TRM_m_C: 0.5606 TRM_b_L: 0.8681 TRM_b_C: 1.0771 || 
+all:528.64  small:311.45  middle:196.55  big:20.64 lr:0.00028
+timer: 0.8575 sec.
+iter 136030 || ARM_L: 0.3077 ARM_C: 1.1047 TRM_s_L: 0.6478 TRM_s_C: 0.0780 TRM_m_L: 0.3961 TRM_m_C: 0.0545 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:571.36  small:284.27  middle:264.45  big:22.64 lr:0.00028
+timer: 0.9255 sec.
+iter 136040 || ARM_L: 0.4737 ARM_C: 1.4060 TRM_s_L: 0.5596 TRM_s_C: 0.9910 TRM_m_L: 0.3827 TRM_m_C: 0.0289 TRM_b_L: 0.8334 TRM_b_C: 0.8877 || 
+all:572.00  small:310.91  middle:234.73  big:26.36 lr:0.00028
+timer: 0.8562 sec.
+iter 136050 || ARM_L: 0.5360 ARM_C: 1.1977 TRM_s_L: 0.8923 TRM_s_C: 0.3670 TRM_m_L: 0.4772 TRM_m_C: 0.1352 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:520.36  small:282.82  middle:207.55  big:30.00 lr:0.00028
+timer: 0.8921 sec.
+iter 136060 || ARM_L: 0.7121 ARM_C: 1.6197 TRM_s_L: 1.0575 TRM_s_C: 1.3749 TRM_m_L: 0.5015 TRM_m_C: 0.4042 TRM_b_L: 0.3293 TRM_b_C: 0.3569 || 
+all:664.45  small:413.64  middle:238.45  big:12.36 lr:0.00028
+timer: 0.8646 sec.
+iter 136070 || ARM_L: 0.6484 ARM_C: 1.1904 TRM_s_L: 0.9028 TRM_s_C: 1.3468 TRM_m_L: 0.4418 TRM_m_C: 0.8324 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:577.64  small:300.00  middle:247.64  big:30.00 lr:0.00028
+timer: 0.8520 sec.
+iter 136080 || ARM_L: 0.9873 ARM_C: 1.4842 TRM_s_L: 1.3014 TRM_s_C: 1.5015 TRM_m_L: 0.3541 TRM_m_C: 0.4922 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:495.64  small:293.82  middle:192.91  big:8.91 lr:0.00028
+timer: 0.8746 sec.
+iter 136090 || ARM_L: 0.5860 ARM_C: 1.0888 TRM_s_L: 0.6369 TRM_s_C: 0.9375 TRM_m_L: 0.4614 TRM_m_C: 0.3578 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:637.45  small:359.82  middle:248.09  big:29.55 lr:0.00028
+timer: 0.8553 sec.
+iter 136100 || ARM_L: 0.4461 ARM_C: 1.3025 TRM_s_L: 0.9509 TRM_s_C: 0.7538 TRM_m_L: 0.2057 TRM_m_C: 0.3667 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:662.36  small:355.18  middle:299.91  big:7.27 lr:0.00028
+timer: 0.8531 sec.
+iter 136110 || ARM_L: 0.5018 ARM_C: 1.3889 TRM_s_L: 0.8593 TRM_s_C: 0.9811 TRM_m_L: 0.3061 TRM_m_C: 0.6262 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:525.73  small:329.36  middle:152.27  big:44.09 lr:0.00028
+timer: 0.8885 sec.
+iter 136120 || ARM_L: 0.6612 ARM_C: 1.3145 TRM_s_L: 0.9008 TRM_s_C: 1.8608 TRM_m_L: 0.5756 TRM_m_C: 0.8192 TRM_b_L: 0.4132 TRM_b_C: 0.7471 || 
+all:476.45  small:318.18  middle:130.82  big:27.45 lr:0.00028
+timer: 0.9475 sec.
+iter 136130 || ARM_L: 0.3685 ARM_C: 1.2054 TRM_s_L: 0.8077 TRM_s_C: 1.3204 TRM_m_L: 0.2889 TRM_m_C: 0.9712 TRM_b_L: 0.3759 TRM_b_C: 0.3629 || 
+all:577.36  small:325.91  middle:234.27  big:17.18 lr:0.00028
+timer: 0.8564 sec.
+iter 136140 || ARM_L: 1.0117 ARM_C: 1.9009 TRM_s_L: 0.8257 TRM_s_C: 0.8382 TRM_m_L: 0.3542 TRM_m_C: 0.6677 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:566.82  small:342.00  middle:200.45  big:24.36 lr:0.00028
+timer: 0.9029 sec.
+iter 136150 || ARM_L: 0.6598 ARM_C: 1.3954 TRM_s_L: 1.1270 TRM_s_C: 1.1274 TRM_m_L: 0.2858 TRM_m_C: 0.8433 TRM_b_L: 0.3090 TRM_b_C: 0.4792 || 
+all:628.09  small:357.91  middle:232.27  big:37.91 lr:0.00028
+timer: 0.9013 sec.
+iter 136160 || ARM_L: 0.6939 ARM_C: 1.5686 TRM_s_L: 0.9938 TRM_s_C: 1.3446 TRM_m_L: 0.4370 TRM_m_C: 0.7676 TRM_b_L: 0.2829 TRM_b_C: 0.5084 || 
+all:575.82  small:315.55  middle:240.73  big:19.55 lr:0.00028
+timer: 0.8529 sec.
+iter 136170 || ARM_L: 0.6095 ARM_C: 1.7537 TRM_s_L: 0.7949 TRM_s_C: 1.2524 TRM_m_L: 0.4958 TRM_m_C: 0.3531 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:582.73  small:247.73  middle:288.45  big:46.55 lr:0.00028
+timer: 0.8881 sec.
+iter 136180 || ARM_L: 0.8760 ARM_C: 1.7059 TRM_s_L: 1.3491 TRM_s_C: 2.0049 TRM_m_L: 0.4480 TRM_m_C: 0.1722 TRM_b_L: 0.1958 TRM_b_C: 0.7539 || 
+all:549.82  small:303.55  middle:231.73  big:14.55 lr:0.00028
+timer: 0.9321 sec.
+iter 136190 || ARM_L: 1.1365 ARM_C: 1.5826 TRM_s_L: 1.2217 TRM_s_C: 1.4036 TRM_m_L: 0.2866 TRM_m_C: 0.4048 TRM_b_L: 0.2088 TRM_b_C: 0.6296 || 
+all:519.55  small:294.55  middle:189.45  big:35.55 lr:0.00028
+timer: 0.8736 sec.
+iter 136200 || ARM_L: 0.2975 ARM_C: 1.1487 TRM_s_L: 0.7302 TRM_s_C: 0.1132 TRM_m_L: 0.2224 TRM_m_C: 0.0482 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:515.55  small:305.36  middle:172.55  big:37.64 lr:0.00028
+timer: 0.9007 sec.
+iter 136210 || ARM_L: 0.5441 ARM_C: 1.4000 TRM_s_L: 0.8565 TRM_s_C: 1.2375 TRM_m_L: 0.3791 TRM_m_C: 0.6085 TRM_b_L: 0.3620 TRM_b_C: 0.3906 || 
+all:569.82  small:312.73  middle:221.36  big:35.73 lr:0.00028
+timer: 0.9324 sec.
+iter 136220 || ARM_L: 0.7217 ARM_C: 1.2925 TRM_s_L: 0.7391 TRM_s_C: 1.6873 TRM_m_L: 0.4754 TRM_m_C: 0.7606 TRM_b_L: 0.5663 TRM_b_C: 0.3077 || 
+all:552.82  small:297.55  middle:217.55  big:37.73 lr:0.00028
+timer: 0.9021 sec.
+iter 136230 || ARM_L: 0.6490 ARM_C: 1.2268 TRM_s_L: 0.9246 TRM_s_C: 1.1630 TRM_m_L: 0.2386 TRM_m_C: 0.8463 TRM_b_L: 0.6884 TRM_b_C: 0.9302 || 
+all:484.27  small:288.36  middle:179.55  big:16.36 lr:0.00028
+timer: 0.8843 sec.
+iter 136240 || ARM_L: 1.1883 ARM_C: 1.5911 TRM_s_L: 1.0019 TRM_s_C: 1.0239 TRM_m_L: 0.5680 TRM_m_C: 0.5555 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:545.00  small:299.82  middle:228.64  big:16.55 lr:0.00028
+timer: 0.3254 sec.
+iter 136250 || ARM_L: 1.2920 ARM_C: 1.2722 TRM_s_L: 1.3963 TRM_s_C: 2.2596 TRM_m_L: 0.1486 TRM_m_C: 0.3347 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:527.00  small:314.36  middle:190.18  big:22.45 lr:0.00028
+timer: 0.8978 sec.
+iter 136260 || ARM_L: 0.5597 ARM_C: 1.4704 TRM_s_L: 1.1068 TRM_s_C: 0.1870 TRM_m_L: 0.5668 TRM_m_C: 0.1692 TRM_b_L: 0.4434 TRM_b_C: 0.9982 || 
+all:661.91  small:306.64  middle:331.18  big:24.09 lr:0.00028
+timer: 0.8687 sec.
+iter 136270 || ARM_L: 0.6103 ARM_C: 1.6273 TRM_s_L: 0.9115 TRM_s_C: 1.1849 TRM_m_L: 0.2601 TRM_m_C: 0.3163 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:639.82  small:449.64  middle:169.09  big:21.09 lr:0.00028
+timer: 0.9001 sec.
+iter 136280 || ARM_L: 0.5773 ARM_C: 1.1954 TRM_s_L: 0.6013 TRM_s_C: 0.8785 TRM_m_L: 0.4587 TRM_m_C: 0.2631 TRM_b_L: 0.4445 TRM_b_C: 0.7304 || 
+all:571.55  small:311.18  middle:238.00  big:22.36 lr:0.00028
+timer: 0.8559 sec.
+iter 136290 || ARM_L: 0.8421 ARM_C: 1.3962 TRM_s_L: 1.3489 TRM_s_C: 1.5616 TRM_m_L: 0.2157 TRM_m_C: 0.2737 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:533.64  small:299.73  middle:207.73  big:26.18 lr:0.00028
+timer: 0.9242 sec.
+iter 136300 || ARM_L: 0.4374 ARM_C: 1.2975 TRM_s_L: 0.7723 TRM_s_C: 0.9354 TRM_m_L: 0.4261 TRM_m_C: 0.6309 TRM_b_L: 0.2059 TRM_b_C: 0.6149 || 
+all:587.36  small:285.00  middle:278.18  big:24.18 lr:0.00028
+timer: 0.8900 sec.
+iter 136310 || ARM_L: 0.8553 ARM_C: 1.9104 TRM_s_L: 1.4282 TRM_s_C: 1.3249 TRM_m_L: 0.4015 TRM_m_C: 1.6758 TRM_b_L: 0.1619 TRM_b_C: 0.3490 || 
+all:525.55  small:317.82  middle:190.91  big:16.82 lr:0.00028
+timer: 0.8969 sec.
+iter 136320 || ARM_L: 0.5639 ARM_C: 1.2582 TRM_s_L: 0.7606 TRM_s_C: 0.9065 TRM_m_L: 0.2703 TRM_m_C: 0.5232 TRM_b_L: 1.3426 TRM_b_C: 1.6530 || 
+all:461.09  small:239.18  middle:195.36  big:26.55 lr:0.00028
+timer: 0.8478 sec.
+iter 136330 || ARM_L: 0.8729 ARM_C: 1.8295 TRM_s_L: 0.9125 TRM_s_C: 1.0285 TRM_m_L: 0.6574 TRM_m_C: 0.1554 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:671.36  small:289.36  middle:354.18  big:27.82 lr:0.00028
+timer: 0.7593 sec.
+iter 136340 || ARM_L: 0.4917 ARM_C: 1.2545 TRM_s_L: 0.9201 TRM_s_C: 1.1574 TRM_m_L: 0.4301 TRM_m_C: 0.3123 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:598.36  small:309.64  middle:265.45  big:23.27 lr:0.00028
+timer: 0.7901 sec.
+iter 136350 || ARM_L: 0.5268 ARM_C: 1.4143 TRM_s_L: 0.7875 TRM_s_C: 0.9630 TRM_m_L: 0.4554 TRM_m_C: 1.2192 TRM_b_L: 0.3784 TRM_b_C: 1.0302 || 
+all:592.82  small:324.91  middle:240.27  big:27.64 lr:0.00028
+timer: 0.7565 sec.
+iter 136360 || ARM_L: 0.7500 ARM_C: 1.2930 TRM_s_L: 0.9852 TRM_s_C: 1.0823 TRM_m_L: 0.2510 TRM_m_C: 0.5532 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:609.82  small:311.27  middle:253.82  big:44.73 lr:0.00028
+timer: 0.7768 sec.
+iter 136370 || ARM_L: 0.4751 ARM_C: 1.2974 TRM_s_L: 0.7720 TRM_s_C: 0.8695 TRM_m_L: 0.1901 TRM_m_C: 0.0383 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:585.00  small:319.36  middle:239.82  big:25.82 lr:0.00028
+timer: 0.7755 sec.
+iter 136380 || ARM_L: 0.4319 ARM_C: 1.4905 TRM_s_L: 0.7806 TRM_s_C: 0.7944 TRM_m_L: 0.2106 TRM_m_C: 0.3904 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:552.00  small:327.91  middle:199.00  big:25.09 lr:0.00028
+timer: 0.7758 sec.
+iter 136390 || ARM_L: 0.4122 ARM_C: 1.1651 TRM_s_L: 0.7803 TRM_s_C: 1.6257 TRM_m_L: 0.1316 TRM_m_C: 0.3224 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:548.27  small:315.00  middle:208.55  big:24.73 lr:0.00028
+timer: 0.7641 sec.
+iter 136400 || ARM_L: 0.9175 ARM_C: 1.4615 TRM_s_L: 1.1259 TRM_s_C: 1.3418 TRM_m_L: 0.2250 TRM_m_C: 1.0322 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:597.00  small:331.00  middle:231.27  big:34.73 lr:0.00028
+timer: 0.8113 sec.
+iter 136410 || ARM_L: 0.3864 ARM_C: 1.0729 TRM_s_L: 0.7282 TRM_s_C: 0.9092 TRM_m_L: 0.3568 TRM_m_C: 0.5445 TRM_b_L: 0.3166 TRM_b_C: 0.3851 || 
+all:659.64  small:386.55  middle:236.73  big:36.36 lr:0.00028
+timer: 0.7733 sec.
+iter 136420 || ARM_L: 0.5540 ARM_C: 1.1558 TRM_s_L: 0.9040 TRM_s_C: 1.6573 TRM_m_L: 0.4262 TRM_m_C: 0.3601 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:581.09  small:269.82  middle:278.91  big:32.36 lr:0.00028
+timer: 0.7936 sec.
+iter 136430 || ARM_L: 0.5434 ARM_C: 1.2437 TRM_s_L: 0.8248 TRM_s_C: 0.8089 TRM_m_L: 0.3228 TRM_m_C: 0.1046 TRM_b_L: 0.3569 TRM_b_C: 0.2587 || 
+all:577.64  small:361.45  middle:199.27  big:16.91 lr:0.00028
+timer: 0.7606 sec.
+iter 136440 || ARM_L: 0.7846 ARM_C: 1.4844 TRM_s_L: 1.1293 TRM_s_C: 1.3109 TRM_m_L: 0.2651 TRM_m_C: 0.0940 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:622.55  small:340.64  middle:264.82  big:17.09 lr:0.00028
+timer: 0.8007 sec.
+iter 136450 || ARM_L: 0.6598 ARM_C: 1.2264 TRM_s_L: 0.7250 TRM_s_C: 0.8269 TRM_m_L: 0.6328 TRM_m_C: 0.5984 TRM_b_L: 0.1743 TRM_b_C: 0.4341 || 
+all:562.64  small:346.27  middle:199.82  big:16.55 lr:0.00028
+timer: 0.8387 sec.
+iter 136460 || ARM_L: 0.5454 ARM_C: 1.1867 TRM_s_L: 1.5277 TRM_s_C: 1.5052 TRM_m_L: 0.4440 TRM_m_C: 1.1955 TRM_b_L: 0.2096 TRM_b_C: 1.0075 || 
+all:512.91  small:223.27  middle:260.55  big:29.09 lr:0.00028
+timer: 0.8600 sec.
+iter 136470 || ARM_L: 0.3956 ARM_C: 1.1687 TRM_s_L: 0.7786 TRM_s_C: 0.1024 TRM_m_L: 0.4144 TRM_m_C: 0.9270 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:620.91  small:376.36  middle:221.55  big:23.00 lr:0.00028
+timer: 0.8655 sec.
+iter 136480 || ARM_L: 0.3959 ARM_C: 1.1660 TRM_s_L: 0.6242 TRM_s_C: 0.7753 TRM_m_L: 0.2146 TRM_m_C: 0.4996 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:548.09  small:301.18  middle:238.18  big:8.73 lr:0.00028
+timer: 0.8607 sec.
+iter 136490 || ARM_L: 0.5812 ARM_C: 1.5943 TRM_s_L: 0.8313 TRM_s_C: 1.0414 TRM_m_L: 0.5339 TRM_m_C: 0.4453 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:559.36  small:314.09  middle:229.00  big:16.27 lr:0.00028
+timer: 0.9043 sec.
+iter 136500 || ARM_L: 0.4993 ARM_C: 1.2911 TRM_s_L: 0.8270 TRM_s_C: 1.0914 TRM_m_L: 0.3279 TRM_m_C: 1.0602 TRM_b_L: 0.7817 TRM_b_C: 1.4975 || 
+all:606.73  small:312.09  middle:269.91  big:24.73 lr:0.00028
+timer: 0.8561 sec.
+iter 136510 || ARM_L: 0.7061 ARM_C: 1.5807 TRM_s_L: 0.9773 TRM_s_C: 1.0746 TRM_m_L: 0.4144 TRM_m_C: 0.0667 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:580.18  small:349.00  middle:214.73  big:16.45 lr:0.00028
+timer: 0.9240 sec.
+iter 136520 || ARM_L: 0.4417 ARM_C: 1.4004 TRM_s_L: 0.9357 TRM_s_C: 0.9410 TRM_m_L: 0.3571 TRM_m_C: 1.5748 TRM_b_L: 0.3429 TRM_b_C: 0.1343 || 
+all:489.18  small:328.18  middle:133.18  big:27.82 lr:0.00028
+timer: 0.8956 sec.
+iter 136530 || ARM_L: 0.5229 ARM_C: 0.9758 TRM_s_L: 0.7594 TRM_s_C: 0.9036 TRM_m_L: 0.7519 TRM_m_C: 1.0636 TRM_b_L: 0.1629 TRM_b_C: 0.2819 || 
+all:618.55  small:339.00  middle:256.18  big:23.36 lr:0.00028
+timer: 0.9380 sec.
+iter 136540 || ARM_L: 0.4200 ARM_C: 1.0534 TRM_s_L: 0.8578 TRM_s_C: 1.1359 TRM_m_L: 0.3780 TRM_m_C: 0.7397 TRM_b_L: 0.2025 TRM_b_C: 0.8433 || 
+all:566.36  small:292.55  middle:238.09  big:35.73 lr:0.00028
+timer: 0.8541 sec.
+iter 136550 || ARM_L: 0.3830 ARM_C: 1.0396 TRM_s_L: 0.6603 TRM_s_C: 1.0799 TRM_m_L: 0.4730 TRM_m_C: 0.3739 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:544.36  small:302.45  middle:235.18  big:6.73 lr:0.00028
+timer: 0.9038 sec.
+iter 136560 || ARM_L: 0.6036 ARM_C: 1.3833 TRM_s_L: 0.8698 TRM_s_C: 1.1655 TRM_m_L: 0.4576 TRM_m_C: 0.8137 TRM_b_L: 0.1986 TRM_b_C: 0.5703 || 
+all:565.00  small:353.09  middle:175.82  big:36.09 lr:0.00028
+timer: 0.9348 sec.
+iter 136570 || ARM_L: 0.6800 ARM_C: 1.2568 TRM_s_L: 0.9564 TRM_s_C: 1.5738 TRM_m_L: 0.3259 TRM_m_C: 0.4685 TRM_b_L: 0.4280 TRM_b_C: 0.5906 || 
+all:610.00  small:308.82  middle:266.55  big:34.64 lr:0.00028
+timer: 0.9049 sec.
+iter 136580 || ARM_L: 0.8622 ARM_C: 1.4421 TRM_s_L: 0.9728 TRM_s_C: 1.4141 TRM_m_L: 0.3252 TRM_m_C: 1.4604 TRM_b_L: 0.3769 TRM_b_C: 0.6431 || 
+all:560.27  small:290.36  middle:245.73  big:24.18 lr:0.00028
+timer: 0.8602 sec.
+iter 136590 || ARM_L: 0.3747 ARM_C: 1.2881 TRM_s_L: 0.7301 TRM_s_C: 0.8011 TRM_m_L: 0.2355 TRM_m_C: 0.6971 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:512.91  small:341.09  middle:149.27  big:22.55 lr:0.00028
+timer: 0.9081 sec.
+iter 136600 || ARM_L: 0.8773 ARM_C: 1.4225 TRM_s_L: 1.3047 TRM_s_C: 1.4471 TRM_m_L: 0.9897 TRM_m_C: 1.2618 TRM_b_L: 0.3578 TRM_b_C: 0.4428 || 
+all:541.18  small:337.36  middle:190.45  big:13.36 lr:0.00028
+timer: 0.9032 sec.
+iter 136610 || ARM_L: 0.6283 ARM_C: 1.0383 TRM_s_L: 1.1127 TRM_s_C: 1.3621 TRM_m_L: 0.1784 TRM_m_C: 0.3094 TRM_b_L: 0.3743 TRM_b_C: 0.3424 || 
+all:558.09  small:325.82  middle:214.36  big:17.91 lr:0.00028
+timer: 0.8530 sec.
+iter 136620 || ARM_L: 0.6461 ARM_C: 1.1405 TRM_s_L: 0.9787 TRM_s_C: 1.2484 TRM_m_L: 0.2935 TRM_m_C: 0.3678 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:526.82  small:307.27  middle:197.36  big:22.18 lr:0.00028
+timer: 0.8880 sec.
+iter 136630 || ARM_L: 0.5891 ARM_C: 1.5419 TRM_s_L: 1.1062 TRM_s_C: 2.0010 TRM_m_L: 0.3771 TRM_m_C: 0.6586 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:674.45  small:299.09  middle:347.27  big:28.09 lr:0.00028
+timer: 0.8493 sec.
+iter 136640 || ARM_L: 0.7636 ARM_C: 1.6699 TRM_s_L: 0.8933 TRM_s_C: 1.0125 TRM_m_L: 0.0000 TRM_m_C: 0.0000 TRM_b_L: 0.3895 TRM_b_C: 0.5640 || 
+all:507.36  small:316.82  middle:178.36  big:12.18 lr:0.00028
+timer: 0.8892 sec.
+iter 136650 || ARM_L: 0.5272 ARM_C: 1.1891 TRM_s_L: 1.0087 TRM_s_C: 1.2568 TRM_m_L: 0.2547 TRM_m_C: 0.3227 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:493.73  small:274.82  middle:192.00  big:26.91 lr:0.00028
+timer: 0.8930 sec.
+iter 136660 || ARM_L: 0.5524 ARM_C: 1.3261 TRM_s_L: 0.9460 TRM_s_C: 1.0507 TRM_m_L: 0.5569 TRM_m_C: 0.9626 TRM_b_L: 0.2281 TRM_b_C: 0.3833 || 
+all:545.64  small:298.55  middle:217.27  big:29.82 lr:0.00028
+timer: 0.9243 sec.
+iter 136670 || ARM_L: 0.3866 ARM_C: 1.1927 TRM_s_L: 0.9141 TRM_s_C: 1.3755 TRM_m_L: 0.2976 TRM_m_C: 0.4173 TRM_b_L: 0.2184 TRM_b_C: 0.8077 || 
+all:459.91  small:296.09  middle:138.09  big:25.73 lr:0.00028
+timer: 0.8973 sec.
+iter 136680 || ARM_L: 1.3009 ARM_C: 1.5996 TRM_s_L: 1.1795 TRM_s_C: 1.4780 TRM_m_L: 0.3921 TRM_m_C: 0.8468 TRM_b_L: 0.9008 TRM_b_C: 0.4115 || 
+all:523.18  small:291.64  middle:224.27  big:7.27 lr:0.00028
+timer: 0.8870 sec.
+iter 136690 || ARM_L: 0.5636 ARM_C: 1.3039 TRM_s_L: 0.9947 TRM_s_C: 1.2463 TRM_m_L: 0.4166 TRM_m_C: 0.6013 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:598.36  small:314.09  middle:273.00  big:11.27 lr:0.00028
+timer: 0.9025 sec.
+iter 136700 || ARM_L: 0.7481 ARM_C: 1.1886 TRM_s_L: 0.9897 TRM_s_C: 0.7159 TRM_m_L: 0.1394 TRM_m_C: 0.3115 TRM_b_L: 0.3214 TRM_b_C: 0.3584 || 
+all:576.73  small:339.27  middle:193.09  big:44.36 lr:0.00028
+timer: 0.9129 sec.
+iter 136710 || ARM_L: 0.7304 ARM_C: 1.3859 TRM_s_L: 1.0248 TRM_s_C: 2.1898 TRM_m_L: 0.4071 TRM_m_C: 0.4076 TRM_b_L: 0.3676 TRM_b_C: 0.8213 || 
+all:558.45  small:290.09  middle:242.27  big:26.09 lr:0.00028
+timer: 0.9076 sec.
+iter 136720 || ARM_L: 0.5045 ARM_C: 1.2186 TRM_s_L: 0.8719 TRM_s_C: 1.2001 TRM_m_L: 0.3872 TRM_m_C: 2.5277 TRM_b_L: 0.4237 TRM_b_C: 0.1606 || 
+all:607.36  small:363.55  middle:228.18  big:15.64 lr:0.00028
+timer: 0.9266 sec.
+iter 136730 || ARM_L: 0.5394 ARM_C: 1.2874 TRM_s_L: 0.8775 TRM_s_C: 1.2316 TRM_m_L: 0.2591 TRM_m_C: 0.0858 TRM_b_L: 0.7212 TRM_b_C: 3.9918 || 
+all:629.64  small:395.91  middle:223.82  big:9.91 lr:0.00028
+timer: 0.8641 sec.
+iter 136740 || ARM_L: 0.8837 ARM_C: 1.6362 TRM_s_L: 0.9120 TRM_s_C: 0.9516 TRM_m_L: 0.8121 TRM_m_C: 1.5320 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:557.36  small:302.36  middle:218.27  big:36.73 lr:0.00028
+timer: 0.8653 sec.
+iter 136750 || ARM_L: 0.6054 ARM_C: 1.6216 TRM_s_L: 0.7553 TRM_s_C: 1.1246 TRM_m_L: 0.4418 TRM_m_C: 0.7769 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:583.73  small:360.73  middle:204.45  big:18.55 lr:0.00028
+timer: 0.9615 sec.
+iter 136760 || ARM_L: 1.2826 ARM_C: 1.3837 TRM_s_L: 1.2977 TRM_s_C: 1.3140 TRM_m_L: 0.3320 TRM_m_C: 0.8996 TRM_b_L: 0.2104 TRM_b_C: 0.0836 || 
+all:575.91  small:312.45  middle:232.55  big:30.91 lr:0.00028
+timer: 0.8646 sec.
+iter 136770 || ARM_L: 1.0198 ARM_C: 1.5220 TRM_s_L: 1.3284 TRM_s_C: 1.3676 TRM_m_L: 0.3737 TRM_m_C: 0.5000 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:511.18  small:273.36  middle:224.00  big:13.82 lr:0.00028
+timer: 0.9055 sec.
+iter 136780 || ARM_L: 0.6326 ARM_C: 1.6321 TRM_s_L: 0.7830 TRM_s_C: 0.7606 TRM_m_L: 0.6047 TRM_m_C: 0.4476 TRM_b_L: 0.1835 TRM_b_C: 0.3136 || 
+all:610.64  small:384.00  middle:209.55  big:17.09 lr:0.00028
+timer: 0.8750 sec.
+iter 136790 || ARM_L: 0.5071 ARM_C: 1.4302 TRM_s_L: 0.8199 TRM_s_C: 0.9822 TRM_m_L: 0.1846 TRM_m_C: 0.2834 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:588.36  small:327.91  middle:247.82  big:12.64 lr:0.00028
+timer: 0.9353 sec.
+iter 136800 || ARM_L: 0.3506 ARM_C: 1.3052 TRM_s_L: 0.7819 TRM_s_C: 0.0881 TRM_m_L: 0.2882 TRM_m_C: 0.7569 TRM_b_L: 0.4022 TRM_b_C: 0.9663 || 
+all:662.91  small:408.91  middle:216.18  big:37.82 lr:0.00028
+timer: 0.8480 sec.
+iter 136810 || ARM_L: 0.8902 ARM_C: 1.6355 TRM_s_L: 1.1683 TRM_s_C: 1.4149 TRM_m_L: 0.7012 TRM_m_C: 0.9274 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:555.64  small:293.55  middle:246.91  big:15.18 lr:0.00028
+timer: 0.8576 sec.
+iter 136820 || ARM_L: 0.7811 ARM_C: 1.6210 TRM_s_L: 0.9057 TRM_s_C: 0.9378 TRM_m_L: 0.4163 TRM_m_C: 1.0435 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:499.55  small:229.73  middle:248.45  big:21.36 lr:0.00028
+timer: 0.9967 sec.
+iter 136830 || ARM_L: 1.5103 ARM_C: 1.7349 TRM_s_L: 3.1359 TRM_s_C: 1.7609 TRM_m_L: 0.4653 TRM_m_C: 0.3424 TRM_b_L: 0.4580 TRM_b_C: 0.5332 || 
+all:594.09  small:364.91  middle:199.91  big:29.27 lr:0.00028
+timer: 0.8467 sec.
+iter 136840 || ARM_L: 0.5716 ARM_C: 1.5036 TRM_s_L: 0.7994 TRM_s_C: 0.9621 TRM_m_L: 0.6260 TRM_m_C: 0.5440 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:682.82  small:295.45  middle:372.91  big:14.45 lr:0.00028
+timer: 0.8531 sec.
+iter 136850 || ARM_L: 0.6654 ARM_C: 1.3759 TRM_s_L: 0.9857 TRM_s_C: 1.5676 TRM_m_L: 0.3131 TRM_m_C: 0.5745 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:571.55  small:288.91  middle:262.18  big:20.45 lr:0.00028
+timer: 0.8980 sec.
+iter 136860 || ARM_L: 0.6582 ARM_C: 1.6178 TRM_s_L: 0.8795 TRM_s_C: 1.3376 TRM_m_L: 0.5639 TRM_m_C: 0.9973 TRM_b_L: 0.5407 TRM_b_C: 1.4007 || 
+all:526.18  small:304.18  middle:203.64  big:18.36 lr:0.00028
+timer: 0.8609 sec.
+iter 136870 || ARM_L: 0.5115 ARM_C: 1.0133 TRM_s_L: 0.6818 TRM_s_C: 1.2991 TRM_m_L: 0.4179 TRM_m_C: 0.7943 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:517.09  small:338.45  middle:159.36  big:19.27 lr:0.00028
+timer: 0.9309 sec.
+iter 136880 || ARM_L: 0.4927 ARM_C: 1.4631 TRM_s_L: 0.7453 TRM_s_C: 1.3108 TRM_m_L: 0.3978 TRM_m_C: 1.3856 TRM_b_L: 0.2826 TRM_b_C: 0.6069 || 
+all:705.09  small:356.73  middle:319.82  big:28.55 lr:0.00028
+timer: 0.8729 sec.
+iter 136890 || ARM_L: 0.4804 ARM_C: 1.1517 TRM_s_L: 0.8449 TRM_s_C: 1.0629 TRM_m_L: 0.2208 TRM_m_C: 0.3566 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:534.91  small:339.00  middle:177.73  big:18.18 lr:0.00028
+timer: 0.9299 sec.
+iter 136900 || ARM_L: 0.6871 ARM_C: 1.9735 TRM_s_L: 0.9131 TRM_s_C: 1.1406 TRM_m_L: 0.7156 TRM_m_C: 0.7205 TRM_b_L: 0.2052 TRM_b_C: 0.4747 || 
+all:610.45  small:350.82  middle:235.45  big:24.18 lr:0.00028
+timer: 0.8659 sec.
+iter 136910 || ARM_L: 0.8660 ARM_C: 1.4093 TRM_s_L: 0.9388 TRM_s_C: 1.2308 TRM_m_L: 0.2800 TRM_m_C: 0.7902 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:548.09  small:289.73  middle:237.45  big:20.91 lr:0.00028
+timer: 0.8581 sec.
+iter 136920 || ARM_L: 0.3671 ARM_C: 1.1073 TRM_s_L: 0.7513 TRM_s_C: 1.0337 TRM_m_L: 0.2823 TRM_m_C: 0.5524 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:496.82  small:274.09  middle:213.27  big:9.45 lr:0.00028
+timer: 0.8945 sec.
+iter 136930 || ARM_L: 0.7004 ARM_C: 1.4889 TRM_s_L: 0.9974 TRM_s_C: 1.5538 TRM_m_L: 0.4247 TRM_m_C: 0.7348 TRM_b_L: 0.8797 TRM_b_C: 1.5324 || 
+all:570.64  small:297.64  middle:261.55  big:11.45 lr:0.00028
+timer: 0.9005 sec.
+iter 136940 || ARM_L: 0.4082 ARM_C: 1.2003 TRM_s_L: 0.6877 TRM_s_C: 0.2518 TRM_m_L: 0.3777 TRM_m_C: 0.0596 TRM_b_L: 0.1281 TRM_b_C: 0.1375 || 
+all:579.73  small:348.27  middle:211.91  big:19.55 lr:0.00028
+timer: 0.8916 sec.
+iter 136950 || ARM_L: 0.7217 ARM_C: 1.5466 TRM_s_L: 0.9466 TRM_s_C: 1.3164 TRM_m_L: 0.1433 TRM_m_C: 0.1096 TRM_b_L: 0.2190 TRM_b_C: 0.6037 || 
+all:658.64  small:366.64  middle:274.45  big:17.55 lr:0.00028
+timer: 0.8908 sec.
+iter 136960 || ARM_L: 1.1365 ARM_C: 1.5603 TRM_s_L: 1.1849 TRM_s_C: 1.3343 TRM_m_L: 0.6551 TRM_m_C: 1.4762 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:687.09  small:383.36  middle:291.82  big:11.91 lr:0.00028
+timer: 0.8936 sec.
+iter 136970 || ARM_L: 0.6526 ARM_C: 1.5637 TRM_s_L: 0.7901 TRM_s_C: 0.9585 TRM_m_L: 0.4615 TRM_m_C: 0.5838 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:502.45  small:269.18  middle:208.64  big:24.64 lr:0.00028
+timer: 0.8588 sec.
+iter 136980 || ARM_L: 1.0875 ARM_C: 1.8459 TRM_s_L: 1.1465 TRM_s_C: 1.4098 TRM_m_L: 0.4099 TRM_m_C: 2.2735 TRM_b_L: 0.0000 TRM_b_C: 0.0000 || 
+all:498.27  small:294.64  middle:191.36  big:12.27 lr:0.00028
+timer: 0.9357 sec.
+iter 136990 || ARM_L: 0.7798 ARM_C: 1.5601 TRM_s_L: 0.8465 TRM_s_C: 1.3263 TRM_m_L: 0.4513 TRM_m_C: 1.0966 TRM_b_L: 0.2396 TRM_b_C: 0.4046 ||

@@ -34,7 +34,7 @@ class Detect_multitridentRefineDet(Function):
         num = loc_data1.size(0)  # batch size
         num_priors = prior.size(0)
         choose_result_loc = torch.zeros(num, num_priors, 4)
-        choose_result_conf = torch.zeros(num, num_priors, 21)
+        choose_result_conf = torch.zeros(num, num_priors, self.num_classes)
 
         for i in range(num):
             loc1 = loc_data1[i].clone().unsqueeze(0)
