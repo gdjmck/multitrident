@@ -9,7 +9,7 @@ import torch
 import torch.nn as nn
 import torch.backends.cudnn as cudnn
 from torch.autograd import Variable
-from data import VOC_ROOT, VOCAnnotationTransform, VOCDetection, BaseTransform
+from data import VOC_ROOT, VOCAnnotationTransform, VOCDetection, BaseTransform, GDUT
 from data import VOC_CLASSES as labelmap
 import torch.utils.data as data
 
@@ -69,14 +69,14 @@ if torch.cuda.is_available():
 else:
     torch.set_default_tensor_type('torch.FloatTensor')
 
-annopath = os.path.join(args.voc_root, 'VOC2007', 'Annotations', '%s.xml')
-imgpath = os.path.join(args.voc_root, 'VOC2007', 'JPEGImages', '%s.jpg')
-imgsetpath = os.path.join(args.voc_root, 'VOC2007', 'ImageSets',
+annopath = os.path.join(args.voc_root, 'Annotations', '%s.xml')
+imgpath = os.path.join(args.voc_root, 'JPEGImages', '%s.jpg')
+imgsetpath = os.path.join(args.voc_root, 'ImageSets',
                           'Main', '{:s}.txt')
-YEAR = '2007'
-devkit_path = args.voc_root + 'VOC' + YEAR
+devkit_path = args.voc_root + 'SAFTY_HELMET'
 dataset_mean = (104, 117, 123)
-set_type = 'test'
+#set_type = 'test'
+set_type = 'trainval'
 
 
 class Timer(object):
@@ -170,7 +170,7 @@ def do_python_eval(output_dir='output', use_07=True):
     use_07_metric = use_07
     print('VOC07 metric? ' + ('Yes' if use_07_metric else 'No'))
     if not os.path.isdir(output_dir):
-        os.mkdir(output_dir)
+        os.makedirs(output_dir)
     for i, cls in enumerate(labelmap):
         filename = get_voc_results_file_template(set_type, cls)
         rec, prec, ap = voc_eval(
@@ -430,14 +430,19 @@ def evaluate_detections(box_list, output_dir, dataset):
 if __name__ == '__main__':
     # load net
     num_classes = len(labelmap) + 1                      # +1 for background
+    print('#classes:', num_classes)
     net = build_multitridentrefinedet('test', int(args.input_size), num_classes)            # initialize SSD
     net.load_state_dict(torch.load(args.trained_model))
     net.eval()
     print('Finished loading model!')
     # load data
+    '''
     dataset = VOCDetection(args.voc_root, [('2007', set_type)],
                            BaseTransform(int(args.input_size), dataset_mean),
                            VOCAnnotationTransform())
+    '''
+    #import pdb; pdb.set_trace()
+    dataset = GDUT(args.voc_root, BaseTransform(int(args.input_size), dataset_mean))
     if args.cuda:
         net = net.cuda()
         cudnn.benchmark = True

@@ -115,10 +115,12 @@ class RefineDetMultiBoxLoss(nn.Module):
         pos_idx = pos.unsqueeze(pos.dim()).expand_as(loc_data)
         loc_p = loc_data[pos_idx].view(-1, 4)
         loc_t = loc_t[pos_idx].view(-1, 4)
+        '''
         if have_nan(loc_p):
             print('nan in loc_p')
         if have_nan(loc_t):
             print('nan in loc_t')
+        '''
         loss_l = F.smooth_l1_loss(loc_p, loc_t, reduction='sum')
 
         # Compute max conf across batch for hard negative mining

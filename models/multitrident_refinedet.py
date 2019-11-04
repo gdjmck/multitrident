@@ -89,22 +89,18 @@ class multitridentRefineDet(nn.Module):
         
         #print(x.size())
         #print(x)
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8cc17e0fdc977ba63be5538b925e68da550479d7
         arm_branch = list()
         # apply vgg up to conv4_3 relu and conv5_3 relu
         nan_first_appearance = -1
         for k in range(30):
             x_t = self.vgg[k](x)
-            if have_nan(x_t) and nan_first_appearance == -1:
-                print('nan in VGG[%d]'%k, have_nan(x_t))
-                if have_nan(self.vgg[k].weight):
-                    print('nan in VGG[%d] conv kernel'%k)
-                nan_first_appearance = k
             x = x_t
             if 22 == k:
                 s = self.conv4_3_L2Norm(x)
-                if have_nan(s) and nan_first_appearance == -1:
-                    print('nan in conv4_3_L2Norm')
-                    nan_first_appearance = k
                 sources.append(s)
             elif 29 == k:
                 s = self.conv5_3_L2Norm(x)
@@ -123,10 +119,6 @@ class multitridentRefineDet(nn.Module):
 
 
         sources.reverse()
-        for i, source in enumerate(sources):
-            if have_nan(source):
-                print('nan in sources[%d]'%i)
-
 
         a = sources[0]
         for i in range(2):
@@ -142,18 +134,12 @@ class multitridentRefineDet(nn.Module):
         b = sources[2]
         for i in range(2):
             b = self.fpn1[i](b)
-            if have_nan(b):
-                print('nan in b from source[2]')
         fpn_for_arm1 = self.relu(b + a)          #fpn for arm1
 
         a = self.decov[2](fpn_for_arm1)
-        if have_nan(a):
-            print('nan in a from decov[2]')
         b = sources[3]
         for i in range(2):
             b = self.fpn0[i](b)
-            if have_nan(b):
-                print('nan in b from source[3]')
         fpn_for_arm0 = self.relu(b + a)          #fpn for arm0
 
 
@@ -161,16 +147,11 @@ class multitridentRefineDet(nn.Module):
         trm_source.append(fpn_for_arm1)
         trm_source.append(fpn_for_arm2)
         trm_source.append(fpn_for_arm3)
-        for i, x in enumerate(trm_source):
-            if have_nan(x):
-                print('nan in trm_source[%d]'%i)
 
         # apply ARM and ODM to source layers
         for i, (x, l, c) in enumerate(zip(trm_source, self.arm_loc, self.arm_conf)):
             arm_loc.append(l(x).permute(0, 2, 3, 1).contiguous())
             arm_conf.append(c(x).permute(0, 2, 3, 1).contiguous())
-            if have_nan(arm_loc[-1]):
-                print('nan in arm_loc[%d]'%i)
         arm_loc = torch.cat([o.view(o.size(0), -1) for o in arm_loc], 1)
         arm_conf = torch.cat([o.view(o.size(0), -1) for o in arm_conf], 1)
 

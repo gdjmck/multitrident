@@ -6,7 +6,7 @@ import torch.nn.functional as F
 from torch.autograd import Variable
 # from data import coco as cfg
 # print(os.getcwd())
-from layers.box_utils import match, log_sum_exp, refine_match_return_matches, scaleAssign
+from layers.box_utils import match, log_sum_exp, refine_match_return_matches, scaleAssign, have_nan
 import globalValue
 
 # os.environ["CUDA_VISIBLE_DEVICES"] = "-1"
@@ -184,7 +184,12 @@ class multitridentMultiBoxLoss(nn.Module):
         # globalValue.addItem("mid_gt_set", set(matches_list[pos_for_middle]))
         # globalValue.addItem("big_gt_set", set(matches_list[pos_for_big]))
 
-
+        if have_nan(pos_for_small):
+            print('nan in pos_for_small')
+        if have_nan(loc_data1):
+            print('nan in loc_data1')
+        if have_nan(loc_t):
+            print('nan in loc_t')
         loss_l_for_small = self.computeSmothL1Loss(pos_for_WHAT=pos_for_small, loc_pred=loc_data1, loc_thruth=loc_t)
         loss_l_for_middle = self.computeSmothL1Loss(pos_for_WHAT=pos_for_middle, loc_pred=loc_data2, loc_thruth=loc_t)
         loss_l_for_big = self.computeSmothL1Loss(pos_for_WHAT=pos_for_big, loc_pred=loc_data3, loc_thruth=loc_t)
@@ -235,9 +240,9 @@ class multitridentMultiBoxLoss(nn.Module):
         N_for_middle = num_pos_for_middle.data.sum().float()
         N_for_big = num_pos_for_big.data.sum().float()
 
-        N_for_small = max(N_for_small, 0.0001)
-        N_for_middle = max(N_for_middle, 0.0001)
-        N_for_big = max(N_for_big, 0.0001)
+        N_for_small = max(N_for_small, torch.Tensor((0.0001,)))
+        N_for_middle = max(N_for_middle, torch.Tensor((0.0001,)))
+        N_for_big = max(N_for_big, torch.Tensor((0.0001,)))
 
         # print('all:{}  small:{}  middle:{}  big:{}'.format(N_for_all,N_for_small,N_for_middle,N_for_big))
         # N = N_for_small+N_for_middle+N_for_big
