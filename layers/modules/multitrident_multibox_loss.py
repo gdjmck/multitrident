@@ -155,7 +155,7 @@ class multitridentMultiBoxLoss(nn.Module):
 
         if self.use_ARM:
             P = F.softmax(arm_conf_data, 2)
-            arm_conf_tmp = P[:,:,1]
+            arm_conf_tmp = P[:,:,1] # proposal认为有object的概率
             object_score_index = arm_conf_tmp <= self.theta
             pos_for_small[object_score_index.data] = 0
 

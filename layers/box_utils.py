@@ -152,11 +152,16 @@ def refine_match(threshold, truths, priors, variances, labels, loc_t, conf_t, id
     # TODO refactor: index  best_prior_idx with long tensor
     # ensure every gt matches with its prior of max overlap
     for j in range(best_prior_idx.size(0)):
-        best_truth_idx[best_prior_idx[j]] = j
+        # best_prior_idx[j]是第j个gt object对应的iou最大的prior 的idx
+        # 然后将best_truth_idx的那个prior也相应设为gt obj的idx
+        # 所以这个一个保险的操作
+        best_truth_idx[best_prior_idx[j]] = j 
+    # matches是每个prior对应的gt obj
     matches = truths[best_truth_idx]          # Shape: [num_priors,4]
     if arm_loc is None:
         conf = labels[best_truth_idx]         # Shape: [num_priors]
-        loc = encode(matches, priors, variances)
+        loc = encode(matches, priors, variances) # matches和prior是pair，matches是gt的
+        # loc是对gt做variances变化之后的结果
     else:
         conf = labels[best_truth_idx] + 1     # Shape: [num_priors]
         loc = encode(matches, center_size(decode_arm), variances)
@@ -270,6 +275,8 @@ def refine_match_return_matches(threshold, truths, priors, variances, labels, lo
     return matches, best_prior_overlap, best_prior_idx
 
 def scaleAssign(matches, conf_t,idx ):
+    # matches are actually truths (xmin, ymin, xmax, ymax) w.r.t. image height and width
+    # 但是有#priors个truths在这里
 
     conf_t_copy=conf_t[idx]
     wh = matches[:,2:]-matches[:,:2]
@@ -302,7 +309,7 @@ def scaleAssign(matches, conf_t,idx ):
     return posidx_smaller_than40, posidx_middle_30and160, posidx_bigger_than150
 
 
-def encode(matched, priors, variances):
+def encode(matched, priors, variances): # variances=(0.1, 0.2) for 320
     """Encode the variances from the priorbox layers into the ground truth boxes
     we have matched (based on jaccard overlap) with the prior boxes.
     Args:

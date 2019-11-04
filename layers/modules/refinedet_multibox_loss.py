@@ -69,7 +69,7 @@ class RefineDetMultiBoxLoss(nn.Module):
         else:
             loc_data, conf_data = arm_loc_data, arm_conf_data
         num = loc_data.size(0)
-        priors = priors[:loc_data.size(1), :]
+        priors = priors[:loc_data.size(1), :] # 主要为了可以忽略掉一些large scale的prior，如果忽略掉一些network输出
         num_priors = (priors.size(0))
         num_classes = self.num_classes
         #print(loc_data.size(), conf_data.size(), priors.size())
@@ -106,7 +106,7 @@ class RefineDetMultiBoxLoss(nn.Module):
             pos = conf_t > 0
             pos[object_score_index.data] = 0
         else:
-            pos = conf_t > 0
+            pos = conf_t > 0 # 因为在refine_match的时候已经去掉小于self.threshold（0.5）的
         #print(pos.size())
         #num_pos = pos.sum(dim=1, keepdim=True)
 

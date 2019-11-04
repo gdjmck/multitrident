@@ -87,13 +87,8 @@ class multitridentRefineDet(nn.Module):
         trm_loc = list()
         trm_conf = list()
         
-        print('===========================================')
         #print(x.size())
         #print(x)
-        
-        if have_nan(x):
-            print('nan in input x of model')
-
         arm_branch = list()
         # apply vgg up to conv4_3 relu and conv5_3 relu
         nan_first_appearance = -1
@@ -113,9 +108,6 @@ class multitridentRefineDet(nn.Module):
                 sources.append(s)
             elif 29 == k:
                 s = self.conv5_3_L2Norm(x)
-                if have_nan(s) and nan_first_appearance == -1:
-                    print('nan in conv5_3_L2Norm')
-                    nan_first_appearance = k
                 sources.append(s)
 
         # apply vgg up to fc7
@@ -139,22 +131,14 @@ class multitridentRefineDet(nn.Module):
         a = sources[0]
         for i in range(2):
             a = self.fpn3[i](a)
-            if have_nan(a):
-                print('nan in a from source[0]')
         fpn_for_arm3 = self.relu(a)             # fpn for arm3
         a = self.decov[0](a)
-        if have_nan(a):
-            print('nan in a from decov[0]')
         b = sources[1]
         for i in range(2):
             b = self.fpn2[i](b)
-            if have_nan(b):
-                print('nan in b from source[1]')
         fpn_for_arm2 = self.relu(b + a)          #fpn for arm2
 
         a = self.decov[1](fpn_for_arm2)
-        if have_nan(a):
-            print('nan in a from decov[1]')
         b = sources[2]
         for i in range(2):
             b = self.fpn1[i](b)
@@ -257,34 +241,35 @@ class multitridentRefineDet(nn.Module):
         trm_loc3 = torch.cat([o.view(o.size(0), -1) for o in trm_loc[8:12]], 1)
         trm_conf3 = torch.cat([o.view(o.size(0), -1) for o in trm_conf[8:12]], 1)
 
-
-        # #print([x.size() for x in sources])
-        # # calculate TCB features
-        # #print([x.size() for x in sources])
-        # p = None
-        # for k, v in enumerate(sources[::-1]):
-        #     s = v
-        #     for i in range(3):
-        #         s = self.tcb0[(3-k)*3 + i](s)
-        #         #print(s.size())
-        #     if k != 0:
-        #         u = p
-        #         u = self.tcb1[3-k](u)
-        #         s += u
-        #     for i in range(3):
-        #         s = self.tcb2[(3-k)*3 + i](s)
-        #     p = s
-        #     tcb_source.append(s)
-        # #print([x.size() for x in tcb_source])
-        # tcb_source.reverse()
-        #
-        # # apply ODM to source layers
-        # for (x, l, c) in zip(tcb_source, self.odm_loc, self.odm_conf):
-        #     odm_loc.append(l(x).permute(0, 2, 3, 1).contiguous())
-        #     odm_conf.append(c(x).permute(0, 2, 3, 1).contiguous())
-        # odm_loc = torch.cat([o.view(o.size(0), -1) for o in odm_loc], 1)
-        # odm_conf = torch.cat([o.view(o.size(0), -1) for o in odm_conf], 1)
-        # #print(arm_loc.size(), arm_conf.size(), odm_loc.size(), odm_conf.size())
+        '''
+            # #print([x.size() for x in sources])
+            # # calculate TCB features
+            # #print([x.size() for x in sources])
+            # p = None
+            # for k, v in enumerate(sources[::-1]):
+            #     s = v
+            #     for i in range(3):
+            #         s = self.tcb0[(3-k)*3 + i](s)
+            #         #print(s.size())
+            #     if k != 0:
+            #         u = p
+            #         u = self.tcb1[3-k](u)
+            #         s += u
+            #     for i in range(3):
+            #         s = self.tcb2[(3-k)*3 + i](s)
+            #     p = s
+            #     tcb_source.append(s)
+            # #print([x.size() for x in tcb_source])
+            # tcb_source.reverse()
+            #
+            # # apply ODM to source layers
+            # for (x, l, c) in zip(tcb_source, self.odm_loc, self.odm_conf):
+            #     odm_loc.append(l(x).permute(0, 2, 3, 1).contiguous())
+            #     odm_conf.append(c(x).permute(0, 2, 3, 1).contiguous())
+            # odm_loc = torch.cat([o.view(o.size(0), -1) for o in odm_loc], 1)
+            # odm_conf = torch.cat([o.view(o.size(0), -1) for o in odm_conf], 1)
+            # #print(arm_loc.size(), arm_conf.size(), odm_loc.size(), odm_conf.size())
+        '''
 
         if self.phase == "test":
             #print(loc, conf)

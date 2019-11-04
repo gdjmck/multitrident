@@ -402,7 +402,7 @@ class SSDAugmentation(object):
         self.mean = mean
         self.size = size
         self.augment = Compose([
-            ConvertFromInts(),
+            ConvertFromInts(), # 只对img，转成float32
             ToAbsoluteCoords(),
             PhotometricDistort(),
             Expand(self.mean),
