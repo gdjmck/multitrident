@@ -241,9 +241,8 @@ def refine_match_return_matches(threshold, truths, priors, variances, labels, lo
     if arm_loc is None:
         overlaps = jaccard(truths, point_form(priors))
     else:
-        if have_nan(arm_loc):
-            print('nan in arm_loc refine_match_return_matches')
-        decode_arm = decode(arm_loc, priors=priors, variances=variances)
+        #print('Max arm_loc to decode: ', arm_loc.max(), '\tMin: ', arm_loc.min())
+        decode_arm = decode(torch.clamp(arm_loc, max=3.0), priors=priors, variances=variances)
         overlaps = jaccard(truths, decode_arm)
     # (Bipartite Matching)
     # [1,num_objects] best prior for each ground truth
@@ -260,18 +259,12 @@ def refine_match_return_matches(threshold, truths, priors, variances, labels, lo
     for j in range(best_prior_idx.size(0)):
         best_truth_idx[best_prior_idx[j]] = j
     matches = truths[best_truth_idx]          # Shape: [num_priors,4]
-    if have_nan(matches):
-        print('nan in matches refine_match_return_matches')
-    if have_nan(decode_arm):
-        print('nan in decode_arm refine_match_return_matches')
     if arm_loc is None:
         conf = labels[best_truth_idx]         # Shape: [num_priors]
         loc = encode(matches, priors, variances)
     else:
         conf = labels[best_truth_idx] + 1     # Shape: [num_priors]
         loc = encode(matches, center_size(decode_arm), variances)
-    if have_nan(loc):
-        print('nan in loc_t[%d] refine_match_return_matches'%idx)
     conf[best_truth_overlap < threshold] = 0  # label as background
     loc_t[idx] = loc    # [num_priors,4] encoded offsets to learn
     conf_t[idx] = conf  # [num_priors] top class label for each prior
@@ -327,6 +320,13 @@ def encode(matched, priors, variances):
     g_cxcy = (matched[:, :2] + matched[:, 2:])/2 - priors[:, :2]
     # encode variance
     g_cxcy /= (variances[0] * priors[:, 2:])
+    '''
+    if have_nan(g_cxcy):
+        print('\tnan in g_cxcy')
+        nan_mask = torch.isnan(g_cxcy)
+        matched_centerform = (matched[:, :2]+matched[:, 2:])/2
+        print('\tmatched.centers: \n', matched_centerform[nan_mask].mean(), ' vs ', matched_centerform[~nan_mask].mean(), '\n' , matched_centerform[nan_mask], '\n==================\n', matched_centerform[~nan_mask], '\n------------------------\n', priors[:, 2:][nan_mask], '\n', priors[:, 2:].mean())
+    '''
     # match wh / prior wh
     g_wh = (matched[:, 2:] - matched[:, :2]) / priors[:, 2:]
     g_wh = torch.log(g_wh + 1e-5) / variances[1]
@@ -351,19 +351,10 @@ def decode(loc, priors, variances):
     boxes = torch.cat((
         priors[:, :2] + loc[:, :2] * variances[0] * priors[:, 2:],
         priors[:, 2:] * torch.exp(loc[:, 2:] * variances[1])), 1)
-    if have_nan(boxes):
-        print('nan in boxes', loc)
     tmp1 = boxes[:, :2] - boxes[:, 2:] / 2
-    if have_nan(tmp1):
-        print('1:\n', boxes)
     tmp2 = boxes[:, 2:] + tmp1
-    if have_nan(tmp2):
-        mask = torch.isnan(tmp2)
-        print('2:\n', tmp1[mask], '\n********************************\n', boxes[:, 2:][mask], '\n*-*-*-*-*-*-*-*-*-*-*-*-*-\n', priors[:, 2:][mask], '\n*-*-*-*-*-*-*-*-*-*-*-*-*-\n', loc[:, 2:][mask])
     boxes[:, :2] -= boxes[:, 2:] / 2
     boxes[:, 2:] += boxes[:, :2]
-    if have_nan(boxes):
-        print('nan in boxes after center transform', boxes)
     return boxes
 
 

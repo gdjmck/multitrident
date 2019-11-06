@@ -183,13 +183,9 @@ class multitridentMultiBoxLoss(nn.Module):
         # globalValue.addItem("small_gt_set", set(matches_list[pos_for_small]))
         # globalValue.addItem("mid_gt_set", set(matches_list[pos_for_middle]))
         # globalValue.addItem("big_gt_set", set(matches_list[pos_for_big]))
-
-        if have_nan(pos_for_small):
-            print('nan in pos_for_small')
-        if have_nan(loc_data1):
-            print('nan in loc_data1')
         if have_nan(loc_t):
-            print('nan in loc_t')
+            print('NAN in loc_t')
+
         loss_l_for_small = self.computeSmothL1Loss(pos_for_WHAT=pos_for_small, loc_pred=loc_data1, loc_thruth=loc_t)
         loss_l_for_middle = self.computeSmothL1Loss(pos_for_WHAT=pos_for_middle, loc_pred=loc_data2, loc_thruth=loc_t)
         loss_l_for_big = self.computeSmothL1Loss(pos_for_WHAT=pos_for_big, loc_pred=loc_data3, loc_thruth=loc_t)

@@ -69,14 +69,15 @@ if torch.cuda.is_available():
 else:
     torch.set_default_tensor_type('torch.FloatTensor')
 
-annopath = os.path.join(args.voc_root, 'Annotations', '%s.xml')
-imgpath = os.path.join(args.voc_root, 'JPEGImages', '%s.jpg')
-imgsetpath = os.path.join(args.voc_root, 'ImageSets',
+annopath = os.path.join(args.voc_root, 'VOC2007', 'Annotations', '%s.xml')
+imgpath = os.path.join(args.voc_root, 'VOC2007', 'JPEGImages', '%s.jpg')
+imgsetpath = os.path.join(args.voc_root, 'VOC2007', 'ImageSets',
                           'Main', '{:s}.txt')
-devkit_path = args.voc_root + 'SAFTY_HELMET'
+YEAR = '2007'
+devkit_path = args.voc_root + 'VOC' + YEAR
 dataset_mean = (104, 117, 123)
-#set_type = 'test'
-set_type = 'trainval'
+set_type = 'val'
+#set_type = 'trainval'
 
 
 class Timer(object):
@@ -436,13 +437,13 @@ if __name__ == '__main__':
     net.eval()
     print('Finished loading model!')
     # load data
-    '''
     dataset = VOCDetection(args.voc_root, [('2007', set_type)],
                            BaseTransform(int(args.input_size), dataset_mean),
                            VOCAnnotationTransform())
     '''
     #import pdb; pdb.set_trace()
-    dataset = GDUT(args.voc_root, BaseTransform(int(args.input_size), dataset_mean))
+    dataset = VOCDetection(args.voc_root, BaseTransform(int(args.input_size), dataset_mean))
+    '''
     if args.cuda:
         net = net.cuda()
         cudnn.benchmark = True
