@@ -14,6 +14,7 @@ def plot_grad_flow_v2(named_parameters):
     ave_grads = []
     max_grads= []
     layers = []
+    num_params = 0
     for n, p in named_parameters:
         if(p.requires_grad) and ("bias" not in n):
             if p.grad is None:
@@ -25,8 +26,9 @@ def plot_grad_flow_v2(named_parameters):
             layers.append(n)
             ave_grads.append(p.grad.abs().mean())
             max_grads.append(p.grad.abs().max())
+            num_params += 1
     #print('layers:', layers)
-    fig = plt.figure(1, figsize=(20, 5))
+    fig = plt.figure(1, figsize=(max(20, num_params), 5))
     plt.bar(np.arange(len(max_grads)), max_grads, alpha=0.1, lw=1, color="c")
     plt.bar(np.arange(len(max_grads)), ave_grads, alpha=0.1, lw=1, color="b")
     plt.hlines(0, 0, len(ave_grads)+1, lw=2, color="k" )
