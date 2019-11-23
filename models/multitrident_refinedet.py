@@ -116,6 +116,8 @@ class multitridentRefineDet(nn.Module):
 
 
         sources.reverse()
+        # value check
+        #print('sources[0]: ', (sources[0]==0).sum().item(), sources[0].numel())
 
         a = sources[0]
         for i in range(2):
@@ -159,6 +161,11 @@ class multitridentRefineDet(nn.Module):
         for i,b in enumerate(self.branch_for_arm0):
             if i < 6:
                 arm0_b1 = b(arm0_b1)
+                # gradient check
+                '''
+                if i == 0:
+                    print('\tarm0_b1[0]:', (arm0_b1==0).sum().item(), arm0_b1.numel())
+                '''
             if i>=6 and i < 12:
                 arm0_b2 = b(arm0_b2)
             if i>=12:

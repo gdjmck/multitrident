@@ -105,6 +105,7 @@ def train():
             parser.error('Must specify dataset if specifying dataset_root')'''
         cfg = voc_refinedet[args.input_size]
         dataset = VOCDetection(root=args.dataset_root,
+                               image_sets=[('2007', 'train'), ('2012', 'train')],
                                transform=SSDAugmentation(cfg['min_dim'],
                                                          MEANS))
     elif args.dataset == 'GDUT':
@@ -285,8 +286,8 @@ def train():
         
         loss.backward()
         
-        if iteration % 200 == 0:
-            writer.add_figure('Grad', plot_grad_flow_v2(net.named_parameters()), global_step=iteration // 200)
+        if iteration % 100 == 0:
+            writer.add_figure('Grad', plot_grad_flow_v2(net.named_parameters()), global_step=iteration // 100)
         # trm_loss.backward()
         optimizer.step()
         t1 = time.time()
